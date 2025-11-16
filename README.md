@@ -4,7 +4,7 @@ In this repository, you can find default configuration files of latest uxmFarmer
 
 ## Adding New Language Support
 
-You can find language files inside languages folder, copy an existing one and translate it then create a PR including the new translated file. Our staff will check and merge your work if its suitable.
+You can find language files inside languages folder, copy an existing language folder and translate everything inside it then create a PR including the new translated files. Our staff will check and merge your work if its suitable.
 
 ## Reach The Wiki
 
