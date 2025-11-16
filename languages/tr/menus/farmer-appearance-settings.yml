@@ -1,0 +1,63 @@
+title: "<black>Çiftçi Görünüm Ayarları"
+rows: 1
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 4
+  - 6
+  - 7
+  - 8
+items:
+  glowing:
+    material: "HONEY_BOTTLE"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Parlama Ayarları"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Çiftçinin parlama ayarlarını"
+      - " <gray>buradan yönetebilirsin"
+      - ""
+      - "<yellow>▶ Parlama ayarlarını görmek için tıkla"
+    slots:
+      - 4
+    actions:
+      - "[menu] glowing_settings"
+      - "[sound] BLOCK_BREWING_STAND_BREW"
+  entity:
+    material: "ZOMBIE_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Varlık Türü Ayarları"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Çiftçinin varlık türünü"
+      - " <gray>buradan yönetebilirsin"
+      - ""
+      - "<yellow>▶ Varlık türlerini görmek için tıkla"
+    slots:
+      - 3
+  profession:
+    material: "VILLAGER_SPAWN_EGG"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Köylü Mesleği Ayarları"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Çiftçinin köylü mesleğini"
+      - " <gray>buradan yönetebilirsin"
+      - ""
+      - "<yellow>▶ Varlık türlerini görmek için tıkla"
+    slots:
+      - 5
+    actions:
+      - "[menu] entity_menu"
+      - "[sound] BLOCK_BREWING_STAND_BREW"

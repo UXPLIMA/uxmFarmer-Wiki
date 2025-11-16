@@ -1,0 +1,13 @@
+sign-menu:
+  sign-type: DARK_OAK_SIGN
+  text-color: WHITE
+  input-line: 0
+  lines:
+    - ""
+    - "----------"
+    - "<message>"
+    - ""
+  messages:
+    enter: "Please enter the player name"
+    player-not-found: "Player not found"
+    already-exists: "Player already exists"

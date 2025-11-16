@@ -1,0 +1,568 @@
+title: "           <black>Parıltı Ayarları"
+rows: 5
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 17
+  - 18
+  - 26
+  - 27
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+
+items:
+  back:
+    material: "BARRIER"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Geri Dön"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+    slots:
+      - 36
+    actions:
+      - "[menu] appearance_settings"
+      - "[sound] UI_BUTTON_CLICK"
+
+color-items:
+  BLACK:
+    selected:
+      material: "BLACK_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<black>Siyah"
+      glowing: true
+      lore:
+        - ""
+        - "<#05e200>Seçildi"
+      slots:
+        - 11
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] BLACK"
+    unselected:
+      material: "BLACK_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<black>Siyah"
+      glowing: false
+      lore:
+        - ""
+        - "<#f6eb33>▶ Seçmek için tıklayın"
+      slots:
+        - 11
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] BLACK"
+
+  DARK_BLUE:
+    selected:
+      material: "BLUE_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<dark_blue>Koyu Mavi"
+      glowing: true
+      lore:
+        - ""
+        - "<#05e200>Seçildi"
+      slots:
+        - 12
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] DARK_BLUE"
+    unselected:
+      material: "BLUE_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<dark_blue>Koyu Mavi"
+      glowing: false
+      lore:
+        - ""
+        - "<#f6eb33>▶ Seçmek için tıklayın"
+      slots:
+        - 12
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] DARK_BLUE"
+
+  DARK_GREEN:
+    selected:
+      material: "GREEN_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<dark_green>Koyu Yeşil"
+      glowing: true
+      lore:
+        - ""
+        - "<#05e200>Seçildi"
+      slots:
+        - 13
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] DARK_GREEN"
+    unselected:
+      material: "GREEN_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<dark_green>Koyu Yeşil"
+      glowing: false
+      lore:
+        - ""
+        - "<#f6eb33>▶ Seçmek için tıklayın"
+      slots:
+        - 13
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] DARK_GREEN"
+
+  BLUE:
+    selected:
+      material: "BLUE_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<blue>Mavi"
+      glowing: true
+      lore:
+        - ""
+        - "<#05e200>Seçildi"
+      slots:
+        - 14
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] BLUE"
+    unselected:
+      material: "BLUE_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<blue>Mavi"
+      glowing: false
+      lore:
+        - ""
+        - "<#f6eb33>▶ Seçmek için tıklayın"
+      slots:
+        - 14
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] BLUE"
+
+  DARK_AQUA:
+    selected:
+      material: "CYAN_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<dark_aqua>Koyu Su Mavisi"
+      glowing: true
+      lore:
+        - ""
+        - "<#05e200>Seçildi"
+      slots:
+        - 15
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] DARK_AQUA"
+    unselected:
+      material: "CYAN_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<dark_aqua>Koyu Su Mavisi"
+      glowing: false
+      lore:
+        - ""
+        - "<#f6eb33>▶ Seçmek için tıklayın"
+      slots:
+        - 15
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] DARK_AQUA"
+
+  DARK_PURPLE:
+    selected:
+      material: "PURPLE_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<dark_purple>Koyu Mor"
+      glowing: true
+      lore:
+        - ""
+        - "<#05e200>Seçildi"
+      slots:
+        - 20
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] DARK_PURPLE"
+    unselected:
+      material: "PURPLE_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<dark_purple>Koyu Mor"
+      glowing: false
+      lore:
+        - ""
+        - "<#f6eb33>▶ Seçmek için tıklayın"
+      slots:
+        - 20
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] DARK_PURPLE"
+
+  GOLD:
+    selected:
+      material: "ORANGE_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<gold>Turuncu"
+      glowing: true
+      lore:
+        - ""
+        - "<#05e200>Seçildi"
+      slots:
+        - 21
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] GOLD"
+    unselected:
+      material: "ORANGE_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<gold>Turuncu"
+      glowing: false
+      lore:
+        - ""
+        - "<#f6eb33>▶ Seçmek için tıklayın"
+      slots:
+        - 21
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] GOLD"
+
+  GRAY:
+    selected:
+      material: "LIGHT_GRAY_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<gray>Gri"
+      glowing: true
+      lore:
+        - ""
+        - "<#05e200>Seçildi"
+      slots:
+        - 22
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] GRAY"
+    unselected:
+      material: "LIGHT_GRAY_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<gray>Gri"
+      glowing: false
+      lore:
+        - ""
+        - "<#f6eb33>▶ Seçmek için tıklayın"
+      slots:
+        - 22
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] GRAY"
+
+  DARK_GRAY:
+    selected:
+      material: "GRAY_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<dark_gray>Koyu Gri"
+      glowing: true
+      lore:
+        - ""
+        - "<#05e200>Seçildi"
+      slots:
+        - 23
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] DARK_GRAY"
+    unselected:
+      material: "GRAY_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<dark_gray>Koyu Gri"
+      glowing: false
+      lore:
+        - ""
+        - "<#f6eb33>▶ Seçmek için tıklayın"
+      slots:
+        - 23
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] DARK_GRAY"
+
+  AQUA:
+    selected:
+      material: "LIGHT_BLUE_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<aqua>Su Mavisi"
+      glowing: true
+      lore:
+        - ""
+        - "<#05e200>Seçildi"
+      slots:
+        - 24
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] AQUA"
+    unselected:
+      material: "LIGHT_BLUE_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<aqua>Su Mavisi"
+      glowing: false
+      lore:
+        - ""
+        - "<#f6eb33>▶ Seçmek için tıklayın"
+      slots:
+        - 24
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] AQUA"
+
+  LIGHT_PURPLE:
+    selected:
+      material: "PINK_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<light_purple>Açık Mor"
+      glowing: true
+      lore:
+        - ""
+        - "<#05e200>Seçildi"
+      slots:
+        - 29
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] LIGHT_PURPLE"
+    unselected:
+      material: "PINK_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<light_purple>Açık Mor"
+      glowing: false
+      lore:
+        - ""
+        - "<#f6eb33>▶ Seçmek için tıklayın"
+      slots:
+        - 29
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] LIGHT_PURPLE"
+
+  YELLOW:
+    selected:
+      material: "YELLOW_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<yellow>Sarı"
+      glowing: true
+      lore:
+        - ""
+        - "<#05e200>Seçildi"
+      slots:
+        - 30
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] YELLOW"
+    unselected:
+      material: "YELLOW_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<yellow>Sarı"
+      glowing: false
+      lore:
+        - ""
+        - "<#f6eb33>▶ Seçmek için tıklayın"
+      slots:
+        - 30
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] YELLOW"
+
+  WHITE:
+    selected:
+      material: "WHITE_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<white>Beyaz"
+      glowing: true
+      lore:
+        - ""
+        - "<#05e200>Seçildi"
+      slots:
+        - 31
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] WHITE"
+    unselected:
+      material: "WHITE_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<white>Beyaz"
+      glowing: false
+      lore:
+        - ""
+        - "<#f6eb33>▶ Seçmek için tıklayın"
+      slots:
+        - 31
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] WHITE"
+
+  RED:
+    selected:
+      material: "RED_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<red>Kırmızı"
+      glowing: true
+      lore:
+        - ""
+        - "<#05e200>Seçildi"
+      slots:
+        - 32
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] RED"
+    unselected:
+      material: "RED_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<red>Kırmızı"
+      glowing: false
+      lore:
+        - ""
+        - "<#f6eb33>▶ Seçmek için tıklayın"
+      slots:
+        - 32
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] RED"
+
+  GREEN:
+    selected:
+      material: "LIME_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<green>Yeşil"
+      glowing: true
+      lore:
+        - ""
+        - "<#05e200>Seçildi"
+      slots:
+        - 33
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] GREEN"
+    unselected:
+      material: "LIME_CANDLE"
+      model-data: 0
+      amount: 1
+      display-name: "<green>Yeşil"
+      glowing: false
+      lore:
+        - ""
+        - "<#f6eb33>▶ Seçmek için tıklayın"
+      slots:
+        - 33
+      actions:
+        - "[sound] ITEM_DYE_USE"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_color] GREEN"
+
+dynamic-items:
+  glowing:
+    enabled:
+      material: "HONEY_BOTTLE"
+      model-data: 0
+      amount: 1
+      display-name: "<#11ff00>Parıltı"
+      glowing: false
+      lore:
+        - ""
+        - " <gray>NPC'nin parıltı durumunu"
+        - " <gray>buradan değiştirebilirsiniz"
+        - ""
+        - " <white>Parıltı durumu: <#11ff00>Etkin"
+        - ""
+        - "<#f6eb33>▶ Parıltı durumunu değiştirmek için tıklayın"
+      slots:
+        - 40
+      actions:
+        - "[sound] BLOCK_BREWING_STAND_BREW"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_status]"
+    disabled:
+      material: "GLASS_BOTTLE"
+      model-data: 0
+      amount: 1
+      display-name: "<#ff0000>Parıltı"
+      glowing: false
+      lore:
+        - ""
+        - " <gray>NPC'nin parıltı durumunu"
+        - " <gray>buradan değiştirebilirsiniz"
+        - ""
+        - " <white>Parıltı durumu: <#ff0000>Pasif"
+        - ""
+        - "<#f6eb33>▶ Parıltı durumunu değiştirmek için tıklayın"
+      slots:
+        - 40
+      actions:
+        - "[sound] BLOCK_BREWING_STAND_BREW"
+        - "[cooldown] change-glowing-cooldown"
+        - "[glow_status]"

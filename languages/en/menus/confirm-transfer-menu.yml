@@ -1,0 +1,65 @@
+title: "<black>Confirm Transfer Ownership"
+rows: 3
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+items:
+  back:
+    material: "BARRIER"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Go Back"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+    slots:
+      - 22
+    actions:
+      - "[menu] member_manage"
+  confirm:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#1cfc03>Confirm"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTkyZTMxZmZiNTljOTBhYjA4ZmM5ZGMxZmUyNjgwMjAzNWEzYTQ3YzQyZmVlNjM0MjNiY2RiNDI2MmVjYjliNiJ9fX0="
+    lore:
+      - ""
+    slots:
+      - 12
+    actions:
+      - "[confirm_transfer]"
+      - "[menu] member_manage"
+  cancel:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#fc0303>Cancel"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ=="
+    lore:
+      - ""
+    slots:
+      - 14
+    actions:
+      - "[menu] member_manage"

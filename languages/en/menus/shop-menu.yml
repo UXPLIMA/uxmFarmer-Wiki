@@ -1,0 +1,49 @@
+title: "<black>Farmer Shop"
+rows: 3
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+items:
+  buy:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<green>Buy"
+    glowing: true
+    head-data: "texture-ewogICJ0aW1lc3RhbXAiIDogMTYyMDM5NzA2MjE1MSwKICAicHJvZmlsZUlkIiA6ICI0ZGI2MWRkOTM0Mzk0M2M0YjhhOTZiNDQwMWM3MDM1MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJiZWVyYmVsbHltYW4iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2MyZTgxOTkwNmViMTc5NDM5YjhkZDU1NTExMzJlNTRlYjQ3MTczZTBmNDU4ODYxYWQyYThjOTM3OTE4Mzg5MSIKICAgIH0KICB9Cn0="
+    lore:
+      - "<gray>You need to confirm"
+      - "<gray>the purchase of the farmer."
+      - ""
+      - " <dark_gray>▪ <gray>Price: <gold>15,000"
+    slots:
+      - 13
+    actions:
+      - "[close]"
+      - "[buy]"
+

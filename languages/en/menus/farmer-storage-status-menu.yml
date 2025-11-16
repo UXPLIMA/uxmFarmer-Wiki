@@ -1,0 +1,87 @@
+title: "<black>Farmer Storage Status"
+rows: 1
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+
+collected-xp:
+  material: "PLAYER_HEAD"
+  model-data: 0
+  amount: 1
+  display-name: "<#4dcc1f>Collected XP"
+  glowing: false
+  head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTI4Mzk2NTkyM2MwZTNlYWQwZmU4NzYwZTA4Y2JhODk4MmUzM2E2YWNkYjg5MWVjYzZmNmRmZTZkNWQxODBiYyJ9fX0="
+  lore:
+    - ""
+    - "<#5b9397>Current Status ↓"
+    - "<gray>Current XP: <#ffea00><exp> XP"
+    - "<gray>Total price: <#ffea00><total_xp_price>$"
+    - "<gray>Unit price: <#ffea00><xp_price>$"
+    - "<gray>Tax: <#ffea00><tax>%"
+    - ""
+    - "<#5b9397>Production ↓"
+    - "<gray>Average production per minute: <#05e300><production_rate_in_minute> (<production_income_in_minute>$)"
+    - "<gray>Average production per hour: <#05e300><production_rate_in_hour> (<production_income_in_hour>$)"
+    - "<gray>Average production per day: <#05e300><production_rate_in_daily> (<production_income_in_daily>$)"
+    - ""
+    - "<#5b9397>Product Settings ↓"
+    - "<gray>Sales status: <sales_status>"
+    - "<gray>Collecting status: <collecting_status>"
+    - ""
+    - "<#5b9397>Shortcuts ↓"
+    - "<gray>To take as much as you want: <dark_gray>[<#ffea00>Right Click<dark_gray>]"
+    - "<gray>To close sales: <dark_gray>[<#ffea00>Left Click<dark_gray>]"
+    - "<gray>To take all: <dark_gray>[<#ffea00>Shift + Right Click<dark_gray>]"
+    - "<gray>To sell all: <dark_gray>[<#ffea00>Shift + Left Click<dark_gray>]"
+    - "<gray>To change collection status: <dark_gray>[<#ffea00>Number Button<dark_gray>]"
+  slots:
+    - 3
+collected-materials:
+  material: "PLAYER_HEAD"
+  model-data: 0
+  amount: 1
+  display-name: "<#ffea00>Storage Statistics"
+  glowing: false
+  head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjA5Mjk5YTExN2JlZTg4ZDMyNjJmNmFiOTgyMTFmYmEzNDRlY2FlMzliNDdlYzg0ODEyOTcwNmRlZGM4MWU0ZiJ9fX0="
+  lore:
+    - ""
+    - "<#5b9397>Current Status ↓"
+    - "<gray>Current collected products: <#ffea00><total_product>"
+    - "<gray>Current selling price: <#ffea00><total_price>$"
+    - ""
+    - "<#5b9397>All Time Status ↓"
+    - "<gray>Collected products: <#ffea00><all_time_collected>"
+    - "<gray>Collected XP: <#ffea00><all_time_collected_xp>"
+    - "<gray>Sold products: <#ffea00><all_time_sold>"
+    - "<gray>Sold XP: <#ffea00><all_time_sold_xp>"
+    - "<gray>Earned money: <#ffea00><all_time_earned>$"
+    - "<gray>Earned money by products: <#ffea00><all_time_earned_product>$"
+    - "<gray>Earned money by XP: <#ffea00><all_time_earned_xp>$"
+    - "<gray>Paid tax: <#ffea00><all_time_tax>$"
+    - "<gray>Paid tax for products: <#ffea00><all_time_tax_product>$"
+    - "<gray>Paid tax for XP: <#ffea00><all_time_tax_xp>$"
+    - ""
+  slots:
+    - 5
+
+items:
+  back:
+    material: "BARRIER"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Go Back"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+    slots:
+      - 8
+    actions:
+      - "[menu] main"

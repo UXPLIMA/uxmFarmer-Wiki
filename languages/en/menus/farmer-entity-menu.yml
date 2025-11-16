@@ -1,0 +1,400 @@
+title: "              <black>Modify Farmer"
+rows: 6
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 17
+  - 18
+  - 26
+  - 27
+  - 35
+  - 36
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+
+items:
+  info:
+    material: "BOOK"
+    amount: 1
+    display-name: "<#ff0000>Menu Info"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - "<gray>You can click the spawn eggs"
+      - "<gray>to change your farmer's entity"
+      - ""
+    slots:
+      - 4
+    actions: []
+
+  back:
+    material: "BARRIER"
+    amount: 1
+    display-name: "<#ff0000>Go Back"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 49
+    actions:
+      - "[menu] appearance_settings"
+      - "[sound] UI_BUTTON_CLICK"
+
+  player:
+    material: "PLAYER_HEAD"
+    amount: 1
+    display-name: "<#ffffff>Player"
+    head-data: null
+    slots:
+      - 10
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.player <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] PLAYER"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  villager:
+    material: "VILLAGER_SPAWN_EGG"
+    amount: 1
+    display-name: "<#00ff00>Villager"
+    slots:
+      - 11
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.villager <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] VILLAGER"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  wandering_trader:
+    material: "WANDERING_TRADER_SPAWN_EGG"
+    amount: 1
+    display-name: "<#00ffaa>Wandering Trader"
+    slots:
+      - 12
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.wandering <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] WANDERING_TRADER"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  iron_golem:
+    material: "IRON_GOLEM_SPAWN_EGG"
+    amount: 1
+    display-name: "<#cccccc>Iron Golem"
+    slots:
+      - 13
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.golem <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] IRON_GOLEM"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  snow_golem:
+    material: "SNOW_GOLEM_SPAWN_EGG"
+    amount: 1
+    display-name: "<#ffcc00>Snow Golem"
+    slots:
+      - 14
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.snow_golem <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] SNOW_GOLEM"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  cat:
+    material: "CAT_SPAWN_EGG"
+    amount: 1
+    display-name: "<#ffaa00>Cat"
+    slots:
+      - 15
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] CAT"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  parrot:
+    material: "PARROT_SPAWN_EGG"
+    amount: 1
+    display-name: "<#00aaff>Parrot"
+    slots:
+      - 16
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] PARROT"
+      - "[sound] ENTITY_PHANTOM_FLAP"
+
+  horse:
+    material: "HORSE_SPAWN_EGG"
+    amount: 1
+    display-name: "<#a0522d>Horse"
+    slots:
+      - 19
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] HORSE"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  donkey:
+    material: "DONKEY_SPAWN_EGG"
+    amount: 1
+    display-name: "<#8b4513>Donkey"
+    slots:
+      - 20
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] DONKEY"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  mule:
+    material: "MULE_SPAWN_EGG"
+    amount: 1
+    display-name: "<#deb887>Mule"
+    slots:
+      - 21
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] MULE"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  llama:
+    material: "LLAMA_SPAWN_EGG"
+    amount: 1
+    display-name: "<#ffddbb>Llama"
+    slots:
+      - 22
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] LLAMA"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  trader_llama:
+    material: "TRADER_LLAMA_SPAWN_EGG"
+    amount: 1
+    display-name: "<#ffccaa>Trader Llama"
+    slots:
+      - 23
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] TRADER_LLAMA"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  bee:
+    material: "BEE_SPAWN_EGG"
+    amount: 1
+    display-name: "<#ffff00>Bee"
+    slots:
+      - 24
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] BEE"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  fox:
+    material: "FOX_SPAWN_EGG"
+    amount: 1
+    display-name: "<#ff6600>Fox"
+    slots:
+      - 25
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] FOX"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  axolotl:
+    material: "AXOLOTL_SPAWN_EGG"
+    amount: 1
+    display-name: "<#ff99ff>Axolotl"
+    slots:
+      - 28
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] AXOLOTL"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  frog:
+    material: "FROG_SPAWN_EGG"
+    amount: 1
+    display-name: "<#00ff99>Frog"
+    slots:
+      - 29
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] FROG"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  panda:
+    material: "PANDA_SPAWN_EGG"
+    amount: 1
+    display-name: "<#ffffff>Panda"
+    slots:
+      - 30
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] PANDA"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  turtle:
+    material: "TURTLE_SPAWN_EGG"
+    amount: 1
+    display-name: "<#00cc99>Turtle"
+    slots:
+      - 31
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] TURTLE"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  dolphin:
+    material: "DOLPHIN_SPAWN_EGG"
+    amount: 1
+    display-name: "<#00ddff>Dolphin"
+    slots:
+      - 32
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] DOLPHIN"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  bat:
+    material: "BAT_SPAWN_EGG"
+    amount: 1
+    display-name: "<#555555>Bat"
+    slots:
+      - 33
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] BAT"
+      - "[sound] ENTITY_PHANTOM_FLAP"
+
+  ocelot:
+    material: "OCELOT_SPAWN_EGG"
+    amount: 1
+    display-name: "<#ffaa33>Ocelot"
+    slots:
+      - 34
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] OCELOT"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  goat:
+    material: "GOAT_SPAWN_EGG"
+    amount: 1
+    display-name: "<#eeeeee>Goat"
+    slots:
+      - 37
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] GOAT"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  camel:
+    material: "CAMEL_SPAWN_EGG"
+    amount: 1
+    display-name: "<#ffdd99>Camel"
+    slots:
+      - 38
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] CAMEL"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  allay:
+    material: "ALLAY_SPAWN_EGG"
+    amount: 1
+    display-name: "<#66ccff>Allay"
+    slots:
+      - 39
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] ALLAY"
+      - "[sound] ENTITY_PHANTOM_FLAP"
+
+  mooshroom:
+    material: "MOOSHROOM_SPAWN_EGG"
+    amount: 1
+    display-name: "<#ff4444>Mooshroom"
+    slots:
+      - 40
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] MUSHROOM_COW"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  sheep:
+    material: "SHEEP_SPAWN_EGG"
+    amount: 1
+    display-name: "<#ffffff>Sheep"
+    slots:
+      - 41
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] SHEEP"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  cow:
+    material: "COW_SPAWN_EGG"
+    amount: 1
+    display-name: "<#8b4513>Cow"
+    slots:
+      - 42
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] COW"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  pig:
+    material: "PIG_SPAWN_EGG"
+    amount: 1
+    display-name: "<#ff99aa>Pig"
+    slots:
+      - 43
+    actions:
+      - "[close]"
+      - "[cooldown] change-entity-cooldown"
+      - "[modify_appearance] PIG"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"

@@ -1,0 +1,78 @@
+title: "<black>Farmer Appearance Settings"
+rows: 1
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 4
+  - 6
+  - 7
+items:
+  glowing:
+    material: "HONEY_BOTTLE"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Glowing Settings"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>You can manage all settings"
+      - " <gray>related to the glowing"
+      - " <gray>of your farmer from here"
+      - ""
+      - "<yellow>▶ Click to view the glowing settings"
+    slots:
+      - 4
+    actions:
+      - "[menu] glowing_settings"
+      - "[sound] BLOCK_BREWING_STAND_BREW"
+  entity:
+    material: "ZOMBIE_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Entity Type Settings"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>You can manage farmer's"
+      - " <gray>entity type from here"
+      - ""
+      - "<yellow>▶ Click to view entity types"
+    slots:
+      - 3
+    actions:
+      - "[menu] entity_menu"
+      - "[sound] BLOCK_BREWING_STAND_BREW"
+  profession:
+    material: "VILLAGER_SPAWN_EGG"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Villager Profession Settings"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>You can manage farmer's"
+      - " <gray>villager profession from here"
+      - ""
+      - "<yellow>▶ Click to view professions"
+    slots:
+      - 5
+    actions:
+      - "[menu] profession_menu"
+      - "[sound] BLOCK_BREWING_STAND_BREW"
+  back:
+    material: "BARRIER"
+    amount: 1
+    display-name: "<#ff0000>Go Back"
+    glowing: false
+    head-data: null
+    lore: [ ]
+    slots:
+      - 8
+    actions:
+      - "[menu] main"
+      - "[sound] UI_BUTTON_CLICK"

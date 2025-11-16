@@ -1,0 +1,78 @@
+farmer-ranks:
+  member:
+    id: 1 #must always be equal to 1
+    name: "Üye"
+    weight: 100
+    permissions:
+      - SELL
+      - COLLECT
+      - TOGGLE_GLOWING
+      - CHANGE_GLOWING_COLOR
+      - SEE_LOGS
+    show:
+      material: "PLAYER_HEAD"
+      model-data: 0
+      amount: 1
+      display-name: "<#39a7fc>Rol"
+      glowing: false
+      head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTVhMGIwN2UzNmVhZmRlY2YwNTljOGNiMTM0YTdiZjBhMTY3ZjkwMDk2NmYxMDk5MjUyZDkwMzI3NjQ2MWNjZSJ9fX0="
+      lore:
+        - ""
+        - " <gray>Üyenin mevcut rolünü"
+        - " <gray>buradan değiştirebilirsin"
+        - ""
+        - " <white>Rol: <#39a7fc>Üye"
+        - ""
+        - "<#30ff19>▶ Üyeyi terfi etmek için sol tıkla"
+        - "<#f71b26>▶ Üyeyi tenzil etmek için sağ tıkla"
+      slots:
+        - 12
+  leader:
+    id: 2
+    name: "Lider"
+    weight: 500
+    permissions:
+      - MOVE_HERE
+      - CHANGE_SKIN_NAME
+      - CHANGE_APPEARANCE
+    show:
+      material: "PLAYER_HEAD"
+      model-data: 0
+      amount: 1
+      display-name: "<#39a7fc>Rol"
+      glowing: false
+      head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTI1YTMyNTYwODMxYzI5NWIwMDUyNzkyNjI1NWU2MDhhMDM5Nzc2ZjM1MjNiOTJlZGY3ODgxNDlhYWU2N2Q2YSJ9fX0="
+      lore:
+        - ""
+        - " <gray>Üyenin mevcut rolünü"
+        - " <gray>buradan değiştirebilirsin"
+        - ""
+        - " <white>Rol: <#39a7fc>Lider"
+        - ""
+        - "<#30ff19>▶ Üyeyi terfi etmek için sol tıkla"
+        - "<#f71b26>▶ Üyeyi tenzil etmek için sağ tıkla"
+      slots:
+        - 12
+  owner:
+    id: 3
+    name: "Sahip"
+    weight: 1000
+    permissions:
+      - ACCESS_MANAGE_MENU
+    show:
+      material: "PLAYER_HEAD"
+      model-data: 0
+      amount: 1
+      display-name: "<#39a7fc>Rol"
+      glowing: false
+      head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E4YWIyMjY3YWU0NDNlODNiMDVlM2E4ZDY3YjhiNzYwYWRmYWFkMzM1YzkwNDczMzhjMGUxNzc0YTY1YzM3MiJ9fX0="
+      lore:
+        - ""
+        - " <gray>Üyenin mevcut rolünü"
+        - " <gray>buradan değiştirebilirsin"
+        - ""
+        - " <white>Rol: <#39a7fc>Sahip"
+        - ""
+        - "<#f6eb33>▶ Rolü değiştiremezsin"
+      slots:
+        - 12

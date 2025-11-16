@@ -1,0 +1,215 @@
+title: "           <black>Control Product"
+rows: 5
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 17
+  - 18
+  - 26
+  - 27
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 41
+  - 42
+  - 43
+  - 44
+items:
+  collected-item:
+    material: STONE
+    model-data: 0
+    amount: 1
+    display-name: ""
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - "<gray>Current stock: <#05e300><amount><dark_gray>/<#e3000e><capacity>"
+      - "<gray>Unit price: <#d0e300><unit_price>$"
+      - "<gray>Fullness: <#d0e300><fullness>%"
+      - ""
+      - "<#5b9397>Production ↓"
+      - "<gray>Average production per minute: <#05e300><production_rate_in_minute> (<production_income_in_minute>$)"
+      - "<gray>Average production per hour: <#05e300><production_rate_in_hour> (<production_income_in_hour>$)"
+      - "<gray>Average production per day: <#05e300><production_rate_in_daily> (<production_income_in_daily>$)"
+      - ""
+      - "<#5b9397>Product Settings ↓"
+      - "<gray>Sales status: <sales_status>"
+      - "<gray>Collecting status: <collecting_status>"
+      - ""
+      - "<#5b9397>Shortcuts ↓"
+      - "<gray>To take as much as you want: <dark_gray>[<#ffea00>Right Click<dark_gray>]"
+      - "<gray>To close sales: <dark_gray>[<#ffea00>Left Click<dark_gray>]"
+      - "<gray>To take all: <dark_gray>[<#ffea00>Shift + Right Click<dark_gray>]"
+      - "<gray>To sell all: <dark_gray>[<#ffea00>Shift + Left Click<dark_gray>]"
+      - "<gray>To change collection status: <dark_gray>[<#ffea00>Number Button<dark_gray>]"
+      - "<gray>To upgrade the depot: <dark_gray>[<#ffea00>Q<dark_gray>]"
+      - ""
+      - "<#e3000e>Important Note: When selling,"
+      - "<#e3000e>you give the farmer <red><tax>% <#e3000e>share"
+      - ""
+
+    slots:
+      - 13
+  back:
+    material: "BARRIER"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Go Back"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - "<#ffea00>Click to return"
+      - "<#ffea00>to the previous menu"
+      - ""
+    slots:
+      - 40
+    actions:
+      - "[menu] main"
+
+  take-amount:
+    material: "HOPPER"
+    model-data: 0
+    amount: 1
+    display-name: "<#05e300>Take As Much As You Want"
+    glowing: false
+    lore:
+      - ""
+      - "<#ffea00>Click to withdraw"
+      - "<#ffea00>a custom amount"
+      - ""
+    slots:
+      - 19
+
+  take-all:
+    material: "CHEST"
+    model-data: 0
+    amount: 1
+    display-name: "<#05e300>Take All"
+    glowing: false
+    lore:
+      - ""
+      - "<#ffea00>Click to withdraw"
+      - "<#ffea00>everything in stock"
+      - ""
+    slots:
+      - 21
+
+  sell-all:
+    material: "GOLD_INGOT"
+    model-data: 0
+    amount: 1
+    display-name: "<#05e300>Sell All"
+    glowing: false
+    lore:
+      - ""
+      - "<#ffea00>Click to sell"
+      - "<#ffea00>the entire stock"
+      - ""
+    slots:
+      - 23
+
+  upgrade-product:
+    material: "ANVIL"
+    model-data: 0
+    amount: 1
+    display-name: "<#05e300>Update Product"
+    glowing: false
+    lore:
+      - ""
+      - "<#ffea00>Click to upgrade"
+      - "<#ffea00>storage or production"
+      - ""
+    slots:
+      - 25
+
+
+dynamic-items:
+  collecting:
+    enabled:
+      material: "LIME_DYE"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffea00>Change Collecting Status"
+      glowing: false
+      head-data: null
+      lore:
+        - ""
+        - " <gray>The farmer naturally"
+        - " <gray>collects fallen farm"
+        - " <gray>products from the ground"
+        - ""
+        - " <gray>Status: <#05e300>Enabled"
+        - ""
+        - "<yellow>▶ Click to change the collection status"
+
+      slots:
+        - 30
+    disabled:
+      material: "GRAY_DYE"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffea00>Change Collecting Status"
+      glowing: false
+      head-data: null
+      lore:
+        - ""
+        - " <gray>The farmer naturally"
+        - " <gray>collects fallen farm"
+        - " <gray>products from the ground"
+        - ""
+        - " <gray>Status: <#e3000e>Disabled"
+        - ""
+        - "<yellow>▶ Click to change the collection status"
+      slots:
+        - 30
+  selling:
+    enabled:
+      material: "LIME_DYE"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffea00>Change Selling Status"
+      glowing: false
+      head-data: null
+      lore:
+        - ""
+        - " <gray>Products can be sold"
+        - " <gray>from farmer menu or"
+        - " <gray>via automatic sell"
+        - ""
+        - " <gray>Status: <#05e300>Enabled"
+        - ""
+        - "<yellow>▶ Click to change the selling status"
+
+      slots:
+        - 32
+    disabled:
+      material: "GRAY_DYE"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffea00>Change Selling Status"
+      glowing: false
+      head-data: null
+      lore:
+        - ""
+        - " <gray>Products can be sold"
+        - " <gray>from farmer menu or"
+        - " <gray>via automatic sell"
+        - ""
+        - " <gray>Status: <#e3000e>Disabled"
+        - ""
+        - "<yellow>▶ Click to change the selling status"
+      slots:
+        - 32

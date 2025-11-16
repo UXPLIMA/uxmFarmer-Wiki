@@ -1,0 +1,253 @@
+messages:
+  no-role-permission: '<dark_gray>- <red><rank_name>'
+  exact-role-permission: '<dark_gray>- <dark_green><rank_name>'
+  higher-role-permission: '<dark_gray>- <green><rank_name>'
+
+title: "             <black>Permissions"
+rows: 3
+pageable-slot-size: 8
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 13
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+items:
+  next:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Next Page →"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU2YTM2MTg0NTllNDNiMjg3YjIyYjdlMjM1ZWM2OTk1OTQ1NDZjNmZjZDZkYzg0YmZjYTRjZjMwYWI5MzExIn19fQ=="
+    lore:
+      - ""
+    slots:
+      - 23
+    actions:
+      - "[next_page]"
+  previous:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>← Previous Page"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RjOWU0ZGNmYTQyMjFhMWZhZGMxYjViMmIxMWQ4YmVlYjU3ODc5YWYxYzQyMzYyMTQyYmFlMWVkZDUifX19"
+    lore:
+      - ""
+    slots:
+      - 21
+    actions:
+      - "[previous_page]"
+  back:
+    material: "BARRIER"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Back"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+    slots:
+      - 22
+    actions:
+      - "[menu] manage"
+  permission:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffd036><permission_name>"
+    glowing: false
+    lore:
+      - ""
+      - "<white>Role: <#FFE658><member_rank>"
+      - ""
+      - "<white>Added On: <#FFE658><creation_time>"
+      - ""
+      - "<#f6eb33>▶ Click to manage this member"
+permissions:
+  access-manage-menu:
+    material: "RECOVERY_COMPASS"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Access Management Panel"
+    glowing: false
+    head-data: ""
+    lore:
+      - ""
+      - " <gray>Grants access to the"
+      - " <gray>farmer's management panel."
+      - ""
+      - " <white>Role: <#ffea00><rank_name>"
+      - ""
+      - "<message>"
+      - ""
+      - "<gray>Left Click: <#30ff19>▲"
+      - "<gray>Right Click: <#ff0000>▼"
+
+  sell:
+    material: "GOLD_INGOT"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Sell"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Grants permission to sell"
+      - " <gray>the products collected by the farmer."
+      - ""
+      - " <white>Role: <#ffea00><rank_name>"
+      - ""
+      - "<message>"
+      - ""
+      - "<gray>Left Click: <#30ff19>▲"
+      - "<gray>Right Click: <#ff0000>▼"
+
+  collect:
+    material: "GOLDEN_HOE"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Collect"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Grants permission to collect"
+      - " <gray>the products gathered by the farmer."
+      - ""
+      - " <white>Role: <#ffea00><rank_name>"
+      - ""
+      - "<message>"
+      - ""
+      - "<gray>Left Click: <#30ff19>▲"
+      - "<gray>Right Click: <#ff0000>▼"
+
+  toggle-glowing:
+    material: "GLOW_INK_SAC"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Toggle Glowing"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Grants permission to"
+      - " <gray>toggle the farmer's glowing."
+      - ""
+      - " <white>Role: <#ffea00><rank_name>"
+      - ""
+      - "<message>"
+      - ""
+      - "<gray>Left Click: <#30ff19>▲"
+      - "<gray>Right Click: <#ff0000>▼"
+
+  change-glowing-color:
+    material: "GLOW_BERRIES"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Change Glowing Color"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Grants permission to"
+      - " <gray>change the glowing color of the farmer."
+      - ""
+      - " <white>Role: <#ffea00><rank_name>"
+      - ""
+      - "<message>"
+      - ""
+      - "<gray>Left Click: <#30ff19>▲"
+      - "<gray>Right Click: <#ff0000>▼"
+
+  change-skin-name:
+    material: "NAME_TAG"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Change Skin Name"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Grants permission to"
+      - " <gray>change the skin name of the farmer."
+      - ""
+      - " <white>Role: <#ffea00><rank_name>"
+      - ""
+      - "<message>"
+      - ""
+      - "<gray>Left Click: <#30ff19>▲"
+      - "<gray>Right Click: <#ff0000>▼"
+
+  change-appearance:
+    material: "ZOMBIE_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Change Appearance"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Grants permission to"
+      - " <gray>change the entity of the farmer."
+      - ""
+      - " <white>Role: <#ffea00><rank_name>"
+      - ""
+      - "<message>"
+      - ""
+      - "<gray>Left Click: <#30ff19>▲"
+      - "<gray>Right Click: <#ff0000>▼"
+
+  move-here:
+    material: "ENDER_PEARL"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Move Farmer's Location"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Grants permission to"
+      - " <gray>move the farmer's location."
+      - ""
+      - " <white>Role: <#ffea00><rank_name>"
+      - ""
+      - "<message>"
+      - ""
+      - "<gray>Left Click: <#30ff19>▲"
+      - "<gray>Right Click: <#ff0000>▼"
+
+  see-logs:
+    material: "ENDER_PEARL"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>View Farmer Logs"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Grants permission to"
+      - " <gray>view the farmer's logs."
+      - ""
+      - " <white>Role: <#ffea00><rank_name>"
+      - ""
+      - "<message>"
+      - ""
+      - "<gray>Left Click: <#30ff19>▲"
+      - "<gray>Right Click: <#ff0000>▼"

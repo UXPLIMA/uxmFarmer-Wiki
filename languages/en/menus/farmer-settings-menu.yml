@@ -1,0 +1,179 @@
+title: "               <black>Settings"
+rows: 3
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+items:
+  back:
+    material: "BARRIER"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Go Back"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+    slots:
+      - 22
+    actions:
+      - "[menu] manage"
+dynamic-items:
+  auto-harvest:
+    enabled:
+      material: "NETHERITE_HOE"
+      model-data: 0
+      amount: 1
+      display-name: "<#11ff00>Automatic Harvest"
+      glowing: false
+      head-data: "texture-ewogICJ0aW1lc3RhbXAiIDogMTcyNDM2OTU1Njg1MywKICAicHJvZmlsZUlkIiA6ICIxNWJmNDJhNTU1ZjQ0NGRiODE3NzQwNTc3NDVhZDg3ZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJEZWFuTGUiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRjMDAyNjFjYTc2ZmNhNTMzYzhlNzQwNDUyNTVmNDA5MzYxZjE0NWRhMTY3NzFkZjkyMDU1NDIwMzcwOTg5OCIKICAgIH0KICB9Cn0="
+      lore:
+        - ""
+        - " <gray>Automatically harvests crops"
+        - " <gray>in your region when they grow"
+        - ""
+        - " <gray>Status: <#11ff00>Enabled"
+        - ""
+        - "<#ffea00>▶ Click to change!"
+      slots:
+        - 10
+    disabled:
+      material: "NETHERITE_HOE"
+      model-data: 0
+      amount: 1
+      display-name: "<#ff0000>Automatic Harvest"
+      glowing: false
+      head-data: "texture-ewogICJ0aW1lc3RhbXAiIDogMTcyNDM2OTU1Njg1MywKICAicHJvZmlsZUlkIiA6ICIxNWJmNDJhNTU1ZjQ0NGRiODE3NzQwNTc3NDVhZDg3ZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJEZWFuTGUiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRjMDAyNjFjYTc2ZmNhNTMzYzhlNzQwNDUyNTVmNDA5MzYxZjE0NWRhMTY3NzFkZjkyMDU1NDIwMzcwOTg5OCIKICAgIH0KICB9Cn0="
+      lore:
+        - ""
+        - " <gray>Automatically harvests crops"
+        - " <gray>in your region when they grow"
+        - ""
+        - " <gray>Status: <#ff0000>Disabled"
+        - ""
+        - "<#ffea00>▶ Click to change!"
+      slots:
+        - 10
+  auto-kill:
+    enabled:
+      material: "NETHERITE_SWORD"
+      model-data: 0
+      amount: 1
+      display-name: "<#11ff00>Automatic Killing"
+      glowing: false
+      head-data: null
+      lore:
+        - ""
+        - " <gray>Automatically kills creatures"
+        - " <gray>spawned from mobs in your region"
+        - ""
+        - " <gray>Status: <#11ff00>Enabled"
+        - ""
+        - "<#ffea00>▶ Click to change!"
+      slots:
+        - 12
+    disabled:
+      material: "NETHERITE_SWORD"
+      model-data: 0
+      amount: 1
+      display-name: "<#ff0000>Automatic Killing"
+      glowing: false
+      head-data: null
+      lore:
+        - ""
+        - " <gray>Automatically kills creatures"
+        - " <gray>spawned from mobs in your region"
+        - ""
+        - " <gray>Status: <#ff0000>Disabled"
+        - ""
+        - "<#ffea00>▶ Click to change!"
+      slots:
+        - 12
+  auto-sell:
+    enabled:
+      material: "GOLD_INGOT"
+      model-data: 0
+      amount: 1
+      display-name: "<#11ff00>Automatic Selling"
+      glowing: false
+      head-data: null
+      lore:
+        - ""
+        - " <gray>Automatically sells"
+        - " <gray>collected products"
+        - ""
+        - " <gray>Status: <#11ff00>Enabled"
+        - ""
+        - "<#ffea00>▶ Click to change!"
+      slots:
+        - 14
+    disabled:
+      material: "GOLD_INGOT"
+      model-data: 0
+      amount: 1
+      display-name: "<#ff0000>Automatic Selling"
+      glowing: false
+      head-data: null
+      lore:
+        - ""
+        - " <gray>Automatically sells"
+        - " <gray>collected products"
+        - ""
+        - " <gray>Status: <#ff0000>Disabled"
+        - ""
+        - "<#ffea00>▶ Click to change!"
+      slots:
+        - 14
+  xp-collector:
+    enabled:
+      material: "PLAYER_HEAD"
+      model-data: 0
+      amount: 1
+      display-name: "<#11ff00>XP Collector"
+      glowing: false
+      head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTI4Mzk2NTkyM2MwZTNlYWQwZmU4NzYwZTA4Y2JhODk4MmUzM2E2YWNkYjg5MWVjYzZmNmRmZTZkNWQxODBiYyJ9fX0="
+      lore:
+        - ""
+        - " <gray>Automatically collects"
+        - " <gray>fallen XP from mob deaths"
+        - ""
+        - " <gray>Status: <#11ff00>Enabled"
+        - ""
+        - "<#ffea00>▶ Click to change!"
+      slots:
+        - 16
+    disabled:
+      material: "PLAYER_HEAD"
+      model-data: 0
+      amount: 1
+      display-name: "<#ff0000>XP Collector"
+      glowing: false
+      head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTI4Mzk2NTkyM2MwZTNlYWQwZmU4NzYwZTA4Y2JhODk4MmUzM2E2YWNkYjg5MWVjYzZmNmRmZTZkNWQxODBiYyJ9fX0="
+      lore:
+        - ""
+        - " <gray>Automatically collects"
+        - " <gray>fallen XP from mob deaths"
+        - ""
+        - " <gray>Status: <#ff0000>Disabled"
+        - ""
+        - "<#ffea00>▶ Click to change!"
+      slots:
+        - 16

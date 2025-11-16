@@ -1,0 +1,85 @@
+default-levels:
+  0:
+    price: 1000
+    capacity: 2500
+    requirements: {}
+    player-commands: [] # Supports PAPI
+    console-commands: [] # Supports PAPI
+  1:
+    price: 1000
+    capacity: 10000
+    requirements: {}
+    player-commands:
+      - "say test"
+      - "say test"
+    console-commands:
+      - "say test"
+      - "say test"
+  2:
+    price: 4500
+    capacity: 20000
+    requirements: {}
+    player-commands: []
+    console-commands: []
+  3:
+    price: 20000
+    capacity: 30000
+    requirements: {}
+    player-commands: []
+    console-commands: []
+  4:
+    price: 40000
+    tax-price: 0.20
+    capacity: 40000
+    requirements: {}
+    player-commands: []
+    console-commands: []
+  5:
+    price: 75000
+    tax-price: 0.19
+    capacity: 50000
+    requirements: {}
+    player-commands: []
+    console-commands: []
+  6:
+    price: 100000
+    capacity: 60000
+    requirements: {}
+    player-commands: []
+    console-commands: []
+  7:
+    price: 120000
+    capacity: 70000
+    requirements: {}
+    player-commands: []
+    console-commands: []
+  8:
+    price: 150000
+    capacity: 80000
+    requirements: {}
+    player-commands: []
+    console-commands: []
+  9:
+    price: 200000
+    capacity: 90000
+    requirements: {}
+    player-commands: []
+    console-commands: []
+  10:
+    price: 250000
+    capacity: 100000
+    requirements: {}
+    player-commands: []
+    console-commands: []
+  11:
+    price: 300000
+    capacity: 110000
+    requirements: {}
+    player-commands: []
+    console-commands: []
+  12:
+    price: 400000
+    capacity: 120000
+    requirements: {}
+    player-commands: []
+    console-commands: []

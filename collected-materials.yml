@@ -1,0 +1,281 @@
+collected-materials:
+  CACTUS:
+    sellable: true
+    unit-price: 1.5
+    tax-price: 0.15
+    levels:
+      0:
+        price: 1000
+        capacity: 2500
+      1:
+        price: 1000
+        unit-price: 1.6
+        tax-price: 0.14
+        capacity: 10000
+        requirements:
+          "playtime":
+            display: "<blue>1 Hour Playtime (Current: <papi:'math_0:floor_{statistic_PLAY_ONE_MINUTE}/1200'>)"
+            condition: "%math_({statistic_PLAY_ONE_MINUTE}/1200)>60%" # Math expansion is required for this operation
+              # Math expansion returns 1 if given expression is valid
+            # otherwise it returns 0
+            required-output: "1"
+          "vip":
+            display: "<green>VIP Rank"
+            condition: "%vault_hasgroup_VIP%"
+            required-output: "yes"
+        player-commands:
+          - "say test"
+          - "say test"
+        console-commands:
+          - "say test"
+          - "say test"
+      2:
+        price: 4500
+        tax-price: 0.13
+        capacity: 20000
+        requirements: {}
+        player-commands: []
+        console-commands: []
+      3:
+        price: 20000
+        capacity: 30000
+        requirements: {}
+      4:
+        price: 40000
+        capacity: 40000
+        requirements: {}
+      5:
+        price: 75000
+        capacity: 50000
+        requirements: {}
+      6:
+        price: 100000
+        capacity: 60000
+        requirements: {}
+      7:
+        price: 120000
+        capacity: 70000
+        requirements: {}
+      8:
+        price: 150000
+        capacity: 80000
+        requirements: {}
+      9:
+        price: 200000
+        capacity: 90000
+        requirements: {}
+      10:
+        price: 250000
+        capacity: 100000
+        requirements: {}
+      11:
+        price: 300000
+        capacity: 110000
+        requirements: {}
+      12:
+        price: 400000
+        capacity: 120000
+        requirements: {}
+  WHEAT:
+    unit-price: 2.5
+    levels: {}
+  STICK:
+    unit-price: 0.01
+    model-data: 100 # farmer will only collect sticks with this model data, delete this line if you do not need it. you can use model-data in every material
+    levels: {}
+  MELON:
+    unit-price: 2.5
+    levels: {}
+  SUGAR_CANE:
+    unit-price: 2.5
+    levels: {}
+  CARROT:
+    unit-price: 2.0
+    levels: {}
+  POTATO:
+    unit-price: 2.0
+    levels: {}
+  MELON_SLICE:
+    unit-price: 0.5
+    levels: {}
+  PUMPKIN:
+    unit-price: 2.5
+    levels: {}
+  BAMBOO:
+    unit-price: 0.7
+    levels: {}
+  APPLE:
+    unit-price: 1.0
+    levels: {}
+  SWEET_BERRIES:
+    unit-price: 1.0
+    levels: {}
+  BEETROOT:
+    unit-price: 1.0
+    levels: {}
+  WHEAT_SEEDS:
+    unit-price: 0.03
+    levels: {}
+  COCOA_BEANS:
+    unit-price: 1.5
+    levels: {}
+  NETHER_WART:
+    unit-price: 1.5
+    levels: {}
+  BEETROOT_SEEDS:
+    unit-price: 0.1
+    levels: {}
+  SUGAR:
+    unit-price: 1.0
+    levels: {}
+  ARROW:
+    unit-price: 0.5
+    levels: {}
+  BONE:
+    unit-price: 1.1
+    levels: {}
+  SLIME_BALL:
+    unit-price: 2.0
+    levels: {}
+  GUNPOWDER:
+    unit-price: 1.8
+    levels: {}
+  ENDER_PEARL:
+    unit-price: 70.0
+    levels: {}
+  ROTTEN_FLESH:
+    unit-price: 1.1
+    levels: {}
+  POPPY:
+    sellable: true
+    unit-price: 0
+    levels: {}
+  SPIDER_EYE:
+    unit-price: 1.1
+    levels: {}
+  LEATHER:
+    unit-price: 0.7
+    levels: {}
+  INK_SAC:
+    unit-price: 0.7
+    levels: {}
+  BLAZE_ROD:
+    unit-price: 2.5
+    levels: {}
+  GLASS_BOTTLE:
+    unit-price: 0.3
+    levels: {}
+  PRISMARINE_SHARD:
+    unit-price: 1.2
+    levels: {}
+  PRISMARINE_CRYSTALS:
+    unit-price: 1.2
+    levels: {}
+  STRING:
+    unit-price: 0.7
+    levels: {}
+  FEATHER:
+    unit-price: 0.03
+    levels: {}
+  MUTTON:
+    unit-price: 0.4
+    levels: {}
+  RABBIT:
+    unit-price: 0.4
+    levels: {}
+  CHICKEN:
+    unit-price: 0.4
+    levels: {}
+  BEEF:
+    unit-price: 0.4
+    levels: {}
+  PORKCHOP:
+    unit-price: 0.4
+    levels: {}
+  PUFFERFISH:
+    unit-price: 4.0
+    levels: {}
+  SALMON:
+    unit-price: 1.5
+    levels: {}
+  TROPICAL_FISH:
+    unit-price: 3.0
+    levels: {}
+  COD:
+    unit-price: 1.5
+    levels: {}
+  EGG:
+    unit-price: 0.35
+    levels: {}
+  IRON_INGOT:
+    unit-price: 4.5
+    levels: {}
+  GOLD_INGOT:
+    unit-price: 5.0
+    levels: {}
+  GOLD_NUGGET:
+    unit-price: 0.5
+    levels: {}
+  REDSTONE:
+    unit-price: 4.0
+    levels: {}
+  GLOWSTONE_DUST:
+    unit-price: 0.5
+    levels: {}
+  SNOWBALL:
+    unit-price: 0.25
+    levels: {}
+  RABBIT_HIDE:
+    unit-price: 1.5
+    levels: {}
+  RABBIT_FOOT:
+    unit-price: 1.5
+    levels: {}
+  WHITE_WOOL:
+    unit-price: 0.7
+    levels: {}
+  ORANGE_WOOL:
+    unit-price: 1.0
+    levels: {}
+  MAGENTA_WOOL:
+    unit-price: 1.0
+    levels: {}
+  LIGHT_BLUE_WOOL:
+    unit-price: 1.0
+    levels: {}
+  YELLOW_WOOL:
+    unit-price: 1.0
+    levels: {}
+  LIME_WOOL:
+    unit-price: 1.0
+    levels: {}
+  PINK_WOOL:
+    unit-price: 1.0
+    levels: {}
+  GRAY_WOOL:
+    unit-price: 1.0
+    levels: {}
+  LIGHT_GRAY_WOOL:
+    unit-price: 1.0
+    levels: {}
+  CYAN_WOOL:
+    unit-price: 1.0
+    levels: {}
+  PURPLE_WOOL:
+    unit-price: 1.0
+    levels: {}
+  BLUE_WOOL:
+    unit-price: 1.0
+    levels: {}
+  BROWN_WOOL:
+    unit-price: 1.0
+    levels: {}
+  GREEN_WOOL:
+    unit-price: 1.0
+    levels: {}
+  RED_WOOL:
+    unit-price: 1.0
+    levels: {}
+  BLACK_WOOL:
+    unit-price: 1.0
+    levels: {}

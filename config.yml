@@ -1,0 +1,203 @@
+# check https://jd.papermc.io/paper/1.21.8/org/bukkit/entity/EntityType.html for whenever you need help with entity types
+# check https://jd.papermc.io/paper/1.21.8/org/bukkit/Sound.html for whenever you need help with sounds
+
+config-version: "${version}" # do not change this
+language: en # supported languages: TR, EN
+
+hooks:
+  # supported plugins:
+  #  - IridiumSkyblock
+  #  - SuperiorSkyblock2
+  #  - BentoBox:BSkyBlock usage: BentoBox:<island world friendly name from your addon config>
+  #  - BentoBox:OneBlock usage: BentoBox:<island world friendly name from your addon config>
+  #  - Lands
+  #  - RealmCore
+  #  - GriefPrevention
+  #  - GriefDefender - does not support place-farmer-on-region-creation
+  # -  ProtectionStones usage: ProtectionStones:<claim world's name>, supports place-farmer-on-region-creation but best to keep it disabled
+  #  - RClaim
+  #  - Towny (for TownyAdvanced)
+  #  - UltimateClaims
+  #  - FabledSkyBlock
+  region-hook: "Lands"
+
+  # supported plugins:
+  #  - Vault
+  #  - PlayerPoints
+  money-hook: "Vault"
+
+  # supported plugins
+  #  - ShopGUIPlus
+  #  - EconomyShopGUI or EconomyShopGUI-Premium
+  #  - ExcellentShop
+  price-source-hook: default
+
+  # supported plugins:
+  # - Holograms - this is internal, plugin uses it for everywhere you see holograms.
+  # - Citizens
+  # - FancyNpcs
+  # - ZNPCsPlus
+  # - PlayerNpc
+  # - ModelSystem (ModelEngine, ItemsAdder or BetterModel) - this is internal, can be configured in model-settings
+  # If not, leave this space empty
+  interaction-hook: "FancyNpcs"
+
+database:
+  driver: "SQLITE" #MYSQL, SQLITE
+  host: "localhost"
+  database: "database"
+  username: ""
+  password: ""
+  port: 3306
+  use-ssl: false
+
+multi-server:
+  enabled: false # enable this option if you are using more than one server
+  redis-host: ""
+
+settings:
+  disabled-worlds:
+    - "world"
+  farm-logic: MODERN # can be MODERN or CLASSIC, restart is necessary after changing this value
+                     # MODERN is new and heavily optimized for the best performance, it doesn't allow crops to grow and simulates everything, requires 1.20.6+
+                     # CLASSIC is the old system but does not break blocks, instead resets their age when they fully grow, little bit better than LEGACY
+                     # LEGACY is the old system, breaks the blocks when they grow fully and replants if necessary, the worst performant, not recommended
+  collect-dropped-items: false
+  collect-custom-items: false # custom item means an item with either custom name or custom lore
+  upgrade-all-upgrades-everything: false # normally, upgrade-all function only upgrades the product that player's farmer collected before. if you set this to true,
+                                         # upgrade-all takes everything in collected-materials into account and upgrades them.
+  upgrade-all-discount: 50 # applies given discount when upgrading all products. specific discounts can be given with the permission uxmfarmer.upgradediscount.<discount>
+  place-farmer-on-region-creation: false
+  farmer-command-opens-gui: false # when set to true, /farmer command opens farmer gui directly.
+  farmer-command-opens-buy-menu: true # when set to true, /farmer command will open purchase menu if player doesn't have a farmer
+
+  disable-buy-command: false # when set to true, /farmer buy command will be disabled and only way to get farmers will be the farmer eggs.
+  sell-all-requires-confirmation: true # when set to true, /farmer sellall command or sell all executions from anywhere else will require confirmation.
+  adding-member-requires-permission: false # if true, farmer managers will need the permission uxmfarmer.addmember to add new members to their farmers.
+  add-new-region-members-to-farmer: true # if true, new region members (like island member or trusted player in a claim) will be added to farmer as members too.
+  remove-leaving-region-members-from-farmer: true # if true, region members who have left the region will be removed from farmer members
+
+  default-click-actions:
+    - "[menu] main"
+    - "[sound] ENTITY_ALLAY_AMBIENT_WITHOUT_ITEM"
+
+  disable-transfer: false # when set to true, transferring farmers to other players will be disabled.
+  maximum-farmer-per-player: 2 # players can have maximum 2 farmers by default, give players the permission uxmfarmer.maxfarmer.<amount> for more farmers
+
+  tax-price: 0.25 # default tax ratio taken from product sales
+  farmer-price: 15000.0 # price of one farmer
+  return-price-on-delete: true # when set to true, it returns farmer price to the owner when their farmer is deleted
+  return-percent: 75 # gives back given percent of farmer price to farmer owner when they /farmer return it
+
+  first-location: # only works when place-farmer-on-region-creation is enabled
+    enabled: false
+    modify-by: -5.5, 1.5, 3.5 # places farmer at location -5.5 X, +1.5 Y, +3.5 Z relative to region center
+    rotation: -88, 0.8 # modifies farmer's pitch and yaw
+  add-member: # you can configure how players add members to their farmers from here
+    required-online: true
+    input-type: SIGN # can be SIGN or CHAT
+    chat-timeout: 15
+  take-amount: # you can configure how players take specified amount of XP or any products from here
+    input-type: SIGN # can be SIGN or CHAT
+    chat-timeout: 8
+
+model-settings:
+  default-entity: VILLAGER
+  model-source: ModelEngine # can be ModelEngine, ItemsAdder or BetterModel
+  model-name: "test"
+
+log-cleaner:
+
+  # if you have been using the plugin for a long time and players have a lot of logs
+  # log cleaner may cause lag at first usages in rare cases.
+  # in case that happens, log cleaner is disabled by default.
+  # enable it if you want and if it causes lag, disable then clean the logs by yourself.
+
+  enabled: false
+  clean-old-logs-after: 50
+  logs-to-clean: 25
+  # configured like above, log cleaner will remove oldest 25 logs after 50 created logs.
+
+hologram:
+  enabled: true
+
+  billboard: CENTER # available: CENTER, FIXED, VERTICAL, HORIZONTAL
+  view-range: 30
+  height: 2.2
+  scale: 1, 1, 1
+  update-period: 1200 # 1200 ticks = 1 minute, 20 ticks = 1 second, keep this high for best performance, changing this requires a restart to apply
+  see-through-blocks: false
+  shadow: true
+  text-opacity: 255
+  background-color: 1682722635 # https://argb-int-calculator.netlify.app/, open a ticket in discord if you don't understand how to create a color
+  brightness: 1000
+  text-alignment: CENTER # available: CENTER, LEFT, RIGHT
+  content:
+    - "<#ff7700><bold>Farmer<#ff7700>"
+    - ""
+    - " <#ffc891><italic>Using farmer"
+    - " <#ffc891><italic>with strategic moves"
+    - " <#ffc891><italic>to stay one step ahead of"
+    - " <#ffc891><italic>the competition!"
+    - ""
+    - "<#ffcb0b>▶ Click to use the farmer"
+
+  entity-specific-height: # https://jd.papermc.io/paper/1.21.8/org/bukkit/entity/EntityType.html
+    VILLAGER: 2.1
+    ALLAY: 1
+    PIG: 1
+    SHEEP: 1.5
+    IRON_GOLEM: 2.9
+    CAT: 0.7
+    PARROT: 0.9
+    HORSE: 2.7
+    LLAMA: 2.45
+    TRADER_LLAMA: 2.45
+    BEE: 0.8
+    FOX: 1
+    AXOLOTL: 0.7
+    FROG: 0.7
+    PANDA: 1.6
+    TURTLE: 0.8
+    DOLPHIN: 0.9
+    BAT: 1.1
+    OCELOT: 0.9
+    GOAT: 1.8
+    CAMEL: 3.7
+    COW: 1.7
+
+npc:
+  name: "<#0388fc><bold>Farmer"
+  use-name: false # by default, we use the hologram for npc's name. you can enable both if you want.
+
+  default-type: VILLAGER # only works with Citizens and FancyNpcs, supports every entity type, https://jd.papermc.io/paper/1.21.8/org/bukkit/entity/EntityType.html
+  default-villager-profession: FARMER # https://jd.papermc.io/paper/1.21.10/org/bukkit/entity/Villager.Profession.html
+  default-glowing: true
+  default-glowing-color: "BLUE"
+
+  skin-texture: "ewogICJ0aW1lc3RhbXAiIDogMTU5MDM5MTA2OTQ0MywKICAicHJvZmlsZUlkIiA6ICIyZGM3N2FlNzk0NjM0ODAyOTQyODBjODQyMjc0YjU2NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJzYWR5MDYxMCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iOGYyZjMyNDM2YWZhYWMyYWU4YzA3NjNlZDkwYjI4MjFlMGZiZTc2MzI2YzZhMzk3ZDI4Zjc2MjE0NDFlMDMiCiAgICB9CiAgfQp9"
+  skin-signature: "JwgV4AiVpcl914qubQ0AHDCyvdQuaIFaz2L96Om+eSBzHHlCNg5bfCEZzLp/fUDGpbDFDwD6UcfGBTdZhEILjL4SfGr16V3qc1FfCaLZW1HZmTvrIefgeAZEzA9RImgb6HbsN/buv7w4kPG5AdEUqCDKxK/Uf5tSJZSoibNoy96VQSB2WmXxaqUqWlsS1yeXRK8FG1qjAZxo3nipq1fd6+zp0gN8wCM3fLIbJg9meKX/W+YpsnuzMCZpACCjHSqyWTpb2+Qff+mXF/c4fNY//b5quurZI92LK/WS7nL7voMBOZDrPL33dkKH/pO+x5lNSRsV7THMgbFV5ACA1+/Edv41YH0e5xdLJkL+kCJrjZR2tE5UEaJHpqVjW5uLIiWnjX12rn2L0QzwozIO3PkDphuqp8VUAQhMe0L7C/YCB0dCex3c5/KEBi3juZtIZLjyF79vB3+/CLZVJzghbIGl/XT4p0p/gI3xifzm0g+pszdCLh79HzmUVFB9T5mq7vkq8mMjoCsrqd650sZ23C7/wD2uuTbZWMko0uJDVKInNljCC/wXVjtMw8Yg7oPblHDTBDsYyDmaUszu1alDFwBWhvt7nNC5XaLIhuKwHnmjUAx+HoLrmOKVsFHRVqFglxT3ck/1b4MAzFeq7/2maLP/RWoEsxbDgARd8RIpIHnYF4g="
+  skin-name: ""
+  permission-skins:
+    "Notch": "uxmfarmer.usenotch"
+
+  scale: 1.0
+  entity-specific-scales:
+    VILLAGER: 2.5
+
+cooldowns:
+  move-cooldown: 180 # in seconds
+  sell-all-cooldown: 120 # in seconds
+  sell-xp-cooldown: 120 # in seconds
+  change-glowing-cooldown: 120 # in seconds
+  change-entity-cooldown: 120 # in seconds
+  change-profession-cooldown: 120 # in seconds
+  return-cooldown: 120 # in seconds
+
+sounds:
+  on-cooldown: BLOCK_ANVIL_LAND
+  try-again: BLOCK_NOTE_BLOCK_PLING
+  already-using-that-glow-color: UI_BUTTON_CLICK
+  blacklisted-world: BLOCK_ANVIL_BREAK
+
+debug: false # never open this unless UXPLIMA staff told you to do

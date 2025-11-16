@@ -1,0 +1,13 @@
+sign-menu:
+  sign-type: DARK_OAK_SIGN
+  text-color: WHITE
+  input-line: 0
+  lines:
+    - ""
+    - "----------"
+    - "<message>"
+    - ""
+  messages:
+    enter: "Oyuncu ismi giriniz"
+    player-not-found: "Oyuncu bulunamadı"
+    already-exists: "Oyuncu zaten mevcut"

@@ -1,0 +1,86 @@
+production:
+  # module permission: uxmfarmer.production
+
+  enabled: true
+  permission-required: true
+
+farm-manager:
+  disable-growing-if-stock-is-full: true # this requires auto-harvest
+  remove-remaining-drops-from-ground: true # removes remaining drops from ground after adding the amount the product storage can handle
+  remove-drops-if-stock-is-full: true # removes drops from ground if product's storage is full
+
+auto-harvest:
+  # module permission: uxmfarmer.autoharvest
+  # piston check explanation:
+  # if extented-piston-check is false:
+  #    searches above block, below block, west, east, north and south for pistons.
+  # if extented-piston-check is true:
+  #    searches above block, west, east, north and south upper blocks for pistons.
+  # extented-piston-check makes the searches in upper blocks rather than just checking around the block.
+
+  name: "Automatic Harvest"
+  status: true
+  default-status: false
+  permission-required: true
+  required-piston: false
+  extended-piston-check: false
+  drop-item-if-stock-full: true
+  piston-check-items:
+    - MELON
+    - MELON_STEM
+    - PUMPKIN
+    - PUMPKIN_STEM
+    - BAMBOO
+    - SUGAR_CANE
+  items:
+    - WHEAT
+    - COCOA
+    - CACTUS
+    - SUGAR_CANE
+    - NETHER_WART
+    - PUMPKIN
+    - BAMBOO
+    - SWEET_BERRIES
+    - BEETROOTS
+    - MELON
+    - PUMPKIN
+    - CARROTS
+    - POTATOES
+
+auto-kill:
+  # module permission: uxmfarmer.autokill
+  # required-farmer should be true if you want the permission to work
+
+  name: "Automatic Kill"
+  status: true
+  default-status: false
+  permission-required: true
+  only-kill-spawner-mobs: false
+  mobs:
+    - SHEEP
+    - COW
+    - IRON_GOLEM
+
+auto-sell:
+  # module permission: uxmfarmer.autosell
+  # sells products specified in "items" when their stock is full
+
+  name: "Automatic Sell"
+  status: true
+  default-status: false
+  permission-required: true
+  everything: true # when true, supports every item thats collected, ignores the list below
+  items:
+    - WHEAT
+    - CARROT
+
+xp-collector:
+  # module permission: uxmfarmer.xpcollector
+  # collects xp from death entities
+
+  name: "XP Collector"
+  status: true
+  default-status: false
+  permission-required: true
+  xp-unit-price: 0.001
+  xp-tax: 0.1 # 0.1% tax

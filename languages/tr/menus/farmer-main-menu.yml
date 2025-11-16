@@ -1,0 +1,258 @@
+title: "                 <black>Çiftçi"
+rows: 6
+pageable-slot-size: 28
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 4
+  - 6
+  - 7
+  - 8
+  - 9
+  - 17
+  - 18
+  - 26
+  - 27
+  - 35
+  - 36
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+
+collected-item:
+  material: STONE # bunu ellemeyin
+  model-data: 0
+  amount: 1
+  display-name: ""
+  glowing: false
+  head-data: null
+  lore:
+    - ""
+    - "<gray>Mevcut stok: <#05e300><amount><dark_gray>/<#e3000e><capacity>"
+    - "<gray>Birim fiyat: <#d0e300><unit_price>$"
+    - "<gray>Doluluk: <#d0e300><fullness>%"
+    - ""
+    - "<#5b9397>Üretim ↓"
+    - "<gray>Ortalama dakikalık üretim: <#05e300><production_rate_in_minute> (<production_income_in_minute>$)"
+    - "<gray>Ortalama saatlik üretim: <#05e300><production_rate_in_hour> (<production_income_in_hour>$)"
+    - "<gray>Ortalama günlük üretim: <#05e300><production_rate_in_daily> (<production_income_in_daily>$)"
+    - ""
+    - "<#5b9397>Ürün Ayarları ↓"
+    - "<gray>Satış durumu: <sales_status>"
+    - "<gray>Toplama durumu: <collecting_status>"
+    - ""
+    - "<yellow><italic>Ürünü yönetmek için tıkla"
+  slots: []
+  actions:
+    - "[menu] product"
+    - "[sound] ENTITY_ITEM_PICKUP"
+
+items:
+  storage-status:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#4dcc1f>Depo Durumu"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWM5NmJlNzg4NmViN2RmNzU1MjVhMzYzZTVmNTQ5NjI2YzIxMzg4ZjBmZGE5ODhhNmU4YmY0ODdhNTMifX19"
+    lore:
+      - ""
+      - " <gray>Çiftçinizin depo durumunu"
+      - " <gray>buradan görebilirsiniz"
+      - ""
+      - "<#55de23>▶ Çiftçinin depo durumu için tıkla"
+    slots:
+      - 0
+    actions:
+      - "[menu] storage_status"
+
+  manage:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Yönetim Paneli"
+    glowing: false
+    head-data: "texture-ewogICJ0aW1lc3RhbXAiIDogMTYyMDM5NzA2MjE1MSwKICAicHJvZmlsZUlkIiA6ICI0ZGI2MWRkOTM0Mzk0M2M0YjhhOTZiNDQwMWM3MDM1MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJiZWVyYmVsbHltYW4iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2MyZTgxOTkwNmViMTc5NDM5YjhkZDU1NTExMzJlNTRlYjQ3MTczZTBmNDU4ODYxYWQyYThjOTM3OTE4Mzg5MSIKICAgIH0KICB9Cn0="
+    lore:
+    - ""
+    - " <gray>Tüm çiftçi faaliyetlerinin"
+    - " <gray>merkez üssü burasıdır."
+    - ""
+    - " <gray>Verimlilik, yönetim ve"
+    - " <gray>strateji burada şekillenir."
+    - ""
+    - "<red>▶ Yönetim paneline erişmek için tıkla"
+    slots:
+      - 3
+    actions:
+      - "[menu] manage"
+  upgrade-all:
+    material: "FIREWORK_ROCKET"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Her Şeyi Yükseltme Paneli"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Burada yeni seviye"
+      - " <gray>şartlarını karşıladığınız her"
+      - " <gray>ürünü yükseltebilirsiniz."
+      - ""
+      - "<yellow>▶ Tüm ürünleri yükseltmek için tıkla"
+    slots:
+      - 5
+    actions:
+      - "[menu] upgrade_all"
+  move-here:
+    material: "ENDER_PEARL"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Işınla"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Çiftçiyi bulunduğun"
+      - " <gray>konuma ışınlar"
+      - ""
+      - "<yellow>▶ Çiftçiyi ışınlamak için tıkla"
+    slots:
+      - 45
+    actions:
+      - "[close]"
+      - "[player] farmer teleport"
+  next:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Sonraki Sayfa →"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU2YTM2MTg0NTllNDNiMjg3YjIyYjdlMjM1ZWM2OTk1OTQ1NDZjNmZjZDZkYzg0YmZjYTRjZjMwYWI5MzExIn19fQ=="
+    lore:
+      - ""
+    slots:
+      - 50
+    actions:
+      - "[next_page]"
+  previous:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>← Önceki Sayfa"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RjOWU0ZGNmYTQyMjFhMWZhZGMxYjViMmIxMWQ4YmVlYjU3ODc5YWYxYzQyMzYyMTQyYmFlMWVkZDUifX19"
+    lore:
+      - ""
+    slots:
+      - 48
+    actions:
+      - "[previous_page]"
+  sell-all:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Çiftçi Deposunu Sat"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjA5Mjk5YTExN2JlZTg4ZDMyNjJmNmFiOTgyMTFmYmEzNDRlY2FlMzliNDdlYzg0ODEyOTcwNmRlZGM4MWU0ZiJ9fX0="
+    lore:
+      - ""
+      - " <gray>Çiftçi deposunda bulunan"
+      - " <gray>tüm eşyaları %25 pay ile satar"
+      - ""
+      - "<yellow>▶ Tüm eşyaları satmak için tıkla"
+    slots:
+      - 49
+    actions:
+      - "[close]"
+      - "[player] farmer sellall"
+  logs:
+    material: "CLOCK"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Çiftçi Kayıtları"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Oyuncuların çiftçi için"
+      - " <gray>yaptığı tüm işlemlerin kaydı"
+      - " <gray>burada tutulur"
+      - ""
+      - "<yellow>▶ Kayıtları görmek için tıkla"
+    slots:
+      - 46
+    actions:
+      - "[menu] logs"
+  appearance:
+    material: "DRAGON_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Appearance Settings"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Adanızdaki çiftçinin görünüş"
+      - " <gray>ayarlarını yönetmek için"
+      - " <gray>buraya tıklayın"
+      - ""
+      - "<yellow>▶ Görünüş ayarları için tıkla"
+    slots:
+      - 52
+    actions:
+      - "[menu] appearance_settings"
+      - "[sound] BLOCK_BREWING_STAND_BREW"
+dynamic-items:
+  collecting:
+    enabled:
+      material: "LIME_DYE"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffea00>Toplama Durumu"
+      glowing: false
+      head-data: null
+      lore:
+        - ""
+        - " <gray>Çiftçi doğal olarak"
+        - " <gray>yere düşen tarım"
+        - " <gray>ürünlerini toplar"
+        - ""
+        - " <gray>Durum: <#05e300>Açık"
+        - ""
+        - "<yellow>▶ Toplama durumunu değiştirmek için tıkla"
+      slots:
+        - 53
+      actions:
+        - "[change_status]"
+        - "[sound] ENTITY_ITEM_PICKUP"
+    disabled:
+      material: "GRAY_DYE"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffea00>Toplama Durumu"
+      glowing: false
+      head-data: null
+      lore:
+        - ""
+        - " <gray>Çiftçi doğal olarak"
+        - " <gray>yere düşen tarım"
+        - " <gray>ürünlerini toplar"
+        - ""
+        - " <gray>Durum: <#e3000e>Kapalı"
+        - ""
+        - "<yellow>▶ Toplama durumunu değiştirmek için tıkla"
+      slots:
+        - 53
+      actions:
+        - "[change_status]"
+        - "[sound] ENTITY_ITEM_PICKUP"

@@ -1,0 +1,98 @@
+name: uxmFarmer
+version: '${version}'
+main: com.uxplima.uxmfarmer.FarmerPlugin
+folia-supported: true
+api-version: '1.16'
+authors: [ bilektugrul, Scropy ]
+libraries:
+  - com.j256.ormlite:ormlite-jdbc:6.1
+  - com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.18.3
+  - org.yaml:snakeyaml:2.2
+softdepend:
+  - packetevents
+  - PlaceholderAPI
+  - LuckPerms
+  - Citizens
+  - SuperiorSkyblock2
+  - BentoBox
+  - IridiumSkyblock
+  - FabledSkyBlock
+  - Lands
+  - RealmCore
+  - PlayerPoints
+  - Vault
+  - ProtectionStones
+  - GriefPrevention
+  - GriefDefender
+  - RClaim
+  - Towny
+  - UltimateClaims
+  - FancyNpcs
+  - ZNPCsPlus
+  - NBTAPI
+  - RoseStacker
+  - EconomyShopGUI
+  - EconomyShopGUI-Premium
+  - ShopGUIPlus
+  - BetterModel
+  - ModelEngine
+  - ItemsAdder
+  - ExcellentShop
+
+permissions:
+  uxmfarmer.returnfarmer:
+    default: op
+    description: /farmer return command's permission.
+  uxmfarmer.changeskin:
+    default: op
+    description: /farmer skin command's permission.
+  uxmfarmer.useglow:
+    default: op
+    description: Farmer owners needs this permission to use glow in their farmers.
+  uxmfarmer.production:
+    default: op
+    description: Production module permission. Farmer owners must have this to use production.
+  uxmfarmer.autoharvest:
+    default: op
+    description: Auto harvest module permission. Farmer owners must have this to use production.
+  uxmfarmer.autokill:
+    default: op
+    description: Auto kill module permission. Farmer owners must have this to use production.
+  uxmfarmer.autosell:
+    default: op
+    description: Auto sell module permission. Farmer owners must have this to use production.
+  uxmfarmer.addmember:
+    default: op
+    description: Permission for adding members to farmers.
+  "uxmfarmer.taxdiscount.<percentage>":
+    default: op
+    description: If a player has this permission whilst selling anything from farmer, the tax will be discounted by <percantage>"
+  uxmfarmer.upgradediscount.<percentage>":
+    default: op
+    description: If a player has this permission whilst upgrading all procuts, the price will be discounted by <percantage>
+  uxmfarmer.command.teleport:
+    default: op
+  uxmfarmer.command.disappear:
+    default: op
+  uxmfarmer.command.admin:
+    default: op
+  uxmfarmer.command.reload:
+    default: op
+  uxmfarmer.command.uuidof:
+    default: op
+  uxmfarmer.command.delete:
+    default: op
+  uxmfarmer.command.givefarmer:
+    default: op
+  uxmfarmer.command.setproductlevel:
+    default: op
+  uxmfarmer.command.giveegg:
+    default: op
+  uxmfarmer.command.bypass:
+    default: op
+  uxmfarmer.command.menu:
+    default: true
+  uxmfarmer.command.sellall:
+    default: op
+  uxmfarmer.command.clearpermcache:
+    default: op

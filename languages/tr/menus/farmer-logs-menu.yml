@@ -1,0 +1,308 @@
+title: "            <black>Çiftçi Kayıtları"
+rows: 6
+pageable-slot-size: 28
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 17
+  - 18
+  - 26
+  - 27
+  - 35
+  - 36
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+items:
+  back:
+    material: "BARRIER"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Geri Dön"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+    slots:
+      - 49
+    actions:
+      - "[menu] main"
+  next:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#0dff9a>Sonraki Sayfa →"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU2YTM2MTg0NTllNDNiMjg3YjIyYjdlMjM1ZWM2OTk1OTQ1NDZjNmZjZDZkYzg0YmZjYTRjZjMwYWI5MzExIn19fQ=="
+    lore:
+      - ""
+    slots:
+      - 50
+    actions:
+      - "[next_page]"
+  previous:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#0dff9a>← Önceki Sayfa"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RjOWU0ZGNmYTQyMjFhMWZhZGMxYjViMmIxMWQ4YmVlYjU3ODc5YWYxYzQyMzYyMTQyYmFlMWVkZDUifX19"
+    lore:
+      - ""
+    slots:
+      - 48
+    actions:
+      - "[previous_page]"
+dynamic-items:
+  collected:
+    unfiltered:
+      material: "<material>"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffd036>Kayıt #<id>"
+      glowing: false
+      lore:
+        - ""
+        - "<white>Oyuncu: <#87f348><player_name>"
+        - "<white>Durum: <#87f348>Toplanan eşyalar"
+        - ""
+        - "<white>Malzeme: <#FFE658><material>"
+        - "<white>Miktar: <#FFE658><amount>"
+        - ""
+        - "<white>Tarih: <#FFE658><log_time>"
+        - ""
+        - "<#f6eb33>▶ Bu oyuncu tarafından"
+        - "<#f6eb33>gerçekleştirilen kayıtları filtrelemek için tıklayın"
+
+    filtered:
+      material: "<material>"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffd036>Kayıt #<id>"
+      glowing: false
+      lore:
+        - "<dark_gray>Filtrelendi"
+        - ""
+        - "<white>Oyuncu: <#87f348><player_name>"
+        - "<white>Durum: <#87f348>Toplanan eşyalar"
+        - ""
+        - "<white>Malzeme: <#FFE658><material>"
+        - "<white>Miktar: <#FFE658><amount>"
+        - ""
+        - "<white>Tarih: <#FFE658><log_time>"
+        - ""
+        - "<#f6eb33>▶ Filtreyi kaldırmak için tıklayın"
+
+  sold:
+    unfiltered:
+      material: "<material>"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffd036>Kayıt #<id>"
+      glowing: false
+      lore:
+        - ""
+        - "<white>Oyuncu: <#87f348><player_name>"
+        - "<white>Durum: <#87f348>Satılan eşyalar"
+        - ""
+        - "<white>Malzeme: <#FFE658><material>"
+        - "<white>Miktar: <#FFE658><amount>"
+        - "<white>Kazanç: <#FFE658><total_price> ⛃"
+        - ""
+        - "<white>Tarih: <#FFE658><log_time>"
+        - ""
+        - "<#f6eb33>▶ Bu oyuncu tarafından"
+        - "<#f6eb33>gerçekleştirilen kayıtları filtrelemek için tıklayın"
+    filtered:
+      material: "<material>"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffd036>Kayıt #<id>"
+      glowing: false
+      lore:
+        - "<dark_gray>Filtrelendi"
+        - ""
+        - "<white>Oyuncu: <#87f348><player_name>"
+        - "<white>Durum: <#87f348>Satılan eşyalar"
+        - ""
+        - "<white>Malzeme: <#FFE658><material>"
+        - "<white>Miktar: <#FFE658><amount>"
+        - "<white>Kazanç: <#FFE658><total_price> ⛃"
+        - ""
+        - "<white>Tarih: <#FFE658><log_time>"
+        - ""
+        - "<#f6eb33>▶ Filtreyi kaldırmak için tıklayın"
+
+  auto_sold:
+    unfiltered:
+      material: "<material>"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffd036>Kayıt #<id>"
+      glowing: false
+      lore:
+        - ""
+        - "<white>Satıcı: <#87f348>Otomatik Satış"
+        - "<white>Durum: <#87f348>Satılan eşyalar"
+        - ""
+        - "<white>Malzeme: <#FFE658><material>"
+        - "<white>Miktar: <#FFE658><amount>"
+        - "<white>Kazanç: <#FFE658><total_price> ⛃"
+        - ""
+        - "<white>Tarih: <#FFE658><log_time>"
+        - ""
+        - "<#f6eb33>▶ Otomatik satılan"
+        - "<#f6eb33>kayıtları filtrelemek için tıklayın"
+    filtered:
+      material: "<material>"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffd036>Kayıt #<id>"
+      glowing: false
+      lore:
+        - "<dark_gray>Filtrelendi"
+        - ""
+        - "<white>Satıcı: <#87f348>Otomatik Satış"
+        - "<white>Durum: <#87f348>Satılan eşyalar"
+        - ""
+        - "<white>Malzeme: <#FFE658><material>"
+        - "<white>Miktar: <#FFE658><amount>"
+        - "<white>Kazanç: <#FFE658><total_price> ⛃"
+        - ""
+        - "<white>Tarih: <#FFE658><log_time>"
+        - ""
+        - "<#f6eb33>▶ Filtreyi kaldırmak için tıklayın"
+
+  add_member:
+    unfiltered:
+      material: "PLAYER_HEAD"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffd036>Kayıt #<id>"
+      glowing: false
+      head-data: "head-<member_name>"
+      lore:
+        - ""
+        - "<white>Oyuncu: <#87f348><player_name>"
+        - "<white>Durum: <#87f348>Üye Eklendi"
+        - ""
+        - "<white>Eklenen üye: <#FFE658><member_name>"
+        - ""
+        - "<white>Tarih: <#FFE658><log_time>"
+        - ""
+        - "<#f6eb33>▶ Bu oyuncu tarafından"
+        - "<#f6eb33>gerçekleştirilen kayıtları filtrelemek için tıklayın"
+    filtered:
+      material: "PLAYER_HEAD"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffd036>Kayıt #<id>"
+      glowing: false
+      head-data: "head-<member_name>"
+      lore:
+        - "<dark_gray>Filtrelendi"
+        - ""
+        - "<white>Oyuncu: <#87f348><player_name>"
+        - "<white>Durum: <#87f348>Üye eklendi"
+        - ""
+        - "<white>Eklenen üye: <#FFE658><member_name>"
+        - ""
+        - "<white>Tarih: <#FFE658><log_time>"
+        - ""
+        - "<#f6eb33>▶ Filtreyi kaldırmak için tıklayın"
+
+  promote_member:
+    unfiltered:
+      material: "PLAYER_HEAD"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffd036>Kayıt #<id>"
+      glowing: false
+      head-data: "head-<member_name>"
+      lore:
+        - ""
+        - "<white>Oyuncu: <#87f348><player_name>"
+        - "<white>Durum: <#87f348>Üye terfi ettirildi"
+        - ""
+        - "<white>Terfi ettirilen Üye: <#FFE658><member_name>"
+        - "<white>Rütbe: <#FFE658><member_rank>"
+        - ""
+        - "<white>Tarih: <#FFE658><log_time>"
+        - ""
+        - "<#f6eb33>▶ Bu oyuncu tarafından"
+        - "<#f6eb33>gerçekleştirilen kayıtları filtrelemek için tıklayın"
+    filtered:
+      material: "PLAYER_HEAD"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffd036>Kayıt #<id>"
+      glowing: false
+      head-data: "head-<member_name>"
+      lore:
+        - "<dark_gray>Filtrelendi"
+        - ""
+        - "<white>Oyuncu: <#87f348><player_name>"
+        - "<white>Durum: <#87f348>Üye terfi ettirildi"
+        - ""
+        - "<white>Terfi ettirilen Üye: <#FFE658><member_name>"
+        - "<white>Rütbe: <#FFE658><member_rank>"
+        - ""
+        - "<white>Tarih: <#FFE658><log_time>"
+        - ""
+        - "<#f6eb33>▶ Filtreyi kaldırmak için tıklayın"
+
+  demote_member:
+    unfiltered:
+      material: "PLAYER_HEAD"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffd036>Kayıt #<id>"
+      glowing: false
+      head-data: "head-<member_name>"
+      lore:
+        - ""
+        - "<white>Oyuncu: <#87f348><player_name>"
+        - "<white>Durum: <#87f348>Üyenin rütbesi düşürüldü"
+        - ""
+        - "<white>Rütbesi düşürülen Üye: <#FFE658><member_name>"
+        - "<white>Rütbe: <#FFE658><member_rank>"
+        - ""
+        - "<white>Tarih: <#FFE658><log_time>"
+        - ""
+        - "<#f6eb33>▶ Bu oyuncu tarafından"
+        - "<#f6eb33>gerçekleştirilen kayıtları filtrelemek için tıklayın"
+    filtered:
+      material: "PLAYER_HEAD"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffd036>Kayıt #<id>"
+      glowing: false
+      head-data: "head-<member_name>"
+      lore:
+        - "<dark_gray>Filtrelendi"
+        - ""
+        - "<white>Oyuncu: <#87f348><player_name>"
+        - "<white>Durum: <#87f348>Üyenin rütbesi düşürüldü"
+        - ""
+        - "<white>Rütbesi düşürülen Üye: <#FFE658><member_name>"
+        - "<white>Rütbe: <#FFE658><member_rank>"
+        - ""
+        - "<white>Tarih: <#FFE658><log_time>"
+        - ""
+        - "<#f6eb33>▶ Filtreyi kaldırmak için tıklayın"

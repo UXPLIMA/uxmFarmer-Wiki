@@ -1,0 +1,278 @@
+title: "<black>Change Villager Profession"
+rows: 4
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 17
+  - 18
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+
+items:
+  info:
+    material: "BOOK"
+    amount: 1
+    display-name: "<#ff0000>Menu Info"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - "<gray>Here you can choose"
+      - "<gray>your farmer's villager type"
+      - ""
+    slots:
+      - 4
+    actions: []
+
+  back:
+    material: "BARRIER"
+    amount: 1
+    display-name: "<#ff0000>Go Back"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 31
+    actions:
+      - "[menu] appearance_settings"
+      - "[sound] UI_BUTTON_CLICK"
+
+  armorer:
+    material: "BLAST_FURNACE"
+    amount: 1
+    display-name: "<#8B8B8B>Armorer"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 10
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.villager.armorer <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-profession-cooldown"
+      - "[modify_profession] ARMORER"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  butcher:
+    material: "SMOKER"
+    amount: 1
+    display-name: "<#FFE4E1>Butcher"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 11
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.villager.butcher <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-profession-cooldown"
+      - "[modify_profession] BUTCHER"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  cartographer:
+    material: "CARTOGRAPHY_TABLE"
+    amount: 1
+    display-name: "<#D2B48C>Cartographer"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 12
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.villager.cartographer <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-profession-cooldown"
+      - "[modify_profession] CARTOGRAPHER"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  cleric:
+    material: "BREWING_STAND"
+    amount: 1
+    display-name: "<#9370DB>Cleric"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 13
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.villager.cleric <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-profession-cooldown"
+      - "[modify_profession] CLERIC"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  farmer:
+    material: "COMPOSTER"
+    amount: 1
+    display-name: "<#8B4513>Farmer"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 14
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.villager.farmer <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-profession-cooldown"
+      - "[modify_profession] FARMER"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  fisherman:
+    material: "BARREL"
+    amount: 1
+    display-name: "<#4682B4>Fisherman"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 15
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.villager.fisherman <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-profession-cooldown"
+      - "[modify_profession] FISHERMAN"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  fletcher:
+    material: "FLETCHING_TABLE"
+    amount: 1
+    display-name: "<#F4A460>Fletcher"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 16
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.villager.fletcher <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-profession-cooldown"
+      - "[modify_profession] FLETCHER"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  leatherworker:
+    material: "CAULDRON"
+    amount: 1
+    display-name: "<#CD853F>Leatherworker"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 19
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.villager.leatherworker <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-profession-cooldown"
+      - "[modify_profession] LEATHERWORKER"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  librarian:
+    material: "LECTERN"
+    amount: 1
+    display-name: "<#FFFFFF>Librarian"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 20
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.villager.librarian <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-profession-cooldown"
+      - "[modify_profession] LIBRARIAN"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  mason:
+    material: "STONECUTTER"
+    amount: 1
+    display-name: "<#696969>Mason"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 21
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.villager.mason <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-profession-cooldown"
+      - "[modify_profession] MASON"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  shepherd:
+    material: "LOOM"
+    amount: 1
+    display-name: "<#90EE90>Shepherd"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 22
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.villager.shepherd <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-profession-cooldown"
+      - "[modify_profession] SHEPHERD"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  toolsmith:
+    material: "SMITHING_TABLE"
+    amount: 1
+    display-name: "<#2F4F4F>Toolsmith"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 23
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.villager.toolsmith <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-profession-cooldown"
+      - "[modify_profession] TOOLSMITH"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  weaponsmith:
+    material: "GRINDSTONE"
+    amount: 1
+    display-name: "<#4A4A4A>Weaponsmith"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 24
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.villager.weaponsmith <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-profession-cooldown"
+      - "[modify_profession] WEAPONSMITH"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  nitwit:
+    material: "GRASS_BLOCK"
+    amount: 1
+    display-name: "<#228B22>Nitwit"
+    glowing: false
+    head-data: null
+    lore: []
+    slots:
+      - 25
+    actions:
+      - "[close]"
+      - "[check_permission] uxmfarmer.type.villager.nitwit <prefix> <red>You do not have enough permission to use this type."
+      - "[cooldown] change-profession-cooldown"
+      - "[modify_profession] NITWIT"
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"

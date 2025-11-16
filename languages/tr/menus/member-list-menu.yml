@@ -1,0 +1,92 @@
+title: "               <black>Üyeler"
+rows: 4
+pageable-slot-size: 14
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 17
+  - 18
+  - 26
+  - 28
+  - 29
+  - 33
+  - 34
+  - 35
+items:
+  next:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#39a7fc>Sonraki Sayfa →"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU2YTM2MTg0NTllNDNiMjg3YjIyYjdlMjM1ZWM2OTk1OTQ1NDZjNmZjZDZkYzg0YmZjYTRjZjMwYWI5MzExIn19fQ=="
+    lore:
+      - ""
+    slots:
+      - 32
+    actions:
+      - "[next_page]"
+  previous:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#39a7fc>← Önceki Sayfa"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RjOWU0ZGNmYTQyMjFhMWZhZGMxYjViMmIxMWQ4YmVlYjU3ODc5YWYxYzQyMzYyMTQyYmFlMWVkZDUifX19"
+    lore:
+      - ""
+    slots:
+      - 30
+    actions:
+      - "[previous_page]"
+  back:
+    material: "BARRIER"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Geri Dön"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+    slots:
+      - 27
+    actions:
+      - "[menu] manage"
+  member:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffd036><member_name>"
+    glowing: false
+    head-data: "head-<member_name>"
+    lore:
+      - ""
+      - "<white>Rol: <#FFE658><member_rank>"
+      - ""
+      - "<white>Katılma Tarihi: <#FFE658><creation_time>"
+      - ""
+      - "<#f6eb33>▶ Üyeyi yönetmek için tıklayın"
+  add-member:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#05e200>Üye Ekle"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZmMzE0MzFkNjQ1ODdmZjZlZjk4YzA2NzU4MTA2ODFmOGMxM2JmOTZmNTFkOWNiMDdlZDc4NTJiMmZmZDEifX19"
+    lore:
+      - ""
+      - "<gray>Çiftçi takımına üye"
+      - "<gray>eklemek için bunu kullanabilirsiniz"
+      - ""
+      - "<#f6eb33>▶ Üye eklemek için tıklayın"
+    slots:
+      - 31

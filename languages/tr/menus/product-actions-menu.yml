@@ -1,0 +1,214 @@
+title: "           <black>Ürün Kontrolü"
+rows: 5
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 17
+  - 18
+  - 26
+  - 27
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 41
+  - 42
+  - 43
+  - 44
+items:
+  collected-item:
+    material: STONE
+    model-data: 0
+    amount: 1
+    display-name: ""
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - "<gray>Mevcut stok: <#05e300><amount><dark_gray>/<#e3000e><capacity>"
+      - "<gray>Birim fiyatı: <#d0e300><unit_price>$"
+      - "<gray>Doluluk: <#d0e300><fullness>%"
+      - ""
+      - "<#5b9397>Üretim ↓"
+      - "<gray>Dakika başı ortalama üretim: <#05e300><production_rate_in_minute> (<production_income_in_minute>$)"
+      - "<gray>Saat başı ortalama üretim: <#05e300><production_rate_in_hour> (<production_income_in_hour>$)"
+      - "<gray>Günlük ortalama üretim: <#05e300><production_rate_in_daily> (<production_income_in_daily>$)"
+      - ""
+      - "<#5b9397>Ürün Ayarları ↓"
+      - "<gray>Satış durumu: <sales_status>"
+      - "<gray>Toplama durumu: <collecting_status>"
+      - ""
+      - "<#5b9397>Kısayollar ↓"
+      - "<gray>İstediğiniz kadar almak için: <dark_gray>[<#ffea00>Sağ Tık<dark_gray>]"
+      - "<gray>Satışları kapatmak için: <dark_gray>[<#ffea00>Sol Tık<dark_gray>]"
+      - "<gray>Hepsini almak için: <dark_gray>[<#ffea00>Shift + Sağ Tık<dark_gray>]"
+      - "<gray>Hepsini satmak için: <dark_gray>[<#ffea00>Shift + Sol Tık<dark_gray>]"
+      - "<gray>Toplama durumunu değiştirmek için: <dark_gray>[<#ffea00>Sayı Tuşu<dark_gray>]"
+      - "<gray>Depoyu yükseltmek için: <dark_gray>[<#ffea00>Q<dark_gray>]"
+      - ""
+      - "<#e3000e>Önemli Not: Satış yaparken,"
+      - "<#e3000e>çiftçiye <red><tax>% <#e3000e>pay veriyorsunuz"
+      - ""
+
+    slots:
+      - 13
+  back:
+    material: "BARRIER"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Geri Dön"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - "<#ffea00>Önceki menüye"
+      - "<#ffea00>dönmek için tıklayın"
+      - ""
+    slots:
+      - 40
+    actions:
+      - "[menu] main"
+
+  take-amount:
+    material: "HOPPER"
+    model-data: 0
+    amount: 1
+    display-name: "<#05e300>İstediğiniz Kadarını Alın"
+    glowing: false
+    lore:
+      - ""
+      - "<#ffea00>Özel miktarda"
+      - "<#ffea00>çekim yapmak için tıklayın"
+      - ""
+    slots:
+      - 19
+
+  take-all:
+    material: "CHEST"
+    model-data: 0
+    amount: 1
+    display-name: "<#05e300>Hepsini Al"
+    glowing: false
+    lore:
+      - ""
+      - "<#ffea00>Stokta bulunan"
+      - "<#ffea00>her şeyi çekmek için tıklayın"
+      - ""
+    slots:
+      - 21
+
+  sell-all:
+    material: "GOLD_INGOT"
+    model-data: 0
+    amount: 1
+    display-name: "<#05e300>Hepsini Sat"
+    glowing: false
+    lore:
+      - ""
+      - "<#ffea00>Tüm stoku"
+      - "<#ffea00>satmak için tıklayın"
+      - ""
+    slots:
+      - 23
+
+  upgrade-product:
+    material: "ANVIL"
+    model-data: 0
+    amount: 1
+    display-name: "<#05e300>Ürünü Güncelle"
+    glowing: false
+    lore:
+      - ""
+      - "<#ffea00>Depolama veya üretimi"
+      - "<#ffea00>yükseltmek için tıklayın"
+      - ""
+    slots:
+      - 25
+
+dynamic-items:
+  collecting:
+    enabled:
+      material: "LIME_DYE"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffea00>Toplama Durumunu Değiştir"
+      glowing: false
+      head-data: null
+      lore:
+        - ""
+        - " <gray>Çiftçi doğal olarak"
+        - " <gray>yerden düşen çiftlik"
+        - " <gray>ürünlerini toplar"
+        - ""
+        - " <gray>Durum: <#05e300>Etkin"
+        - ""
+        - "<yellow>▶ Toplama durumunu değiştirmek için tıklayın"
+
+      slots:
+        - 30
+    disabled:
+      material: "GRAY_DYE"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffea00>Toplama Durumunu Değiştir"
+      glowing: false
+      head-data: null
+      lore:
+        - ""
+        - " <gray>Çiftçi doğal olarak"
+        - " <gray>yerden düşen çiftlik"
+        - " <gray>ürünlerini toplar"
+        - ""
+        - " <gray>Durum: <#e3000e>Pasif"
+        - ""
+        - "<yellow>▶ Toplama durumunu değiştirmek için tıklayın"
+      slots:
+        - 30
+  selling:
+    enabled:
+      material: "LIME_DYE"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffea00>Satış Durumunu Değiştir"
+      glowing: false
+      head-data: null
+      lore:
+        - ""
+        - " <gray>Ürünler çiftçi menüsünden"
+        - " <gray>veya otomatik satış ile"
+        - " <gray>satılabilir"
+        - ""
+        - " <gray>Durum: <#05e300>Etkin"
+        - ""
+        - "<yellow>▶ Satış durumunu değiştirmek için tıklayın"
+
+      slots:
+        - 32
+    disabled:
+      material: "GRAY_DYE"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffea00>Satış Durumunu Değiştir"
+      glowing: false
+      head-data: null
+      lore:
+        - ""
+        - " <gray>Ürünler çiftçi menüsünden"
+        - " <gray>veya otomatik satış ile"
+        - " <gray>satılabilir"
+        - ""
+        - " <gray>Durum: <#e3000e>Pasif"
+        - ""
+        - "<yellow>▶ Satış durumunu değiştirmek için tıklayın"
+      slots:
+        - 32

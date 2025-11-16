@@ -1,0 +1,12 @@
+sign-menu:
+  sign-type: DARK_OAK_SIGN
+  text-color: WHITE
+  input-line: 0
+  lines:
+    - ""
+    - "----------"
+    - "<message>"
+    - ""
+  messages:
+    enter: "Enter quantity"
+    wrong-format: "You must enter an integer"

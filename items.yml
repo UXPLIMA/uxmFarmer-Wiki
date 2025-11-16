@@ -1,0 +1,40 @@
+farmer-egg:
+  give-even-if-has-farmer: true # set to false if you don't want to give farmer eggs to players who already has farmer
+  item:
+    material: "VILLAGER_SPAWN_EGG"
+    model-data: 0
+    amount: 1
+    glowing: true
+    head-data: null
+    display-name: "<#edaa0e><bold>Farmer Egg"
+    lore:
+      - " "
+      - " <#aeed0e>This egg gives you a farmer."
+      - " <#797d73><italic>(Right-Click)"
+      - " "
+
+set-product-level-item:
+  material: "NETHER_STAR"
+  model-data: 0
+  amount: 1
+  glowing: true
+  head-data: null
+  display-name: "<#edaa0e><bold>Farmer Product Level Changer"
+  lore:
+    - " "
+    - " <#aeed0e>Updates <product> to level <level>"
+    - " <#aeed0e>Use it near a farmer <#797d73><italic>(Right-Click)"
+    - " "
+
+add-product-level-item:
+  material: "NETHER_STAR"
+  model-data: 0
+  amount: 1
+  glowing: true
+  head-data: null
+  display-name: "<#edaa0e><bold>Product Level Updater"
+  lore:
+    - " "
+    - " <#aeed0e>Adds <level> levels to <product>"
+    - " <#aeed0e>Use it near a farmer <#797d73><italic>(Right-Click)"
+    - " "
