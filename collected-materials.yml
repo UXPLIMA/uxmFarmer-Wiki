@@ -12,6 +12,12 @@ collected-materials:
         unit-price: 1.6
         tax-price: 0.14
         capacity: 10000
+        player-commands:
+          - "say test"
+          - "say test"
+        console-commands:
+          - "say test"
+          - "say test"
         requirements:
           "playtime":
             display: "<blue>1 Hour Playtime (Current: <papi:'math_0:floor_{statistic_PLAY_ONE_MINUTE}/1200'>)"
@@ -23,12 +29,6 @@ collected-materials:
             display: "<green>VIP Rank"
             condition: "%vault_hasgroup_VIP%"
             required-output: "yes"
-        player-commands:
-          - "say test"
-          - "say test"
-        console-commands:
-          - "say test"
-          - "say test"
       2:
         price: 4500
         tax-price: 0.13
