@@ -185,6 +185,7 @@ type-player-to-chat: "<prefix> <gold>Please type name of the player you want to 
 player-not-found: "<prefix> <red>Could not find that player."
 already-a-member: "<prefix> <red>That player is already a member of your farmer."
 cannot-add-member: "<prefix> <red>You cannot add new members to your farmer."
+stock-notify: "<prefix> <red><product> stock of your farmer is full."
 
 no-visual-enabled: "<prefix> <gold>Your farmer will not have visual appearance from now on."
 no-visual-enabled-2: "<prefix> <gold>Your farmer's visual appearance is disabled, you cannot change locations."

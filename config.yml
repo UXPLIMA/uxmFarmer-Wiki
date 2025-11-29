@@ -37,7 +37,6 @@ hooks:
   # - Citizens
   # - FancyNpcs
   # - ZNPCsPlus
-  # - PlayerNpc
   # - ModelSystem (ModelEngine, ItemsAdder or BetterModel) - this is internal, can be configured in model-settings
   # If not, leave this space empty
   interaction-hook: "FancyNpcs"
@@ -62,6 +61,12 @@ settings:
                      # MODERN is new and heavily optimized for the best performance, it doesn't allow crops to grow and simulates everything, requires 1.20.6+
                      # CLASSIC is the old system but does not break blocks, instead resets their age when they fully grow, little bit better than LEGACY
                      # LEGACY is the old system, breaks the blocks when they grow fully and replants if necessary, the worst performant, not recommended
+
+  # only affects MODERN farm logic
+  # if enabled, makes crops that are not collected by farmer (disabled by farmer owner/members) grow physically
+  # can cause significant performance drops, not recommended to enable
+  # restart is needed for changes to apply
+  disabled-products-grow-physically: false
   collect-dropped-items: false
   collect-custom-items: false # custom item means an item with either custom name or custom lore
   upgrade-all-upgrades-everything: false # normally, upgrade-all function only upgrades the product that player's farmer collected before. if you set this to true,
@@ -70,7 +75,6 @@ settings:
   place-farmer-on-region-creation: false
   farmer-command-opens-gui: false # when set to true, /farmer command opens farmer gui directly.
   farmer-command-opens-buy-menu: true # when set to true, /farmer command will open purchase menu if player doesn't have a farmer
-
   disable-buy-command: false # when set to true, /farmer buy command will be disabled and only way to get farmers will be the farmer eggs.
   sell-all-requires-confirmation: true # when set to true, /farmer sellall command or sell all executions from anywhere else will require confirmation.
   adding-member-requires-permission: false # if true, farmer managers will need the permission uxmfarmer.addmember to add new members to their farmers.
@@ -89,6 +93,9 @@ settings:
   return-price-on-delete: true # when set to true, it returns farmer price to the owner when their farmer is deleted
   return-percent: 75 # gives back given percent of farmer price to farmer owner when they /farmer return it
 
+  notify-when-stock-gets-full:
+    enabled: false # if true, farmer owner will be notified with a message when a product's stock of their farmer gets full
+    notify-amount: 3
   first-location: # only works when place-farmer-on-region-creation is enabled
     enabled: false
     modify-by: -5.5, 1.5, 3.5 # places farmer at location -5.5 X, +1.5 Y, +3.5 Z relative to region center

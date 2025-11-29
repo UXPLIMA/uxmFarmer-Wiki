@@ -185,6 +185,7 @@ type-player-to-chat: "<prefix> <gold>Eklemek istediğin oyuncunun adını sohbet
 player-not-found: "<prefix> <red>Oyuncu bulunamadı."
 already-a-member: "<prefix> <red>Bu oyuncu zaten çiftçinize üye."
 cannot-add-member: "<prefix> <red>Çiftçine yeni üye ekleme yetkisine sahip değilsin."
+stock-notify: "<prefix> <red>Çiftçinin <product> stoğu dolu."
 
 no-visual-enabled: "<prefix> <gold>Çiftçin artık bölgende gözükmeyecek."
 no-visual-enabled-2: "<prefix> <gold>Çiftçin görünmez olduğu için lokasyon değiştiremezsin."
