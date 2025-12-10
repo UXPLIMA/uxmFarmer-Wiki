@@ -130,7 +130,7 @@ items:
       - 45
     actions:
       - "[close]"
-      - "[player] farmer teleport"
+      - "[teleport]"
   next:
     material: "PLAYER_HEAD"
     model-data: 0

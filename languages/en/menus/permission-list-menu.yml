@@ -119,6 +119,25 @@ permissions:
       - "<gray>Left Click: <#30ff19>▲"
       - "<gray>Right Click: <#ff0000>▼"
 
+  upgrade:
+    material: "diamond"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Upgrade"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Grants permission to upgrade"
+      - " <gray>product levels in the farmer."
+      - ""
+      - " <white>Role: <#ffea00><rank_name>"
+      - ""
+      - "<message>"
+      - ""
+      - "<gray>Left Click: <#30ff19>▲"
+      - "<gray>Right Click: <#ff0000>▼"
+
   collect:
     material: "GOLDEN_HOE"
     model-data: 0
@@ -234,7 +253,7 @@ permissions:
       - "<gray>Right Click: <#ff0000>▼"
 
   see-logs:
-    material: "ENDER_PEARL"
+    material: "CLOCK"
     model-data: 0
     amount: 1
     display-name: "<#ffea00>View Farmer Logs"

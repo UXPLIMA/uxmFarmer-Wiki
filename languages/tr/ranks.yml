@@ -9,6 +9,7 @@ farmer-ranks:
       - TOGGLE_GLOWING
       - CHANGE_GLOWING_COLOR
       - SEE_LOGS
+      - UPGRADE
     show:
       material: "PLAYER_HEAD"
       model-data: 0

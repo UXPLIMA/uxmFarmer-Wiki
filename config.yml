@@ -5,7 +5,9 @@ config-version: "${version}" # do not change this
 language: en # supported languages: TR, EN
 
 hooks:
+  # Region Hook
   # supported plugins:
+  #  - uxmClaims - recommended claim plugin
   #  - IridiumSkyblock
   #  - SuperiorSkyblock2
   #  - BentoBox:BSkyBlock usage: BentoBox:<island world friendly name from your addon config>
@@ -19,26 +21,31 @@ hooks:
   #  - Towny (for TownyAdvanced)
   #  - UltimateClaims
   #  - FabledSkyBlock
+  #  - DeluxeSkyblock
   region-hook: "Lands"
 
+  # Economy Hook
   # supported plugins:
   #  - Vault
   #  - PlayerPoints
   money-hook: "Vault"
 
+  # Price Source Hook
   # supported plugins
   #  - ShopGUIPlus
   #  - EconomyShopGUI or EconomyShopGUI-Premium
   #  - ExcellentShop
+  #  - default or "" - prices from collected-materials.yml
   price-source-hook: default
 
+  # Interaction Hook
   # supported plugins:
   # - Holograms - this is internal, plugin uses it for everywhere you see holograms.
   # - Citizens
   # - FancyNpcs
   # - ZNPCsPlus
   # - ModelSystem (ModelEngine, ItemsAdder or BetterModel) - this is internal, can be configured in model-settings
-  # If not, leave this space empty
+  # - default or "" - no interaction, farmer only accessible by commands
   interaction-hook: "FancyNpcs"
 
 database:
@@ -80,6 +87,9 @@ settings:
   adding-member-requires-permission: false # if true, farmer managers will need the permission uxmfarmer.addmember to add new members to their farmers.
   add-new-region-members-to-farmer: true # if true, new region members (like island member or trusted player in a claim) will be added to farmer as members too.
   remove-leaving-region-members-from-farmer: true # if true, region members who have left the region will be removed from farmer members
+  only-owners-can-upgrade: false # if true, only farmer owners will be able to upgrade products to other levels
+
+  disable-logs: false # logs are cool but might cause performance issues in rare cases, you can disable them anytime here
 
   default-click-actions:
     - "[menu] main"

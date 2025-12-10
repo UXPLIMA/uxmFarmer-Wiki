@@ -119,6 +119,25 @@ permissions:
       - "<gray>Sol Tık: <#30ff19>▲"
       - "<gray>Sağ Tık: <#ff0000>▼"
 
+  upgrade:
+    material: "DIAMOND"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Seviye Yükseltme"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Çiftçi tarafından toplanan ürünlerin"
+      - " <gray>seviyesini yükseltme izni verir."
+      - ""
+      - " <white>Rol: <#ffea00><rank_name>"
+      - ""
+      - "<message>"
+      - ""
+      - "<gray>Sol Tık: <#30ff19>▲"
+      - "<gray>Sağ Tık: <#ff0000>▼"
+
   collect:
     material: "GOLDEN_HOE"
     model-data: 0
