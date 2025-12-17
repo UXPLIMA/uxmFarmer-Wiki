@@ -64,10 +64,6 @@ multi-server:
 settings:
   disabled-worlds:
     - "world"
-  farm-logic: MODERN # can be MODERN or CLASSIC, restart is necessary after changing this value
-                     # MODERN is new and heavily optimized for the best performance, it doesn't allow crops to grow and simulates everything, requires 1.20.6+
-                     # CLASSIC is the old system but does not break blocks, instead resets their age when they fully grow, little bit better than LEGACY
-                     # LEGACY is the old system, breaks the blocks when they grow fully and replants if necessary, the worst performant, not recommended
 
   # only affects MODERN farm logic
   # if enabled, makes crops that are not collected by farmer (disabled by farmer owner/members) grow physically
