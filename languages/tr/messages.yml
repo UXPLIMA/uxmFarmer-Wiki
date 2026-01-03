@@ -15,33 +15,45 @@ command-errors:
   unknown-command: "<prefix> <red>Var olmayan bir komut kullandınız."
 help-message:
   - ""
-  - "<#e2cc00><bold>Çiftçi Komutları"
-  - "<gray>/çiftçi <#39a7fc>satınal <italic><gray>(çiftçi satın alma komutu.)"
-  - "<gray>/çiftçi <#39a7fc>menü <italic><gray>(çiftçi menüsünü açar.)"
-  - "<gray>/çiftçi <#39a7fc>getir <italic><gray>(çiftçiyi yanına ışınlar.)"
-  - "<gray>/çiftçi <#39a7fc>yoket <italic><gray>(çiftçiyi bölgenizde görünmez hale getirir / tekrar görünür yapar.)"
-  - "<gray>/çiftçi <#39a7fc>skin <isim> <italic><gray>(çiftçi skin ismini değiştirir.)"
-  - "<gray>/çiftçi <#39a7fc>iade <italic><gray>(çiftçiyi iade eder ve ücretini geri verir.)"
-  - "<gray>/çiftçi <#39a7fc>hepsinisat <italic><gray>(toplanan tüm ürünleri satar.)"
+  - "<#d6b656><bold>Çiftçi Komutları</bold>"
+  - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
   - ""
-admin-help-message:
+  - "<gray>/çiftçi <#6bbcff>satınal <white>— Yeni bir çiftçi satın alır."
+  - "<gray>/çiftçi <#6bbcff>menü <white>— Çiftçi menüsünü açar."
+  - "<gray>/çiftçi <#6bbcff>getir <white>— Çiftçiyi yanına ışınlar."
+  - "<gray>/çiftçi <#6bbcff>yoket <white>— Çiftçiyi bulunduğun bölgede gizler veya tekrar görünür yapar."
+  - "<gray>/çiftçi <#6bbcff>skin <yellow><isim> <white>— Çiftçinin skin adını değiştirir."
+  - "<gray>/çiftçi <#6bbcff>iade <white>— Çiftçiyi iade eder ve ücretini geri verir."
+  - "<gray>/çiftçi <#6bbcff>hepsinisat <white>— Toplanan tüm ürünleri satar."
   - ""
-  - "<#e2cc00><bold>Farmer Commands"
-  - "<gray>/uxmfarmer <#39a7fc>save <italic><gray>(her şeyi kaydeder.)"
-  - "<gray>/uxmfarmer <#39a7fc>reload <italic><gray>(tüm dosyaları yeniden önbelleğe alır.)"
-  - "<gray>/uxmfarmer <#39a7fc>clearpermcache <italic><gray>(önbelleğe alınmış perm bilgilerini sıfırlar.)"
-  - "<gray>/uxmfarmer <#39a7fc>bypass <italic><gray>(bypass modunu açar veya kapatır.)"
-  - "<gray>/uxmfarmer <#39a7fc>stats <italic><gray>(sunucu genelindeki farmer istatistiklerini yollar.)"
-  - "<gray>/uxmfarmer <#39a7fc>nearfarmers <alan> <italic><gray>(girilen alan kadar çevredeki çiftçi bilgilerini yollar.)"
-  - "<gray>/uxmfarmer <#39a7fc>uuidof <oyuncu> <italic><gray>(girilen oyuncunun çiftçisinin uuidsini yollar.)"
-  - "<gray>/uxmfarmer <#39a7fc>delete <oyuncu> <italic><gray>(girilen oyuncunun çiftçisini siler.)"
-  - "<gray>/uxmfarmer <#39a7fc>deleteuuid <çiftçi uuid> <italic><gray>(girilen uuidye sahip çiftçiyi siler.)"
-  - "<gray>/uxmfarmer <#39a7fc>deleteall <oyuncu> <italic><gray>(girilen oyuncunun çiftçilerini siler.)"
-  - "<gray>/uxmfarmer <#39a7fc>givefarmer <oyuncu> <italic><gray>(girilen oyuncuya bir çiftçi verir.)"
-  - "<gray>/uxmfarmer <#39a7fc>giveegg <oyuncu> <miktar> <italic><gray>(girilen oyuncuya bir çiftçi yumurtası verir, sağ tıklandığında bir çiftçi alır.)"
-  - "<gray>/uxmfarmer <#39a7fc>giveproductupgrader <oyuncu> <ürün> <seviye> <miktar> <italic><gray>(girilen ürünün seviyesini belirleyen bir ürün verir.)"
-  - "<gray>/uxmfarmer <#39a7fc>giveproductupgrader <oyuncu> <ürün> <+seviye> <miktar> <italic><gray>(girilen ürünün seviyesine girilen seviyeyi ekleyen bir ürün verir.)"
+  - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
   - ""
+admin-help-command:
+  header:
+    - ""
+    - "<#d6b656><bold>uxmFarmer <gray><version></gray> — Yönetici Komutları</bold> <gray>(Sayfa <page>)"
+    - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
+  commands:
+    - "<gray>/uxmfarmer <#6bbcff>[help] <sayfa> <white>— Girilen sayfadaki yardım komutlarını gösterir."
+    - "<gray>/uxmfarmer <#6bbcff>save <white>— Tüm verileri veritabanına kaydeder."
+    - "<gray>/uxmfarmer <#6bbcff>reload <white>— Yapılandırmayı ve tüm eklenti dosyalarını yeniden yükler."
+    - "<gray>/uxmfarmer <#6bbcff>clearpermcache <white>— Önbelleğe alınmış oyuncu yetkilerini temizler."
+    - "<gray>/uxmfarmer <#6bbcff>bypass <white>— Bekleme süresi (cooldown) bypass modunu açar/kapatır."
+    - "<gray>/uxmfarmer <#6bbcff>stats <white>— Genel çiftçi istatistiklerini görüntüler."
+    - "<gray>/uxmfarmer <#6bbcff>clearlogs <yellow><farmer uuid> <white>— Belirtilen çiftçinin günlüklerini temizler."
+    - "<gray>/uxmfarmer <#6bbcff>nearfarmers <yellow><çap> <white>— Belirtilen yarıçaptaki çiftçileri listeler."
+    - "<gray>/uxmfarmer <#6bbcff>setowner <yellow><farmer uuid> <oyuncu> <white>— Çiftçinin sahibini belirtilen oyuncu olarak ayarlar."
+    - "<gray>/uxmfarmer <#6bbcff>uuidof <yellow><oyuncu> <white>— Oyuncunun çiftçi UUID bilgisini gösterir."
+    - "<gray>/uxmfarmer <#6bbcff>delete <yellow><oyuncu> <white>— Belirtilen oyuncunun çiftçisini siler."
+    - "<gray>/uxmfarmer <#6bbcff>deleteuuid <yellow><farmer uuid> <white>— Belirtilen UUID'ye sahip çiftçiyi siler."
+    - "<gray>/uxmfarmer <#6bbcff>deleteall <yellow><oyuncu> <white>— Oyuncuya ait tüm çiftçileri siler."
+    - "<gray>/uxmfarmer <#6bbcff>givefarmer <yellow><oyuncu> <white>— Belirtilen oyuncuya çiftçi verir."
+    - "<gray>/uxmfarmer <#6bbcff>giveegg <yellow><oyuncu> <yellow><miktar> <white>— Oyuncuya çiftçi yumurtası verir."
+    - "<gray>/uxmfarmer <#6bbcff>giveproductupgrader <yellow><oyuncu> <yellow><ürün> <yellow><seviye> <yellow><miktar> <white>Ürün seviyesini doğrudan belirleyen bir eşya verir."
+    - "<gray>/uxmfarmer <#6bbcff>giveproductupgrader <yellow><oyuncu> <yellow><ürün> <yellow>+<seviye> <yellow><miktar> <white> Ürüne seviye ekleyen bir eşya verir."
+  footer:
+    - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
+    - "<gray>Yardım mı lazım? <#6bbcff><u><click:open_url:'https://github.com/UXPLIMA/uxmFarmer-Wiki/wiki/'>uxmFarmer Wiki sayfasını açmak için tıklayın</click>"
 colors:
   BLACK: "siyah"
   DARK_BLUE: "koyu mavi"
@@ -94,6 +106,7 @@ can-not-access-admin: '<prefix> <gray><italic>Bu kısıtlamayı "/uxmfarmer bypa
 try-the-operation-again: '<prefix> <red>Lütfen tekrar deneyin!'
 max-level: "<prefix> <red>Son seviyeye ulaştın"
 you-sold: "<prefix> <gray>Başarıyla tüm ürünleri sattın. Kazancın: <#39a7fc><earning>$"
+auto-sold: "<prefix> <gray>Otomatik satış <product> ürününü sattı. Kazancın: <#39a7fc><earning>$"
 have-not-sell-permission: "<prefix> <red>Mahsülleri satmak için yeterli iznin yok"
 not-enough-permission: "<prefix> <red>Bu işlem için gerekli yetki seviyesine sahip değilsiniz."
 no-product: "<prefix> <gray>Satılacak bir <#e3000e>eşya yok!"
@@ -197,6 +210,12 @@ no-visual-disabled: "<prefix> <gold>Çiftçin tekrar bölgende gözükecek."
 
 buy-command-disabled: "<prefix> <red>Komut ile çiftçi satın alımları kapalı."
 
+given-farmer-uuid: "<prefix> <gold>Girilen çiftçi UUIDsi: <aqua><uuid>"
+old-farmer-owner: "<prefix> <gold>Çiftçinin eski sahibi: <aqua><old_owner> (<old_owner_uuid>)"
+new-farmer-owner: "<prefix> <gold>Çiftçinin yeni sahibi: <aqua><new_owner> (<new_owner_uuid>)"
+
+cleared-logs: "<prefix> <gold>Cleared all logs <aqua>(<count>)<gold> of farmer <aqua><uuid><gold>."
+
 upgrade-all:
   some-failed: "<prefix> <red>Bazı ürünler başarıyla yükseltildi ancak bazıları başarısız oldu."
   all-failed: "<prefix> <red>Tüm ürünlerin yükseltilmesi başarısız oldu."
@@ -208,6 +227,15 @@ upgrade-all:
 
   successful-upgrades: "<prefix> <gray>Başarıyla yükseltilen ürünler: <gold><products>"
   no-product: "<prefix> <red>Çiftçinin herhangi bir ürünü yok. Birkaç ürün toplattıktan sonra tekrar deneyin."
+
+near-farmers-command:
+  farmers-near-you: "<gold>Yakınındaki çiftçiler (Çap: <aqua><range><gold>) <italic><gray>(UUID kopyalamak için üstlerine tıklayın)"
+  no-nearby-farmers: "<red>Yakınında hiç çiftçi bulunamadı (Çap <aqua><range><gold>)."
+  found-farmer: " <gray>- <reset><farmer>"
+
+farmer-uuid-command:
+  player-has-farmers: "<prefix> <aqua><player> <gold>isimli oyuncunun <aqua><count> <gold>adet çiftçisi var:"
+  farmer: " <gray><number>: <green><uuid> <italic><gray>(kopyalamak için tıklayın)"
 
 statistics-command:
   - "<prefix> <#4dcc1f><bold>Sunucu Genel İstatistikleri</bold>"

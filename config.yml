@@ -28,6 +28,7 @@ hooks:
   # supported plugins:
   #  - Vault
   #  - PlayerPoints
+  #  - SuperiorSkyblock2 - uses island bank
   money-hook: "Vault"
 
   # Price Source Hook
@@ -65,7 +66,6 @@ settings:
   disabled-worlds:
     - "world"
 
-  # only affects MODERN farm logic
   # if enabled, makes crops that are not collected by farmer (disabled by farmer owner/members) grow physically
   # can cause significant performance drops, not recommended to enable
   # restart is needed for changes to apply
@@ -123,10 +123,10 @@ log-cleaner:
 
   # if you have been using the plugin for a long time and players have a lot of logs
   # log cleaner may cause lag at first usages in rare cases.
-  # in case that happens, log cleaner is disabled by default.
-  # enable it if you want and if it causes lag, disable then clean the logs by yourself.
+  # in case that happens, disable log cleaner and clear your database table of logs
+  # if you are not able to do it, open a ticket in UXPLIMA discord server
 
-  enabled: false
+  enabled: true
   clean-old-logs-after: 50
   logs-to-clean: 25
   # configured like above, log cleaner will remove oldest 25 logs after 50 created logs.

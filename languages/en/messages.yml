@@ -15,33 +15,45 @@ command-errors:
   unknown-command: "<prefix> <red>You have used a non-existent command."
 help-message:
   - ""
-  - "<#e2cc00><bold>Farmer Commands"
-  - "<gray>/farmer <#39a7fc>buy <italic><gray>(command to buy a farmer.)"
-  - "<gray>/farmer <#39a7fc>menu <italic><gray>(opens the farmer menu.)"
-  - "<gray>/farmer <#39a7fc>teleport <italic><gray>(teleports the farmer to you.)"
-  - "<gray>/farmer <#39a7fc>disappear <italic><gray>(disables or enables farmer's visual appearance.)"
-  - "<gray>/farmer <#39a7fc>skin <name> <italic><gray>(changes farmer skin name.)"
-  - "<gray>/farmer <#39a7fc>return <italic><gray>(returns the farmer and gives you the price back.)"
-  - "<gray>/farmer <#39a7fc>sellall <italic><gray>(sells all the farmer's products.)"
+  - "<#d6b656><bold>Farmer Commands</bold>"
+  - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
   - ""
-admin-help-message:
+  - "<gray>/farmer <#6bbcff>buy <white>— Purchases a new farmer."
+  - "<gray>/farmer <#6bbcff>menu <white>— Opens the farmer menu."
+  - "<gray>/farmer <#6bbcff>teleport <white>— Teleports the farmer to you."
+  - "<gray>/farmer <#6bbcff>disappear <white>— Hides the farmer in your current area or makes it visible again."
+  - "<gray>/farmer <#6bbcff>skin <yellow><name> <white>— Changes the farmer’s skin name."
+  - "<gray>/farmer <#6bbcff>return <white>— Refunds the farmer and returns the cost."
+  - "<gray>/farmer <#6bbcff>sellall <white>— Sells all collected products."
   - ""
-  - "<#e2cc00><bold>Farmer Commands"
-  - "<gray>/uxmfarmer <#39a7fc>save <italic><gray>(saves everything to database.)"
-  - "<gray>/uxmfarmer <#39a7fc>reload <italic><gray>(reloads config and every other file.)"
-  - "<gray>/uxmfarmer <#39a7fc>clearpermcache <italic><gray>(clears cached player permissions.)"
-  - "<gray>/uxmfarmer <#39a7fc>bypass <italic><gray>(enables/disables bypass cooldown mode.)"
-  - "<gray>/uxmfarmer <#39a7fc>stats <italic><gray>(shows overall statistics of farmers.)"
-  - "<gray>/uxmfarmer <#39a7fc>nearfarmers <radius> <italic><gray>(shows farmers in the given radius.)"
-  - "<gray>/uxmfarmer <#39a7fc>uuidof <player> <italic><gray>(sends farmer uuid of given player.)"
-  - "<gray>/uxmfarmer <#39a7fc>delete <player> <italic><gray>(deletes given player's farmer.)"
-  - "<gray>/uxmfarmer <#39a7fc>deleteuuid <farmer uuid> <italic><gray>(deletes farmer with the given uuid.)"
-  - "<gray>/uxmfarmer <#39a7fc>deleteall <player> <italic><gray>(deletes given player's farmers.)"
-  - "<gray>/uxmfarmer <#39a7fc>givefarmer <player> <amount> <italic><gray>(gives given player a farmer.)"
-  - "<gray>/uxmfarmer <#39a7fc>giveegg <player> <amount> <italic><gray>(gives given player a farmer egg that gives a farmer upon right click.)"
-  - "<gray>/uxmfarmer <#39a7fc>giveproductupgrader <player> <product> <level> <amount> <italic><gray>(gives an item that upgrades given product's level.)"
-  - "<gray>/uxmfarmer <#39a7fc>giveproductupgrader <player> <product> <+level> <amount> <italic><gray>(gives an item that adds given level to given product's level.)"
+  - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
   - ""
+admin-help-command:
+  header:
+    - ""
+    - "<#d6b656><bold>uxmFarmer <gray><version></gray> — Admin Commands</bold> <gray>(Page <page>)"
+    - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
+  commands:
+    - "<gray>/uxmfarmer <#6bbcff>[help] <page number> <white>— Shows help commands in that page."
+    - "<gray>/uxmfarmer <#6bbcff>save <white>— Saves all data to the database."
+    - "<gray>/uxmfarmer <#6bbcff>reload <white>— Reloads config and all plugin files."
+    - "<gray>/uxmfarmer <#6bbcff>clearpermcache <white>— Clears cached player permissions."
+    - "<gray>/uxmfarmer <#6bbcff>bypass <white>— Toggles cooldown bypass mode."
+    - "<gray>/uxmfarmer <#6bbcff>stats <white>— Displays overall farmer statistics."
+    - "<gray>/uxmfarmer <#6bbcff>clearlogs <yellow><farmer uuid> <white>— Clears logs of given farmer."
+    - "<gray>/uxmfarmer <#6bbcff>nearfarmers <yellow><radius> <white>— Lists farmers within the given radius."
+    - "<gray>/uxmfarmer <#6bbcff>setowner <yellow><farmer uuid> <player> <white>— Sets given farmer's owner to given player."
+    - "<gray>/uxmfarmer <#6bbcff>uuidof <yellow><player> <white>— Shows the farmer UUID of the player."
+    - "<gray>/uxmfarmer <#6bbcff>delete <yellow><player> <white>— Deletes given player’s farmer."
+    - "<gray>/uxmfarmer <#6bbcff>deleteuuid <yellow><farmer uuid> <white>— Deletes farmer with given UUID."
+    - "<gray>/uxmfarmer <#6bbcff>deleteall <yellow><player> <white>— Deletes all farmers owned by given player."
+    - "<gray>/uxmfarmer <#6bbcff>givefarmer <yellow><player> <white>— Gives farmers to given player."
+    - "<gray>/uxmfarmer <#6bbcff>giveegg <yellow><player> <yellow><amount> <white>— Gives farmer eggs."
+    - "<gray>/uxmfarmer <#6bbcff>giveproductupgrader <yellow><player> <yellow><product> <yellow><level> <yellow><amount> <white>Gives an item that sets the product level."
+    - "<gray>/uxmfarmer <#6bbcff>giveproductupgrader <yellow><player> <yellow><product> <yellow>+<level> <yellow><amount> <white>Gives an item that adds levels to the product."
+  footer:
+    - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
+    - "<gray>Need help? <#6bbcff><u><click:open_url:'https://github.com/UXPLIMA/uxmFarmer-Wiki/wiki/'>Click to open the uxmFarmer Wiki</click>"
 colors:
   BLACK: "black"
   DARK_BLUE: "dark blue"
@@ -94,6 +106,7 @@ can-not-access-admin: '<prefix> <gray><italic>You can bypass this restriction by
 try-the-operation-again: '<prefix> <red>Please try again!'
 max-level: "<prefix> <red>You have reached the maximum level"
 you-sold: "<prefix> <gray>You have successfully sold all products. Earnings: <#39a7fc><earning>$"
+auto-sold: "<prefix> <gray>Farmer automatically sold <product>. Earnings: <#39a7fc><earning>$"
 have-not-sell-permission: "<prefix> <red>You do not have sufficient permission to sell products"
 not-enough-permission: "<prefix> <red>You do not have the required authorization level for this operation."
 no-product: "<prefix> <gray>No <#e3000e>items to sell!"
@@ -197,6 +210,12 @@ no-visual-disabled: "<prefix> <gold>Your farmer's visual appearance is restored.
 
 buy-command-disabled: "<prefix> <red>Buying farmers via commands is disabled."
 
+given-farmer-uuid: "<prefix> <gold>Given farmer UUID: <aqua><uuid>"
+old-farmer-owner: "<prefix> <gold>Old farmer owner: <aqua><old_owner> (<old_owner_uuid>)"
+new-farmer-owner: "<prefix> <gold>New farmer owner: <aqua><new_owner> (<new_owner_uuid>)"
+
+cleared-logs: "<prefix> <gold>Çiftçi <aqua><uuid><gold>'ye ait tüm loglar temizlendi <aqua>(<count>)<gold>."
+
 upgrade-all:
   some-failed: "<prefix> <red>You have upgraded some products but some others have failed."
   all-failed: "<prefix> <red>You have failed to upgrade all products."
@@ -208,6 +227,15 @@ upgrade-all:
 
   successful-upgrades: '<prefix> <gray>Products that successfully upgraded: <gold><products>'
   no-product: "<prefix> <red>Farmer does not have any products. Let the farmer collect some products then use this again."
+
+near-farmers-command:
+  farmers-near-you: "<gold>Farmers Near You (Range: <aqua><range><gold>) <italic><gray>(click to copy farmer UUIDs)"
+  no-nearby-farmers: "<red>No farmers found nearby (Range <aqua><range><gold>)."
+  found-farmer: " <gray>- <reset><farmer>"
+
+farmer-uuid-command:
+  player-has-farmers: "<prefix> <aqua><player> <gold>has <aqua><count> <gold>farmers."
+  farmer: " <gray><number>: <green><uuid> <italic><gray>(click to copy)"
 
 statistics-command:
   - "<prefix> <#4dcc1f><bold>Overall Server Statistics</bold>"

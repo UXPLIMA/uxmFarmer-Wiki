@@ -69,6 +69,8 @@ auto-sell:
   status: true
   default-status: false
   permission-required: true
+  send-message: false # when true, sends a message to active farmer members or farmer owner
+  send-to-members: false # when true, sends the notification message to active farmer members, otherwise only farmer owner
   everything: true # when true, supports every item thats collected, ignores the list below
   items:
     - WHEAT
