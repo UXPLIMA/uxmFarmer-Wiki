@@ -1,6 +1,7 @@
 prefix: "<#ff7700><bold>Farmer <dark_gray>►<reset>"
 reloaded: "<prefix> <gray>Configuration files updated"
 saved: "<prefix> <gray>Player datas have been saved and permission caches refreshed."
+empty: "<red>Empty"
 
 new-version-available: '<prefix> <gold>A newer version of uxmFarmer is released, please update. <blue>(<green>new: <new><gray>, <green>current: <current><blue>)'
 pre-release-version:
@@ -28,32 +29,61 @@ help-message:
   - ""
   - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
   - ""
-admin-help-command:
-  header:
-    - ""
-    - "<#d6b656><bold>uxmFarmer <gray><version></gray> — Admin Commands</bold> <gray>(Page <page>)"
-    - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
-  commands:
-    - "<gray>/uxmfarmer <#6bbcff>[help] <page number> <white>— Shows help commands in that page."
-    - "<gray>/uxmfarmer <#6bbcff>save <white>— Saves all data to the database."
-    - "<gray>/uxmfarmer <#6bbcff>reload <white>— Reloads config and all plugin files."
-    - "<gray>/uxmfarmer <#6bbcff>clearpermcache <white>— Clears cached player permissions."
-    - "<gray>/uxmfarmer <#6bbcff>bypass <white>— Toggles cooldown bypass mode."
-    - "<gray>/uxmfarmer <#6bbcff>stats <white>— Displays overall farmer statistics."
-    - "<gray>/uxmfarmer <#6bbcff>clearlogs <yellow><farmer uuid> <white>— Clears logs of given farmer."
-    - "<gray>/uxmfarmer <#6bbcff>nearfarmers <yellow><radius> <white>— Lists farmers within the given radius."
-    - "<gray>/uxmfarmer <#6bbcff>setowner <yellow><farmer uuid> <player> <white>— Sets given farmer's owner to given player."
-    - "<gray>/uxmfarmer <#6bbcff>uuidof <yellow><player> <white>— Shows the farmer UUID of the player."
-    - "<gray>/uxmfarmer <#6bbcff>delete <yellow><player> <white>— Deletes given player’s farmer."
-    - "<gray>/uxmfarmer <#6bbcff>deleteuuid <yellow><farmer uuid> <white>— Deletes farmer with given UUID."
-    - "<gray>/uxmfarmer <#6bbcff>deleteall <yellow><player> <white>— Deletes all farmers owned by given player."
-    - "<gray>/uxmfarmer <#6bbcff>givefarmer <yellow><player> <white>— Gives farmers to given player."
-    - "<gray>/uxmfarmer <#6bbcff>giveegg <yellow><player> <yellow><amount> <white>— Gives farmer eggs."
-    - "<gray>/uxmfarmer <#6bbcff>giveproductupgrader <yellow><player> <yellow><product> <yellow><level> <yellow><amount> <white>Gives an item that sets the product level."
-    - "<gray>/uxmfarmer <#6bbcff>giveproductupgrader <yellow><player> <yellow><product> <yellow>+<level> <yellow><amount> <white>Gives an item that adds levels to the product."
-  footer:
-    - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
-    - "<gray>Need help? <#6bbcff><u><click:open_url:'https://github.com/UXPLIMA/uxmFarmer-Wiki/wiki/'>Click to open the uxmFarmer Wiki</click>"
+admin:
+  info-command:
+    header:
+      - ""
+      - "<#d6b656><bold>uxmFarmer <gray><version></gray> — Admin Info"
+      - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
+      - ""
+    messages:
+      - "<gray>Selected farmer: <aqua><farmer>"
+      - "<gray>Owner: <aqua><owner> <yellow>(<owner_uuid>)"
+      - "<gray>Members (<member_amount>): <aqua><members>"
+      - "<gray>Location: <aqua><location> <green>[Click On Location To Teleport]"
+      - "<gray>Skin name: <aqua><skin>"
+      - "<gray>Region ID: <aqua><region>"
+      - "<gray>Stored XP: <aqua><xp>"
+      - "<gray>Glow Color: <aqua><glow>"
+      - "<gray>Entity Type: <aqua><entity>"
+      - "<gray>Enabled settings: <aqua><enabled_settings> <red>[Click on a setting to disable it]"
+      - "<gray>Disabled settings: <red><disabled_settings> <green>[Click on a setting to enable it]"
+    footer:
+      - ""
+      - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
+      - "<gray>To check all the help commands, please use <#6bbcff><click:run_command:'/uxmfarmer help'>/uxmfarmer help</click>"
+      - "<gray>Need help? <#6bbcff><u><click:open_url:'https://github.com/UXPLIMA/uxmFarmer-Wiki/wiki/'>Click to open the uxmFarmer Wiki</click>"
+    no-selected-farmer: "<prefix> <red>You haven't selected a farmer yet, use <aqua>/uxmfarmer help <red>if you want to get help."
+  help-command:
+    header:
+      - ""
+      - "<#d6b656><bold>uxmFarmer <gray><version></gray> — Admin Commands</bold> <gray>(Page <page>)"
+      - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
+      - ""
+    commands:
+      - "<gray>/uxmfarmer <#6bbcff>help <page number> <white>— Shows help commands in that page."
+      - "<gray>/uxmfarmer <#6bbcff>select [uuid] <white>— Selects nearest farmer or farmer with given UUID to perform edits on."
+      - "<gray>/uxmfarmer <#6bbcff>save <white>— Saves all data to the database."
+      - "<gray>/uxmfarmer <#6bbcff>reload <white>— Reloads config and all plugin files."
+      - "<gray>/uxmfarmer <#6bbcff>clearpermcache <white>— Clears cached player permissions."
+      - "<gray>/uxmfarmer <#6bbcff>bypass <white>— Toggles cooldown bypass mode."
+      - "<gray>/uxmfarmer <#6bbcff>stats <white>— Displays overall farmer statistics."
+      - "<gray>/uxmfarmer <#6bbcff>delete <yellow><player> <white>— Deletes given player’s farmer."
+      - "<gray>/uxmfarmer <#6bbcff>clearlogs <yellow><white>— Clears logs of selected farmer."
+      - "<gray>/uxmfarmer <#6bbcff>teleport <yellow><white>— Teleports you to selected farmer."
+      - "<gray>/uxmfarmer <#6bbcff>setowner <yellow><player> <white>— Sets given farmer's owner to given player."
+      - "<gray>/uxmfarmer <#6bbcff>nearfarmers <yellow><radius> <white>— Lists farmers within the given radius."
+      - "<gray>/uxmfarmer <#6bbcff>uuidof <yellow><player> <white>— Shows the farmer UUID of the player."
+      - "<gray>/uxmfarmer <#6bbcff>deleteuuid <yellow> <white>— Deletes selected farmer."
+      - "<gray>/uxmfarmer <#6bbcff>deleteall <yellow><player> <white>— Deletes all farmers owned by given player."
+      - "<gray>/uxmfarmer <#6bbcff>givefarmer <yellow><player> <white>— Gives farmers to given player."
+      - "<gray>/uxmfarmer <#6bbcff>give <yellow><player> FARMER_EGG <yellow><amount> <white>— Gives farmer eggs."
+      - "<gray>/uxmfarmer <#6bbcff>give <yellow><player> LEVEL_CHANGER <yellow><amount> <product> <new level> <white>— Gives an item that changes given product's level."
+      - "<gray>/uxmfarmer <#6bbcff>give <yellow><player> LEVEL_ADDER <yellow><amount> <product> <levels to add> <white>— Gives an item that adds given levels to given product's level."
+    footer:
+      - ""
+      - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
+      - "<gray>Need help? <#6bbcff><u><click:open_url:'https://github.com/UXPLIMA/uxmFarmer-Wiki/wiki/'>Click to open the uxmFarmer Wiki</click>"
 colors:
   BLACK: "black"
   DARK_BLUE: "dark blue"
@@ -169,12 +199,15 @@ can-not-manage-farmer: "<prefix> <red>You do not have sufficient permission to a
 must-be-your-teammate: "<prefix> <red>The member you add to your farmer must be your teammate"
 not-found-farmer: "<prefix> <red>The player does not have a farmer"
 no-such-farmer: "<prefix> <red>That farmer does not exist"
-deleted-farmer: "<prefix> <red>Farmer deleted"
+delete-farmer-confirm: "<prefix> <red>Are you sure you want to delete this Farmer? <aqua><u><click:run_command:/uxmfarmer deleteuuid true>Click here</u><red> to confirm."
+delete-all-farmers-confirm: "<prefix> <red>Are you sure you want to delete this all farmers of <player>? <aqua><u><click:run_command:/uxmfarmer deleteall <player> true>Click here</u><red> to confirm."
+deleted-farmer: "<prefix> <red>Farmer deleted."
+deleted-all-farmers: "<prefix> <aqua><count> <red>farmers deleted."
 your-farmer-deleted: "<prefix> <red>Your farmer got deleted and its price has been returned to your account."
 toggled-bypass-on: "<prefix> <green>Bypass mode enabled"
 toggled-bypass-off: "<prefix> <red>Bypass mode disabled"
-inventory-full-no-egg: "<prefix> <#ff7700><player_name><gray>'s inventory is full. Couldn't give <#ff7700><amount> Farmer Egg."
-inventory-full-no-egg-pick: "<prefix> <gray>Couldn't give <#ff7700><amount> Farmer Egg <gray>because your inventory is full."
+farmer-location-not-correct: "<prefix> <red>Cannot teleport to that farmer, its location is not correct."
+teleport-admin: "<prefix> <green>Teleported successful."
 gave-farmer: "<prefix> <gray>You have given <#ff7700><player_name> <gray>a farmer."
 got-a-farmer: "<prefix> <gray>Someone gave you a farmer."
 your-product-level-changed: "<prefix> <gray>Level of the product <#ff7700><product><gray> is now <#ff7700><level><gray>."
@@ -192,8 +225,6 @@ return-failed: "<prefix> <red>Return failed because you did not confirm"
 return-cooldown: "<prefix> <gray>Please wait <#e3000e><remaining_time> <gray>for returning another farmer again."
 return-done: "<prefix> <gold>You have returned your farmer and earned back <money>$"
 maximum-farmer-reached: "<prefix> <red>You have reached maximum amount of farmers you can have."
-inventory-full-no-product-level-changer: "<prefix> <#ff7700><player_name><gray>'s inventory is full. Couldn't give <#ff7700><amount> Product Upgrader."
-inventory-full-no-product-level-changer-pick: "<prefix> <gray>Couldn't give <#ff7700><amount> Product Upgrader <gray>because your inventory is full."
 type-take-amount-to-chat: "<prefix> <gold>Please type amount of products you want to take to chat."
 chat-process-cancel: "<prefix> <red>Process cancelled due to timeout."
 type-player-to-chat: "<prefix> <gold>Please type name of the player you want to add to chat."
@@ -231,14 +262,31 @@ upgrade-all:
 near-farmers-command:
   farmers-near-you: "<gold>Farmers Near You (Range: <aqua><range><gold>) <italic><gray>(click to copy farmer UUIDs)"
   no-nearby-farmers: "<red>No farmers found nearby (Range <aqua><range><gold>)."
-  found-farmer: " <gray>- <reset><farmer>"
+  found-farmer: " <gray>- <reset><farmer> <gray>- <reset><owner>"
 
 farmer-uuid-command:
   player-has-farmers: "<prefix> <aqua><player> <gold>has <aqua><count> <gold>farmers."
   farmer: " <gray><number>: <green><uuid> <italic><gray>(click to copy)"
 
+farmer-select-command:
+  farmer-not-found-automatic: "<prefix> <red>Could not find a farmer near you, used automatic selection. Maybe try <u><click:run_command:/uxmfarmer nearfarmers 10>/uxmfarmer nearfarmers</u> to see farmers near you?"
+  farmer-not-found-manuel: "<prefix> <red>Could not find a farmer with UUID <uuid>. Maybe try <u><click:run_command:/uxmfarmer nearfarmers 10>/uxmfarmer nearfarmers</u> to see farmers near you?"
+  farmer-found: "<prefix> <gray>Found a farmer with UUID <aqua><uuid><gray>, using it."
+  not-selected-yet: "<prefix> <red>You have not selected a farmer, select using <aqua><u>/uxmfarmer select [uuid]</u><red>."
+
+give-command:
+  not-correct-item: "<prefix> <red>Invalid item type. Available items: <items>"
+  added-to-inventory: "<prefix> <gray>Successfully gave <#ff7700><amount>x <item> <gray>to <#ff7700><player_name><gray>."
+  added-to-inventory-self: "<prefix> <gray>You have received <#ff7700><amount>x <item><gray>."
+
+  inventory-full: "<prefix> <#ff7700><player_name>'s <gray>inventory is full. <#ff7700><amount>x <item> <gray>could not be delivered."
+  inventory-full-self: "<prefix> <gray>Your inventory is full! <#ff7700><amount>x <item> <gray>could not be added."
+
 statistics-command:
   - "<prefix> <#4dcc1f><bold>Overall Server Statistics</bold>"
+  - ""
+  - "<gray>Total Farmer Count: <#ffea00><farmers>"
+  - "<gray>Total Farmer Member Count: <#ffea00><members>"
   - ""
   - "<#5b9397>Collected ↓"
   - "<gray>Products: <#ffea00><all_time_collected>"
@@ -257,3 +305,20 @@ statistics-command:
   - "<gray>Total Taxes: <#ffea00><all_time_tax>$"
   - "<gray>Product Taxes: <#ffea00><all_time_tax_product>$"
   - "<gray>XP Taxes: <#ffea00><all_time_tax_xp>$"
+
+item-names:
+  FARMER_EGG: "Farmer Egg"
+  LEVEL_CHANGER: "Product Level Changer"
+  LEVEL_ADDER: "Product Level Adder"
+
+setting-names:
+  collect-natural-drops: "Collect Natural Drops"
+  auto-harvest: "Auto Harvest"
+  auto-sell: "Auto Sell"
+  auto-kill: "Auto Kill"
+  xp-collector: "XP Collector"
+  xp-sellable: "XP Sellable"
+  glowing: "Glowing"
+  farmer-visuals: "Invisibility"
+  kill-spawner-mobs: "Auto Kill Spawner Mobs"
+  collect-player-drops: "Collect Player Drops"

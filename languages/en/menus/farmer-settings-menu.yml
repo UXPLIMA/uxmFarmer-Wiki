@@ -1,12 +1,11 @@
 title: "               <black>Settings"
-rows: 3
+rows: 5
 filler-material: "GRAY_STAINED_GLASS_PANE"
 filler-slots:
   - 0
   - 1
   - 2
   - 3
-  - 4
   - 5
   - 6
   - 7
@@ -17,12 +16,51 @@ filler-slots:
   - 19
   - 20
   - 21
-  - 22
   - 23
   - 24
   - 25
   - 26
+  - 27
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 41
+  - 42
+  - 43
+  - 44
 items:
+  module_settings:
+    material: "OAK_HANGING_SIGN"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Module Settings"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Via clicking items below you can"
+      - " <gray>change statuses of different modules"
+      - ""
+    slots:
+      - 4
+    actions: []
+  other_settings:
+    material: "JUNGLE_HANGING_SIGN"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Other Settings"
+    glowing: false
+    head-data: null
+    lore:
+    - ""
+    - " <gray>Via clicking items below you can"
+    - " <gray>modify your farmer's settings"
+    - ""
+    slots:
+      - 22
+    actions: []
   back:
     material: "BARRIER"
     model-data: 0
@@ -33,10 +71,113 @@ items:
     lore:
       - ""
     slots:
-      - 22
+      - 40
     actions:
       - "[menu] manage"
 dynamic-items:
+  collect-player-drops:
+    enabled:
+      material: "HOPPER"
+      model-data: 0
+      amount: 1
+      display-name: "<#11ff00>Collect Player Drops"
+      glowing: false
+      head-data: ""
+      lore:
+        - ""
+        - " <gray>Automatically collects"
+        - " <gray>items dropped by players"
+        - ""
+        - " <gray>Status: <#11ff00>Enabled"
+        - ""
+        - "<#ffea00>▶ Click to change!"
+      slots:
+        - 28
+    disabled:
+      material: "HOPPER"
+      model-data: 0
+      amount: 1
+      display-name: "<#ff0000>Collect Player Drops"
+      glowing: false
+      head-data: ""
+      lore:
+        - ""
+        - " <gray>Automatically collects"
+        - " <gray>items dropped by players"
+        - ""
+        - " <gray>Status: <#ff0000>Disabled"
+        - ""
+        - "<#ffea00>▶ Click to change!"
+      slots:
+        - 28
+  kill-spawner-mobs:
+    enabled:
+      material: "SPAWNER"
+      model-data: 0
+      amount: 1
+      display-name: "<#11ff00>Kill Spawner Mobs"
+      glowing: false
+      head-data: ""
+      lore:
+        - ""
+        - " <gray>Automatically kill mobs"
+        - " <gray>spawned by spawners"
+        - ""
+        - " <gray>Status: <#11ff00>Enabled"
+        - ""
+        - "<#ffea00>▶ Click to change!"
+      slots:
+        - 31
+    disabled:
+      material: "SPAWNER"
+      model-data: 0
+      amount: 1
+      display-name: "<#ff0000>Kill Spawner Mobs"
+      glowing: false
+      head-data: ""
+      lore:
+        - ""
+        - " <gray>Automatically kill mobs"
+        - " <gray>spawned by spawners"
+        - ""
+        - " <gray>Status: <#ff0000>Disabled"
+        - ""
+        - "<#ffea00>▶ Click to change!"
+      slots:
+        - 31
+  farmer-visuals:
+    enabled:
+      material: "ENDER_EYE"
+      model-data: 0
+      amount: 1
+      display-name: "<#11ff00>Disable Farmer Visuals"
+      glowing: false
+      head-data: ""
+      lore:
+        - ""
+        - " <gray>Make your farmer invisible"
+        - ""
+        - " <gray>Status: <#11ff00>Enabled"
+        - ""
+        - "<#ffea00>▶ Click to change!"
+      slots:
+        - 34
+    disabled:
+      material: "ENDER_EYE"
+      model-data: 0
+      amount: 1
+      display-name: "<#ff0000>Disable Farmer Visuals"
+      glowing: false
+      head-data: ""
+      lore:
+        - ""
+        - " <gray>Make your farmer invisible"
+        - ""
+        - " <gray>Status: <#ff0000>Disabled"
+        - ""
+        - "<#ffea00>▶ Click to change!"
+      slots:
+        - 34
   auto-harvest:
     enabled:
       material: "NETHERITE_HOE"
@@ -83,7 +224,7 @@ dynamic-items:
       lore:
         - ""
         - " <gray>Automatically kills creatures"
-        - " <gray>spawned from mobs in your region"
+        - " <gray>spawned in your region"
         - ""
         - " <gray>Status: <#11ff00>Enabled"
         - ""
@@ -100,7 +241,7 @@ dynamic-items:
       lore:
         - ""
         - " <gray>Automatically kills creatures"
-        - " <gray>spawned from mobs in your region"
+        - " <gray>spawned in your region"
         - ""
         - " <gray>Status: <#ff0000>Disabled"
         - ""

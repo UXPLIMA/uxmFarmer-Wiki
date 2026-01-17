@@ -3,8 +3,10 @@ default-levels:
     price: 1000
     capacity: 2500
     requirements: {}
-    player-commands: [] # Supports PAPI
-    console-commands: [] # Supports PAPI
+    # Supports PAPI
+    player-commands: []
+    # Supports PAPI
+    console-commands: []
   1:
     price: 1000
     capacity: 10000

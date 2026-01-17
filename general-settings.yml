@@ -1,0 +1,81 @@
+# if enabled, makes crops that are not collected by farmer (disabled by farmer owner/members) grow physically
+# can cause significant performance drops, not recommended to enable
+disabled-products-grow-physically: false
+collect-dropped-items: true
+# whether farmer should collect items dropped by players
+collect-player-dropped-items: true
+# custom item means an item with either custom name or custom lore
+collect-custom-items: false
+
+# normally, upgrade-all function only upgrades the product that player's farmer collected before. if you set this to true,
+# upgrade-all takes everything in collected-materials into account and upgrades them.
+upgrade-all-upgrades-everything: false
+# applies given discount when upgrading all products. specific discounts can be given with the permission uxmfarmer.upgradediscount.<discount>
+upgrade-all-discount: 50
+
+# when set to true, /farmer command opens farmer gui directly.
+farmer-command-opens-gui: false
+# when set to true, /farmer command will open purchase menu if player doesn't have a farmer
+farmer-command-opens-buy-menu: true
+# when set to true, /farmer buy command will be disabled and only way to get farmers will be the farmer eggs.
+disable-buy-command: false
+# when set to true, /farmer sellall command or sell all executions from anywhere else will require confirmation.
+sell-all-requires-confirmation: true
+
+place-farmer-on-region-creation: false
+# if true, farmer managers will need the permission uxmfarmer.addmember to add new members to their farmers.
+adding-member-requires-permission: false
+# if true, new region members (like island member or trusted player in a claim) will be added to farmer as members too.
+add-new-region-members-to-farmer: true
+# if true, region members who have left the region will be removed from farmer members
+remove-leaving-region-members-from-farmer: true
+# if true, only farmer owners will be able to upgrade products to other levels
+only-owners-can-upgrade: false
+
+# logs are cool but might cause performance issues in rare cases, you can disable them anytime here
+disable-logs: false
+# when set to true, transferring farmers to other players will be disabled.
+disable-transfer: false
+# players can have maximum 2 farmers by default, give players the permission uxmfarmer.maxfarmer.<amount> for more farmers
+maximum-farmer-per-player: 2
+
+# default tax ratio taken from product sales
+tax-price: 0.25
+# price of one farmer
+farmer-price: 15000.0
+# when set to true, it returns farmer price to the owner when their farmer is deleted
+return-price-on-delete: true
+# gives back this percent of farmer price to farmer owner when they /farmer return it
+return-percent: 75
+
+default-click-actions:
+  - "[menu] main"
+  - "[sound] ENTITY_ALLAY_AMBIENT_WITHOUT_ITEM"
+
+notify-when-stock-gets-full:
+  # if true, farmer owner or all members will be notified with a message when a product's stock of their farmer gets full
+  enabled: true
+  # when true, sends the notification message to active farmer members, otherwise only farmer owner
+  notify-members: true
+  notify-amount: 3
+
+# only works when place-farmer-on-region-creation is enabled
+first-location:
+  enabled: false
+  # places farmer at location -5.5 X, +1.5 Y, +3.5 Z relative to region center
+  modify-by: -5.5, 1.5, 3.5
+  # modifies farmer's pitch and yaw
+  rotation: -88, 0.8
+
+# you can configure how players add members to their farmers from here
+add-member:
+  required-online: true
+  # can be SIGN or CHAT
+  input-type: SIGN
+  chat-timeout: 15
+
+# you can configure how players take specified amount of XP or any products from here
+take-amount:
+  # can be SIGN or CHAT
+  input-type: SIGN
+  chat-timeout: 8

@@ -5,9 +5,12 @@ production:
   permission-required: true
 
 farm-manager:
-  disable-growing-if-stock-is-full: true # this requires auto-harvest
-  remove-remaining-drops-from-ground: true # removes remaining drops from ground after adding the amount the product storage can handle
-  remove-drops-if-stock-is-full: true # removes drops from ground if product's storage is full
+  # this requires auto-harvest
+  disable-growing-if-stock-is-full: true
+  # removes remaining drops from ground after adding the amount the product storage can handle
+  remove-remaining-drops-from-ground: true
+  # removes drops from ground if product's storage is full
+  remove-drops-if-stock-is-full: true
 
 auto-harvest:
   # module permission: uxmfarmer.autoharvest
@@ -69,9 +72,12 @@ auto-sell:
   status: true
   default-status: false
   permission-required: true
-  send-message: false # when true, sends a message to active farmer members or farmer owner
-  send-to-members: false # when true, sends the notification message to active farmer members, otherwise only farmer owner
-  everything: true # when true, supports every item thats collected, ignores the list below
+  # when true, sends a message to active farmer members or farmer owner
+  send-message: false
+  # when true, sends the notification message to active farmer members, otherwise only farmer owner
+  send-to-members: false
+  # when true, supports every item thats collected, ignores the list below
+  everything: true
   items:
     - WHEAT
     - CARROT
@@ -85,4 +91,5 @@ xp-collector:
   default-status: false
   permission-required: true
   xp-unit-price: 0.001
-  xp-tax: 0.1 # 0.1% tax
+  # 0.1% tax
+  xp-tax: 0.1

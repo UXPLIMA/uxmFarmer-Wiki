@@ -39,6 +39,7 @@ collected-item:
     - ""
     - "<gray>Mevcut stok: <#05e300><amount><dark_gray>/<#e3000e><capacity>"
     - "<gray>Birim fiyat: <#d0e300><unit_price>$"
+    - "<gray>Vergi: <#d0e300>%<tax>"
     - "<gray>Doluluk: <#d0e300><fullness>%"
     - ""
     - "<#5b9397>Üretim ↓"
@@ -167,7 +168,8 @@ items:
     lore:
       - ""
       - " <gray>Çiftçi deposunda bulunan"
-      - " <gray>tüm eşyaları %25 pay ile satar"
+      - " <gray>tüm eşyaların vergilerini"
+      - " <gray>ödeyerek satar"
       - ""
       - "<yellow>▶ Tüm eşyaları satmak için tıkla"
     slots:

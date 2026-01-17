@@ -1,0 +1,21 @@
+name: "<#0388fc><bold>Farmer"
+# by default, we use the hologram for npc's name. you can enable both if you want.
+use-name: false
+
+# only works with Citizens and FancyNpcs, supports every entity type, https://jd.papermc.io/paper/org/bukkit/entity/EntityType.html
+default-type: VILLAGER
+# https://jd.papermc.io/paper/org/bukkit/entity/Villager.Profession.html
+default-villager-profession: FARMER
+default-glowing: true
+default-glowing-color: "BLUE"
+
+skin-texture: "ewogICJ0aW1lc3RhbXAiIDogMTU5MDM5MTA2OTQ0MywKICAicHJvZmlsZUlkIiA6ICIyZGM3N2FlNzk0NjM0ODAyOTQyODBjODQyMjc0YjU2NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJzYWR5MDYxMCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iOGYyZjMyNDM2YWZhYWMyYWU4YzA3NjNlZDkwYjI4MjFlMGZiZTc2MzI2YzZhMzk3ZDI4Zjc2MjE0NDFlMDMiCiAgICB9CiAgfQp9"
+skin-signature: "JwgV4AiVpcl914qubQ0AHDCyvdQuaIFaz2L96Om+eSBzHHlCNg5bfCEZzLp/fUDGpbDFDwD6UcfGBTdZhEILjL4SfGr16V3qc1FfCaLZW1HZmTvrIefgeAZEzA9RImgb6HbsN/buv7w4kPG5AdEUqCDKxK/Uf5tSJZSoibNoy96VQSB2WmXxaqUqWlsS1yeXRK8FG1qjAZxo3nipq1fd6+zp0gN8wCM3fLIbJg9meKX/W+YpsnuzMCZpACCjHSqyWTpb2+Qff+mXF/c4fNY//b5quurZI92LK/WS7nL7voMBOZDrPL33dkKH/pO+x5lNSRsV7THMgbFV5ACA1+/Edv41YH0e5xdLJkL+kCJrjZR2tE5UEaJHpqVjW5uLIiWnjX12rn2L0QzwozIO3PkDphuqp8VUAQhMe0L7C/YCB0dCex3c5/KEBi3juZtIZLjyF79vB3+/CLZVJzghbIGl/XT4p0p/gI3xifzm0g+pszdCLh79HzmUVFB9T5mq7vkq8mMjoCsrqd650sZ23C7/wD2uuTbZWMko0uJDVKInNljCC/wXVjtMw8Yg7oPblHDTBDsYyDmaUszu1alDFwBWhvt7nNC5XaLIhuKwHnmjUAx+HoLrmOKVsFHRVqFglxT3ck/1b4MAzFeq7/2maLP/RWoEsxbDgARd8RIpIHnYF4g="
+skin-name: ""
+
+permission-skins:
+  "Notch": "uxmfarmer.usenotch"
+
+scale: 1.0
+entity-specific-scales:
+  VILLAGER: 2.5

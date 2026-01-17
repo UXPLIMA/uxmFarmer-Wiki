@@ -21,9 +21,10 @@ collected-materials:
         requirements:
           "playtime":
             display: "<blue>1 Hour Playtime (Current: <papi:'math_0:floor_{statistic_PLAY_ONE_MINUTE}/1200'>)"
-            condition: "%math_({statistic_PLAY_ONE_MINUTE}/1200)>60%" # Math expansion is required for this operation
-              # Math expansion returns 1 if given expression is valid
+            # Math expansion is required for this operation
+            # Math expansion returns 1 if given expression is valid
             # otherwise it returns 0
+            condition: "%math_({statistic_PLAY_ONE_MINUTE}/1200)>60%"
             required-output: "1"
           "vip":
             display: "<green>VIP Rank"
@@ -81,7 +82,8 @@ collected-materials:
     levels: {}
   STICK:
     unit-price: 0.01
-    model-data: 100 # farmer will only collect sticks with this model data, delete this line if you do not need it. you can use model-data in every material
+    # farmer will only collect sticks with this model data, delete this line if you do not need it. you can use model-data in every material
+    model-data: 100
     levels: {}
   MELON:
     unit-price: 2.5

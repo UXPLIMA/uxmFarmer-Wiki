@@ -41,6 +41,7 @@ collected-item:
     - ""
     - "<gray>Current stock: <#05e300><amount><dark_gray>/<#e3000e><capacity>"
     - "<gray>Unit price: <#d0e300><unit_price>$"
+    - "<gray>Tax ratio: <#d0e300><tax>%"
     - "<gray>Fullness: <#d0e300><fullness>%"
     - ""
     - "<#5b9397>Production ↓"
@@ -171,7 +172,7 @@ items:
       - " <gray>Sells all items in the"
       - " <gray>farmer's storage"
       - " <gray>Sell taxes for each product"
-      - " <gray>be applied"
+      - " <gray>will be applied"
       - ""
       - "<yellow>▶ Click to sell all items"
     slots:

@@ -87,8 +87,8 @@ items:
     glowing: false
     lore:
       - ""
-      - "<#ffea00>Özel miktarda"
-      - "<#ffea00>çekim yapmak için tıklayın"
+      - "<#ffea00>Özel miktarda eşyayı"
+      - "<#ffea00>envantere almak için tıklayın"
       - ""
     slots:
       - 19
@@ -101,8 +101,8 @@ items:
     glowing: false
     lore:
       - ""
-      - "<#ffea00>Stokta bulunan"
-      - "<#ffea00>her şeyi çekmek için tıklayın"
+      - "<#ffea00>Stokta bulunan her şeyi"
+      - "<#ffea00>envantere almak için tıklayın"
       - ""
     slots:
       - 21
@@ -115,7 +115,7 @@ items:
     glowing: false
     lore:
       - ""
-      - "<#ffea00>Tüm stoku"
+      - "<#ffea00>Tüm stoğu"
       - "<#ffea00>satmak için tıklayın"
       - ""
     slots:
@@ -125,7 +125,7 @@ items:
     material: "ANVIL"
     model-data: 0
     amount: 1
-    display-name: "<#05e300>Ürünü Güncelle"
+    display-name: "<#05e300>Ürün Seviyesini Yükselt"
     glowing: false
     lore:
       - ""
@@ -147,8 +147,8 @@ dynamic-items:
       lore:
         - ""
         - " <gray>Çiftçi doğal olarak"
-        - " <gray>yerden düşen çiftlik"
-        - " <gray>ürünlerini toplar"
+        - " <gray>yere düşen ürünleri"
+        - " <gray>toplar"
         - ""
         - " <gray>Durum: <#05e300>Etkin"
         - ""
@@ -166,8 +166,8 @@ dynamic-items:
       lore:
         - ""
         - " <gray>Çiftçi doğal olarak"
-        - " <gray>yerden düşen çiftlik"
-        - " <gray>ürünlerini toplar"
+        - " <gray>yere düşen ürünleri"
+        - " <gray>toplar"
         - ""
         - " <gray>Durum: <#e3000e>Pasif"
         - ""
@@ -184,7 +184,7 @@ dynamic-items:
       head-data: null
       lore:
         - ""
-        - " <gray>Ürünler çiftçi menüsünden"
+        - " <gray>Bu ürün çiftçi menüsünden"
         - " <gray>veya otomatik satış ile"
         - " <gray>satılabilir"
         - ""
@@ -203,7 +203,7 @@ dynamic-items:
       head-data: null
       lore:
         - ""
-        - " <gray>Ürünler çiftçi menüsünden"
+        - " <gray>Bu ürün çiftçi menüsünden"
         - " <gray>veya otomatik satış ile"
         - " <gray>satılabilir"
         - ""
