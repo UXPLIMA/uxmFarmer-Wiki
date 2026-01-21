@@ -2,14 +2,33 @@ title: "<black>Çiftçi Görünüm Ayarları"
 rows: 1
 filler-material: "GRAY_STAINED_GLASS_PANE"
 filler-slots:
-  - 0
   - 1
   - 2
   - 4
   - 6
   - 7
-  - 8
 items:
+  baby:
+    material: "ALLAY_SPAWN_EGG"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Bebeğe Dönüştür"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Çiftçinizin varlığının"
+      - " <gray>bebek olup olmayacağını"
+      - " <gray>buradan ayarlayabilirsiniz"
+      - ""
+      - "<yellow>▶ Tıkla ve çiftçi yaşını değiştir"
+    slots:
+      - 0
+    actions:
+      - "[cooldown] change-entity-cooldown"
+      - "[toggle_setting] BABY"
+      - "[close]"
+      - "[sound] BLOCK_BREWING_STAND_BREW"
   glowing:
     material: "HONEY_BOTTLE"
     model-data: 0
@@ -64,3 +83,15 @@ items:
     actions:
       - "[menu] profession_menu"
       - "[sound] BLOCK_BREWING_STAND_BREW"
+  back:
+    material: "BARRIER"
+    amount: 1
+    display-name: "<#ff0000>Geri Dön"
+    glowing: false
+    head-data: null
+    lore: [ ]
+    slots:
+      - 8
+    actions:
+      - "[menu] main"
+      - "[sound] UI_BUTTON_CLICK"

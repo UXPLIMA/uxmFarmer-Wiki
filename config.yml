@@ -21,7 +21,7 @@ hooks:
   #  - UltimateClaims
   #  - FabledSkyBlock
   #  - DeluxeSkyblock
-  region-hook: "Lands"
+  region-hook: "uxmClaims"
 
   # Economy Hook
   # supported plugins:

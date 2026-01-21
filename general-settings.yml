@@ -48,6 +48,9 @@ return-price-on-delete: true
 # gives back this percent of farmer price to farmer owner when they /farmer return it
 return-percent: 75
 
+# gives a glow effect to product's slot if its stock is full
+glow-if-stock-is-full: true
+
 default-click-actions:
   - "[menu] main"
   - "[sound] ENTITY_ALLAY_AMBIENT_WITHOUT_ITEM"

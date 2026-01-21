@@ -68,6 +68,8 @@ admin:
       - "<gray>/uxmfarmer <#6bbcff>clearpermcache <white>— Önbelleğe alınmış oyuncu yetkilerini temizler."
       - "<gray>/uxmfarmer <#6bbcff>bypass <white>— Bekleme süresi (cooldown) bypass modunu açar/kapatır."
       - "<gray>/uxmfarmer <#6bbcff>stats <white>— Genel çiftçi istatistiklerini görüntüler."
+      - "<gray>/uxmfarmer <#6bbcff>bulkedit <yellow><setting> <true|false> <white>— Girilen ayarı her çiftçi için açar veya kapatır."
+      - "<gray>/uxmfarmer <#6bbcff>editsetting <yellow><setting> <true|false> <white>— Girilen ayarı seçilen çiftçi için açar veya kapatır."
       - "<gray>/uxmfarmer <#6bbcff>teleport <white>— Sizi seçilen çiftçiye ışınlar."
       - "<gray>/uxmfarmer <#6bbcff>clearlogs <white>— Seçilen çiftçinin günlüklerini temizler."
       - "<gray>/uxmfarmer <#6bbcff>setowner <yellow><oyuncu> <white>— Seçilen çiftçinin sahibini belirtilen oyuncu olarak ayarlar."
@@ -274,6 +276,18 @@ farmer-select-command:
   farmer-found: "<prefix> <aqua><uuid><gray> UUIDsine sahip bir çiftçi bulundu ve artık o kullanılacak."
   not-selected-yet: "<prefix> <red>Henüz bir çiftçi seçmedin, <aqua><u>/uxmfarmer select [uuid]</u><red> komutunu kullanarak birini seç."
 
+bulk-edit-command:
+  no-such-setting: "<prefix> <red><aqua><name> <red>adında bir ayar bulunamadı, şunlardan birini deneyin: <aqua><settings>"
+  are-you-sure:
+    - "<prefix> <aqua><setting> <gray>adlı ayarı tüm çiftçilerde değiştirmek istediğinize emin misiniz?"
+    - "<prefix> <gray>Bu işlemin geri alınması mümkün değildir."
+    - "<prefix> <aqua>10 saniye<gray> içinde komutu tekrar kullanarak işlemi onaylayın."
+  have-another-waiting-confirmation: "<prefix> <red>Şu anda <aqua><setting><red> ayarı için bekleyen bir onayın var, lütfen önce o işlemi bitir."
+  enabled-for-all: "<prefix> <aqua><setting> <gray>ayarı tüm çiftçiler için <green>etkinleştirildi<gray>."
+  enabled-for-selected: "<prefix> <aqua><setting> <gray>ayarı seçilen çiftçi için <green>etkinleştirildi<gray>."
+  disabled-for-all: "<prefix> <aqua><setting> <gray>ayarı tüm çiftçiler için <red>devre dışı <gray>bırakıldı."
+  disabled-for-selected: "<prefix> <aqua><setting> <gray>ayarı seçilen çiftçi için <red>devre dışı <gray>bırakıldı."
+
 give-command:
   not-correct-item: "<prefix> <red>Böyle bir eşya yok. Mevcut eşyalar: <items>"
   added-to-inventory: "<prefix> <#ff7700><player_name><gray> adlı oyuncuya <#ff7700><amount> adet <item> <gray>verildi."
@@ -322,3 +336,4 @@ setting-names:
   farmer-visuals: "Görünmezlik"
   kill-spawner-mobs: "Spawner Yaratıklarını Otomatik Öldürme"
   collect-player-drops: "Oyunculardan Düşen Eşyaları Toplama"
+  baby: "Bebek Görünümü"

@@ -11,6 +11,8 @@ farm-manager:
   remove-remaining-drops-from-ground: true
   # removes drops from ground if product's storage is full
   remove-drops-if-stock-is-full: true
+  # drops products that are not possible get collected at the moment to the ground - not recommended to enable, can cause performance drops
+  drop-items-to-ground-if-not-enabled-or-full: false
 
 auto-harvest:
   # module permission: uxmfarmer.autoharvest
@@ -46,7 +48,6 @@ auto-harvest:
     - SWEET_BERRIES
     - BEETROOTS
     - MELON
-    - PUMPKIN
     - CARROTS
     - POTATOES
 

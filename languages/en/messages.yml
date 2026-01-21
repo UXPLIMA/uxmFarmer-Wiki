@@ -68,10 +68,12 @@ admin:
       - "<gray>/uxmfarmer <#6bbcff>clearpermcache <white>— Clears cached player permissions."
       - "<gray>/uxmfarmer <#6bbcff>bypass <white>— Toggles cooldown bypass mode."
       - "<gray>/uxmfarmer <#6bbcff>stats <white>— Displays overall farmer statistics."
+      - "<gray>/uxmfarmer <#6bbcff>bulkedit <yellow><setting> <true|false> <white>— Disables or enables given setting for every farmer."
+      - "<gray>/uxmfarmer <#6bbcff>editsetting <yellow><setting> <true|false> <white>— Disables or enables given setting for selected farmer."
       - "<gray>/uxmfarmer <#6bbcff>delete <yellow><player> <white>— Deletes given player’s farmer."
       - "<gray>/uxmfarmer <#6bbcff>clearlogs <yellow><white>— Clears logs of selected farmer."
       - "<gray>/uxmfarmer <#6bbcff>teleport <yellow><white>— Teleports you to selected farmer."
-      - "<gray>/uxmfarmer <#6bbcff>setowner <yellow><player> <white>— Sets given farmer's owner to given player."
+      - "<gray>/uxmfarmer <#6bbcff>setowner <yellow><player> <white>— Sets selected farmer's owner to given player."
       - "<gray>/uxmfarmer <#6bbcff>nearfarmers <yellow><radius> <white>— Lists farmers within the given radius."
       - "<gray>/uxmfarmer <#6bbcff>uuidof <yellow><player> <white>— Shows the farmer UUID of the player."
       - "<gray>/uxmfarmer <#6bbcff>deleteuuid <yellow> <white>— Deletes selected farmer."
@@ -274,6 +276,18 @@ farmer-select-command:
   farmer-found: "<prefix> <gray>Found a farmer with UUID <aqua><uuid><gray>, using it."
   not-selected-yet: "<prefix> <red>You have not selected a farmer, select using <aqua><u>/uxmfarmer select [uuid]</u><red>."
 
+bulk-edit-command:
+  no-such-setting: "<prefix> <red>No such setting named <aqua><name><red>, try one of these: <aqua><settings>"
+  are-you-sure:
+    - "<prefix> <gray>Are you sure you want to change <aqua><setting> <gray>on all farmers?"
+    - "<prefix> <gray>This process cannot be reverted."
+    - "<prefix> <gray>Use the command again in <aqua>10 seconds<gray> to confirm the process."
+  have-another-waiting-confirmation: "<prefix> <red>You currently have another waiting confirmation for setting <aqua><setting><red>, please finish that first."
+  enabled-for-all: "<prefix> <green>Enabled <gray>the setting <aqua><setting> <gray>for every farmer."
+  enabled-for-selected: "<prefix> <green>Enabled <gray>the setting <aqua><setting> <gray>selected farmer."
+  disabled-for-all: "<prefix> <red>Disabled <gray>the setting <aqua><setting> <gray>for every farmer."
+  disabled-for-selected: "<prefix> <red>Disabled <gray>the setting <aqua><setting> <gray>for selected farmer."
+
 give-command:
   not-correct-item: "<prefix> <red>Invalid item type. Available items: <items>"
   added-to-inventory: "<prefix> <gray>Successfully gave <#ff7700><amount>x <item> <gray>to <#ff7700><player_name><gray>."
@@ -322,3 +336,4 @@ setting-names:
   farmer-visuals: "Invisibility"
   kill-spawner-mobs: "Auto Kill Spawner Mobs"
   collect-player-drops: "Collect Player Drops"
+  baby: "Baby Age"
