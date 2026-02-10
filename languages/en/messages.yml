@@ -1,5 +1,6 @@
 prefix: "<#ff7700><bold>Farmer <dark_gray>►<reset>"
-reloaded: "<prefix> <gray>Configuration files updated"
+reloaded: "<prefix> <gray>Configuration files updated."
+reload-failed: "<prefix> <gray>Something went wrong while reloading, please check console."
 saved: "<prefix> <gray>Player datas have been saved and permission caches refreshed."
 empty: "<red>Empty"
 
@@ -46,8 +47,11 @@ admin:
       - "<gray>Stored XP: <aqua><xp>"
       - "<gray>Glow Color: <aqua><glow>"
       - "<gray>Entity Type: <aqua><entity>"
-      - "<gray>Enabled settings: <aqua><enabled_settings> <red>[Click on a setting to disable it]"
-      - "<gray>Disabled settings: <red><disabled_settings> <green>[Click on a setting to enable it]"
+      - "<gray>Settings: <settings> <aqua>[Click on a setting to toggle it]"
+      - "<gray>AutoKill mobs: <auto_kill_values> <aqua>[Click on a entity to toggle it]"
+      - "<gray>AutoKill settings: <auto_kill_settings> <aqua>[Click on a setting to toggle it]"
+      - "<gray>AutoSell items: <auto_sell_values> <aqua>[Click on a material to toggle it]"
+      - "<gray>AutoSell settings: <auto_sell_settings> <aqua>[Click on a setting to toggle it]"
     footer:
       - ""
       - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
@@ -114,6 +118,7 @@ permissions:
   change-appearance: "Change Appearance"
   move-here: "Move Farmer Location"
   see-logs: "View Farmer Logs"
+  see-module-settings: "View Module Settings"
 date-format: "dd/MM/yyyy HH:mm"
 time-format:
   days: "days"
@@ -125,11 +130,13 @@ toggle-placeholders:
   sales-enabled: "<#00ff44>Enabled"
   collecting-disabled: "<#e3000e>Disabled"
   collecting-enabled: "<#00ff44>Enabled"
+no-farmer-here: "<prefix> <red>There isn't a farmer near you that you are a member of."
+already-have-farmer-here: "<prefix> <red>There is already a farmer near you that belongs to this region."
 not-have-farmer: "<prefix> <red>You do not have a farmer."
 disabled-farmer: "<prefix> <red>The farmer is disabled in this world"
 must-be-inside-region: "<prefix> <red>You must be in claim to access the farmer."
-not-have-an-island: "<prefix> <red>You do not own an island"
-not-the-owner: "<prefix> <red>Only island owners can buy a farmer for their island"
+not-have-an-island: "<prefix> <red>You do not own an region"
+not-the-owner: "<prefix> <red>Only region owners can buy a farmer for their region"
 already-have-farmer: "<prefix> <red>You already own a farmer"
 other-already-have-farmer: "<prefix> <red><other> already owns a farmer"
 successfully-bought: "<prefix> <green>You have successfully purchased a farmer"
@@ -162,7 +169,7 @@ no-collectable-item: "<prefix> <gray>No <#e3000e>items to collect!"
 inventory-is-full: "<prefix> <gray>No enough <#e3000e>space in inventory!"
 can-not-sellable: "<prefix> <red>This product is not for sale, you can enable it by left-clicking!"
 material-not-sellable: "<prefix> <red>This product can not be sold."
-this-island-does-not-belong-to-you: "<prefix> <red>This island does not belong to you"
+this-island-does-not-belong-to-you: "<prefix> <red>This region does not belong to you"
 should-number-format: "<prefix> <gray>Did not enter a valid number."
 collected-item: "<prefix> <#54fb55>Successfully collected <#05e200><amount> <#54fb55>items."
 have-not-collect-permission: "<prefix> <red>You do not have sufficient permission to collect products"
@@ -178,6 +185,7 @@ have-not-change-skin-name-permission: "<prefix> <red>You do not have sufficient 
 have-not-change-appearance-permission: "<prefix> <red>You do not have sufficient permission to change appearance"
 have-not-move-here-permission: "<prefix> <red>You do not have sufficient permission to move the farmer"
 have-not-see-logs-permission: "<prefix> <red>You do not have sufficient permission to view farmer logs"
+have-not-see-module-settings-permission: "<prefix> <red>You do not have sufficient permission to view module settings"
 have-not-upgrade-permission: "<prefix> <red>You do not have sufficient permission to upgrade product levels"
 not-enough: "<prefix> <gray>Not enough <#e3000e>items."
 successfully-upgraded: "<prefix> <gray>Successfully purchased upgrade."
@@ -264,7 +272,8 @@ upgrade-all:
 near-farmers-command:
   farmers-near-you: "<gold>Farmers Near You (Range: <aqua><range><gold>) <italic><gray>(click to copy farmer UUIDs)"
   no-nearby-farmers: "<red>No farmers found nearby (Range <aqua><range><gold>)."
-  found-farmer: " <gray>- <reset><farmer> <gray>- <reset><owner>"
+  found-farmer: " <gray>- <reset><farmer> <gray>- <reset><owner> <gray>- <green>[<teleport>]"
+  click-to-teleport: "Click To Teleport"
 
 farmer-uuid-command:
   player-has-farmers: "<prefix> <aqua><player> <gold>has <aqua><count> <gold>farmers."
@@ -324,6 +333,14 @@ item-names:
   FARMER_EGG: "Farmer Egg"
   LEVEL_CHANGER: "Product Level Changer"
   LEVEL_ADDER: "Product Level Adder"
+
+auto-kill-module:
+  will-be-auto-killed: "<prefix> <white><entity> <green>will be killed automatically from now on."
+  wont-be-auto-killed: "<prefix> <white><entity> <green>will not get killed automatically from now on."
+
+auto-sell-module:
+  will-be-auto-sold: "<prefix> <white><material> <green>will be sold automatically from now on."
+  wont-be-auto-sold: "<prefix> <white><material> <green>will not get sold automatically from now on."
 
 setting-names:
   collect-natural-drops: "Collect Natural Drops"

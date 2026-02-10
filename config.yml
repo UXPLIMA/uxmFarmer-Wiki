@@ -2,6 +2,7 @@
 
 config-version: "${version}" # do not change this
 language: en # supported languages: TR, EN
+license-key: ""
 
 hooks:
   # Region Hook

@@ -124,9 +124,6 @@ dynamic-items:
         - ""
         - " <gray>Spawnerlardan doğan yaratıkları"
         - " <gray>otomatik olarak öldürür."
-        - " <gray>Bu özelliğin çalışması için"
-        - " <red>Otomatik Öldürme <gray>ayarı da"
-        - " <gray>açık olmalıdır"
         - ""
         - " <gray>Durum: <#11ff00>Aktif"
         - ""
@@ -144,9 +141,6 @@ dynamic-items:
         - ""
         - " <gray>Spawnerlardan doğan yaratıkları"
         - " <gray>otomatik olarak öldürür."
-        - " <gray>Bu özelliğin çalışması için"
-        - " <red>Otomatik Öldürme <gray>ayarı da"
-        - " <gray>açık olmalıdır"
         - ""
         - " <gray>Durum: <#ff0000>Devre Dışı"
         - ""
@@ -237,6 +231,7 @@ dynamic-items:
         - " <gray>Durum: <#11ff00>Aktif"
         - ""
         - "<#ffea00>▶ Değiştirmek için tıkla!"
+        - "<#ffea00>▶ Ayarları yönetmek için shifte basarak tıkla!"
       slots:
         - 12
     disabled:
@@ -254,6 +249,7 @@ dynamic-items:
         - " <gray>Durum: <#ff0000>Devre Dışı"
         - ""
         - "<#ffea00>▶ Değiştirmek için tıkla!"
+        - "<#ffea00>▶ Ayarları yönetmek için shifte basarak tıkla!"
       slots:
         - 12
   auto-sell:
@@ -272,6 +268,7 @@ dynamic-items:
         - " <gray>Durum: <#11ff00>Aktif"
         - ""
         - "<#ffea00>▶ Değiştirmek için tıkla!"
+        - "<#ffea00>▶ Ayarları yönetmek için shifte basarak tıkla!"
       slots:
         - 14
     disabled:
@@ -289,6 +286,7 @@ dynamic-items:
         - " <gray>Durum: <#ff0000>Devre Dışı"
         - ""
         - "<#ffea00>▶ Değiştirmek için tıkla!"
+        - "<#ffea00>▶ Ayarları yönetmek için shifte basarak tıkla!"
       slots:
         - 14
   xp-collector:

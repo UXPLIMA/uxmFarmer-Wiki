@@ -4,8 +4,11 @@ disabled-products-grow-physically: false
 collect-dropped-items: true
 # whether farmer should collect items dropped by players
 collect-player-dropped-items: true
+collect-player-dropped-items-by-default: true
 # custom item means an item with either custom name or custom lore
 collect-custom-items: false
+
+farmer-visible-by-default: true
 
 # normally, upgrade-all function only upgrades the product that player's farmer collected before. if you set this to true,
 # upgrade-all takes everything in collected-materials into account and upgrades them.

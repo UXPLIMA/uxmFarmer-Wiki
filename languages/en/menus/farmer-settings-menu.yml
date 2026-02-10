@@ -122,8 +122,6 @@ dynamic-items:
         - ""
         - " <gray>Automatically kill mobs"
         - " <gray>spawned by spawners"
-        - " <red>Auto Kill <gray>setting must be"
-        - " <gray>enabled for this to work"
         - ""
         - " <gray>Status: <#11ff00>Enabled"
         - ""
@@ -141,8 +139,6 @@ dynamic-items:
         - ""
         - " <gray>Automatically kill mobs"
         - " <gray>spawned by spawners"
-        - " <red>Auto Kill <gray>setting must be"
-        - " <gray>enabled for this to work"
         - ""
         - " <gray>Status: <#ff0000>Disabled"
         - ""
@@ -233,6 +229,7 @@ dynamic-items:
         - " <gray>Status: <#11ff00>Enabled"
         - ""
         - "<#ffea00>▶ Click to change!"
+        - "<#ffea00>▶ Shift Click to open settings!"
       slots:
         - 12
     disabled:
@@ -250,6 +247,7 @@ dynamic-items:
         - " <gray>Status: <#ff0000>Disabled"
         - ""
         - "<#ffea00>▶ Click to change!"
+        - "<#ffea00>▶ Shift Click to open settings!"
       slots:
         - 12
   auto-sell:
@@ -268,6 +266,7 @@ dynamic-items:
         - " <gray>Status: <#11ff00>Enabled"
         - ""
         - "<#ffea00>▶ Click to change!"
+        - "<#ffea00>▶ Shift+Click to open settings!"
       slots:
         - 14
     disabled:
@@ -285,6 +284,7 @@ dynamic-items:
         - " <gray>Status: <#ff0000>Disabled"
         - ""
         - "<#ffea00>▶ Click to change!"
+        - "<#ffea00>▶ Shift+Click to open settings!"
       slots:
         - 14
   xp-collector:

@@ -40,7 +40,7 @@ items:
       - "<gray>You need to confirm"
       - "<gray>the purchase of the farmer."
       - ""
-      - " <dark_gray>▪ <gray>Price: <gold>15,000"
+      - " <dark_gray>▪ <gray>Price: <gold><price>"
     slots:
       - 13
     actions:

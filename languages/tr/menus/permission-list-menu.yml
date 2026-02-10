@@ -269,3 +269,22 @@ permissions:
       - ""
       - "<gray>Sol Tık: <#30ff19>▲"
       - "<gray>Sağ Tık: <#ff0000>▼"
+
+  see-module-settings:
+    material: "COMPARATOR"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Modül Ayarlarını Görüntüle"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Modül ayarlarını"
+      - " <gray>görüntüleme izni verir."
+      - ""
+      - " <white>Rol: <#ffea00><rank_name>"
+      - ""
+      - "<message>"
+      - ""
+      - "<gray>Sol Tık: <#30ff19>▲"
+      - "<gray>Sağ Tık: <#ff0000>▼"

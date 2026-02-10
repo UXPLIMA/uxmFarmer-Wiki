@@ -4,6 +4,8 @@ use-name: false
 
 # only works with Citizens and FancyNpcs, supports every entity type, https://jd.papermc.io/paper/org/bukkit/entity/EntityType.html
 default-type: VILLAGER
+# should the entity be baby by default?
+default-baby: false
 # https://jd.papermc.io/paper/org/bukkit/entity/Villager.Profession.html
 default-villager-profession: FARMER
 default-glowing: true

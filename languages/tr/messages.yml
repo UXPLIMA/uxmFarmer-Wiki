@@ -1,5 +1,6 @@
 prefix: "<#ff7700><bold>Çiftçi <dark_gray>►<reset>"
-reloaded: "<prefix> <gray>Yapılandırma dosyaları güncellendi"
+reloaded: "<prefix> <gray>Yapılandırma dosyaları yeniden önbelleğe alındı."
+reload-failed: "<prefix> <gray>Yeniden önbelleğe alma işlemi sırasında bir hata oluştu, lütfen konsola göz at."
 saved: "<prefix> <gray>Oyuncu verileri kaydedildi ve yetki önbelleği güncellendi."
 empty: "<red>Yok"
 
@@ -46,8 +47,11 @@ admin:
       - "<gray>Biriken XP: <aqua><xp>"
       - "<gray>Parlama Rengi: <aqua><glow>"
       - "<gray>Varlık Türü: <aqua><entity>"
-      - "<gray>Aktif ayarlar: <aqua><enabled_settings> <red>[Kapatmak için ayara tıkla]"
-      - "<gray>Devre dışı ayarlar: <red><disabled_settings> <green>[Açmak için ayara tıkla]"
+      - "<gray>Ayarlar: <aqua><settings> <aqua>[Açmak/kapamak için ayara tıkla]"
+      - "<gray>AutoKill mobları: <red><auto_kill_values> <aqua>[Açmak/kapatmak için bir moba tıkla]"
+      - "<gray>AutoKill ayarları: <red><auto_kill_settings> <aqua>[Açmak/kapatmak için bir ayara tıkla]"
+      - "<gray>AutoSell eşyaları: <red><auto_sell_values> <aqua>[Açmak/kapatmak için bir eşyaya tıkla]"
+      - "<gray>AutoSell ayarları: <aqua><auto_sell_settings> <aqua>[Açmak/kapatmak bırakmak için bir ayara tıkla]"
     footer:
       - ""
       - "<gray>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</gray>"
@@ -114,6 +118,7 @@ permissions:
   change-appearance: "Görünümü Değiştirme"
   move-here: "Çiftçinin Konumunu Değiştirme"
   see-logs: "Çiftçi Kayıtlarını Görebilme"
+  see-module-settings: "Modül Ayarlarını Görme"
 date-format: "dd/MM/yyyy HH:mm"
 time-format:
   days: "gün"
@@ -125,10 +130,12 @@ toggle-placeholders:
   sales-enabled: "<#00ff44>Açık"
   collecting-disabled: "<#e3000e>Kapalı"
   collecting-enabled: "<#00ff44>Açık"
+no-farmer-here: "<prefix> <red>Yakınlarında üyesi olduğun bir çiftçi yok."
+already-have-farmer-here: "<prefix> <red>Yakınlarında zaten bu bölgeye ait olan bir çiftçi var."
 not-have-farmer: "<prefix> <red>Çiftçin yok."
 disabled-farmer: "<prefix> <red>Çiftçi bu dünyada devre dışı"
-not-have-an-island: "<prefix> <red>Bir adaya sahip değilsin"
-not-the-owner: "<prefix> <red>Sadece ada sahipleri adalarına çiftçi alabilir"
+not-have-an-island: "<prefix> <red>Bir bölgeye sahip değilsin"
+not-the-owner: "<prefix> <red>Sadece bölge sahipleri bölgelerine çiftçi alabilir"
 must-be-inside-region: "<prefix> <red>Çiftçiye erişebilmek için bölgenizde bulunmanız gerekir."
 already-have-farmer: "<prefix> <red>Sen zaten bir çiftçiye sahipsin"
 other-already-have-farmer: "<prefix> <red><other> zaten bir çiftçiye sahip"
@@ -156,7 +163,7 @@ no-collectable-item: "<prefix> <gray>Toplanacak bir <#e3000e>eşya yok!"
 inventory-is-full: "<prefix> <gray>Envanterinde yeteri kadar <#e3000e>yer yok!"
 can-not-sellable: "<prefix> <red>Bu ürün satışa kapalı, sol tık ile açabilirsin!"
 material-not-sellable: "<prefix> <red>Bu ürün satılamaz."
-this-island-does-not-belong-to-you: "<prefix> <red>Bu ada sana ait değil"
+this-island-does-not-belong-to-you: "<prefix> <red>Bu bölge sana ait değil"
 should-number-format: "<prefix> <gray>Geçerli bir sayı <#e3000e>girmedin."
 collected-item: "<prefix> <#54fb55>Başarıyla envanterine <#05e200><amount> adet <#54fb55>ürün aldın."
 have-not-collect-permission: "<prefix> <red>Mahsülleri toplamak için yeterli iznin yok"
@@ -172,6 +179,7 @@ have-not-change-skin-name-permission: "<prefix> <red>Çiftçi skinini değiştir
 have-not-change-appearance-permission: "<prefix> <red>Çiftçi görünümünü değiştirmek için yeterli iznin yok."
 have-not-move-here-permission: "<prefix> <red>Çiftçi konumunu değiştirmek için yeterli iznin yok."
 have-not-see-logs-permission: "<prefix> <red>Çiftçi kayıtlarını görebilmek için yeterli iznin yok."
+have-not-see-module-settings-permission: "<prefix> <red>Modül ayarlarını görebilmek için yeterli iznin yok."
 have-not-upgrade-permission: "<prefix> <red>Çiftçi ürün seviyelerini yükseltebilmek için yeterli iznin yok."
 not-enough: "<prefix> <gray>Yeteri kadar <#e3000e>ürün yok."
 successfully-upgraded: "<prefix> <gray>Başarıyla yükseltme satın alındı."
@@ -264,7 +272,8 @@ upgrade-all:
 near-farmers-command:
   farmers-near-you: "<gold>Yakınındaki çiftçiler (Çap: <aqua><range><gold>) <italic><gray>(UUID kopyalamak için üstlerine tıklayın)"
   no-nearby-farmers: "<red>Yakınında hiç çiftçi bulunamadı (Çap <aqua><range><gold>)."
-  found-farmer: " <gray>- <reset><farmer> <gray>- <reset><owner>"
+  found-farmer: " <gray>- <reset><farmer> <gray>- <reset><owner> <gray>- <green>[<teleport>]"
+  click-to-teleport: "Tıkla Ve Işınlan"
 
 farmer-uuid-command:
   player-has-farmers: "<prefix> <aqua><player> <gold>isimli oyuncunun <aqua><count> <gold>adet çiftçisi var:"
@@ -324,6 +333,14 @@ item-names:
   FARMER_EGG: "Çiftçi Yumurtası"
   LEVEL_CHANGER: "Ürün Seviye Yükseltici"
   LEVEL_ADDER: "Ürün Seviye Ekleyici"
+
+auto-kill-module:
+  will-be-auto-killed: "<prefix> <white><entity> <green>artık otomatik olarak öldürülecek."
+  wont-be-auto-killed: "<prefix> <white><entity> <green>artık otomatik olarak öldürülmeyecek."
+
+auto-sell-module:
+  will-be-auto-sold: "<prefix> <white><material> <green>artık otomatik olarak satılmayacak."
+  wont-be-auto-sold: "<prefix> <white><material> <green>artık otomatik olarak satılmayacak."
 
 setting-names:
   collect-natural-drops: "Doğal Olarak Yere Düşen Eşyaları Topla"

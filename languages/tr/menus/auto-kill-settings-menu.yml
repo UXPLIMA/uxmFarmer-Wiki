@@ -1,0 +1,95 @@
+title: "           <black>Auto Kill Settings"
+rows: 6
+pageable-slot-size: 28
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 17
+  - 18
+  - 26
+  - 27
+  - 35
+  - 36
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 50
+  - 51
+  - 52
+  - 53
+
+entity:
+  enabled:
+    material: STONE # keep this here
+    model-data: 0
+    amount: 1
+    display-name: "<entity>"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - "<#5b9397>Varlık Ayarları ↓"
+      - "<gray>Otomatik olarak öldürülüyor: <green>Evet"
+      - ""
+      - "<yellow><italic>Değiştirmek için tıkla"
+    slots: []
+    actions:
+      - "[sound] ENTITY_ITEM_PICKUP"
+  disabled:
+    material: STONE # keep this here
+    model-data: 0
+    amount: 1
+    display-name: "<entity>"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - "<#5b9397>Varlık Ayarları ↓"
+      - "<gray>Otomatik olarak öldürülüyor: <red>Hayır"
+      - ""
+      - "<yellow><italic>Değiştirmek için tıkla"
+    slots: [ ]
+    actions:
+      - "[sound] ENTITY_ITEM_PICKUP"
+
+items:
+  module_settings:
+    material: "OAK_HANGING_SIGN"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Hangi Varlıkları Öldürmek İstiyorsun?"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Aşağıdaki butonları kullanarak"
+      - " <gray>o varlıkların otomatik olarak"
+      - " <gray>öldürülmesini ayarlayabilirsin."
+      - ""
+    slots:
+      - 4
+    actions: []
+  back:
+    material: "BARRIER"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Geri Git"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+    slots:
+      - 49
+    actions:
+      - "[menu] settings"

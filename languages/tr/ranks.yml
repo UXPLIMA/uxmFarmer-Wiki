@@ -36,6 +36,7 @@ farmer-ranks:
       - MOVE_HERE
       - CHANGE_SKIN_NAME
       - CHANGE_APPEARANCE
+      - SEE_MODULE_SETTINGS
     show:
       material: "PLAYER_HEAD"
       model-data: 0

@@ -79,6 +79,8 @@ auto-sell:
   send-to-members: false
   # when true, supports every item thats collected, ignores the list below
   everything: true
+  # if "everything" is true:
+  #  players will ONLY be able to toggle items below in their auto-sell module settings
   items:
     - WHEAT
     - CARROT
@@ -90,6 +92,7 @@ xp-collector:
   name: "XP Collector"
   status: true
   default-status: false
+  sellable-by-default: true
   permission-required: true
   xp-unit-price: 0.001
   # 0.1% tax

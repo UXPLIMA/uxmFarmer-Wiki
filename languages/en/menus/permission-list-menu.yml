@@ -270,3 +270,22 @@ permissions:
       - ""
       - "<gray>Left Click: <#30ff19>▲"
       - "<gray>Right Click: <#ff0000>▼"
+
+  see-module-settings:
+    material: "COMPARATOR"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>View Module Settings"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Grants permission to"
+      - " <gray>view the module settings."
+      - ""
+      - " <white>Role: <#ffea00><rank_name>"
+      - ""
+      - "<message>"
+      - ""
+      - "<gray>Left Click: <#30ff19>▲"
+      - "<gray>Right Click: <#ff0000>▼"

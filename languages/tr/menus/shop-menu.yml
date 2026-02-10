@@ -40,7 +40,7 @@ items:
       - "<gray>Çiftçi satın almak için"
       - "<gray>onaylamalısın."
       - ""
-      - " <dark_gray>▪ <gray>Fiyat: <gold>15.000"
+      - " <dark_gray>▪ <gray>Fiyat: <gold><price>"
       - ""
       - "<yellow>▶ satın almak için tıkla"
     slots:
