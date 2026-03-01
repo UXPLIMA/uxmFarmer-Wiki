@@ -27,8 +27,25 @@ filler-slots:
   - 23
   - 24
   - 25
-  - 26
-items: {}
+
+items:
+  back:
+    material: "BARRIER"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Go Back"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - "<#ffea00>Click to return"
+      - "<#ffea00>to the previous menu"
+      - ""
+    slots:
+      - 26
+    actions:
+      - "[menu] main"
+
 
 dynamic-update-items:
   upgrade:

@@ -11,7 +11,7 @@ pre-release-version:
 
 command-errors:
   invalid-argument: "<prefix> <red>Komutu yanlış kullandınız."
-  no-permission: "<prefix> <red>Bu komutu kullanmak için yetkin yok."
+  no-permission: "<prefix> <red>Bunu yapmak için yeterli için yetkin yok."
   too-many-arguments: "<prefix> <red>Gereğinden fazla argüman girdiniz."
   not-enough-arguments: "<prefix> <red>Yeterli sayıda argüman girmediniz."
   unknown-command: "<prefix> <red>Var olmayan bir komut kullandınız."
@@ -67,9 +67,11 @@ admin:
     commands:
       - "<gray>/uxmfarmer <#6bbcff>yardım <sayfa> <white>— Girilen sayfadaki yardım komutlarını gösterir."
       - "<gray>/uxmfarmer <#6bbcff>seç [uuid] <white>— Girilen UUID'ye sahip çiftçiyi veya en yakınınızdaki çiftçiyi seçer ve düzenlemelerde onu kullanır."
+      - "<gray>/uxmfarmer <#6bbcff>menü <white>— Seçilen çiftçinin menüsünü açar."
       - "<gray>/uxmfarmer <#6bbcff>kaydet <white>— Tüm verileri veritabanına kaydeder."
       - "<gray>/uxmfarmer <#6bbcff>reload <white>— Yapılandırmayı ve tüm eklenti dosyalarını yeniden yükler."
       - "<gray>/uxmfarmer <#6bbcff>clearpermcache <white>— Önbelleğe alınmış oyuncu yetkilerini temizler."
+      - "<gray>/uxmfarmer <#6bbcff>checkperm <oyuncu> <yetki> <white>— Girilen oyuncunun, girilen yetkiye sahip olma durumunun önbellekteki halini gösterir."
       - "<gray>/uxmfarmer <#6bbcff>bypass <white>— Bekleme süresi (cooldown) bypass modunu açar/kapatır."
       - "<gray>/uxmfarmer <#6bbcff>stats <white>— Genel çiftçi istatistiklerini görüntüler."
       - "<gray>/uxmfarmer <#6bbcff>bulkedit <yellow><setting> <true|false> <white>— Girilen ayarı her çiftçi için açar veya kapatır."
@@ -167,12 +169,17 @@ this-island-does-not-belong-to-you: "<prefix> <red>Bu bölge sana ait değil"
 should-number-format: "<prefix> <gray>Geçerli bir sayı <#e3000e>girmedin."
 collected-item: "<prefix> <#54fb55>Başarıyla envanterine <#05e200><amount> adet <#54fb55>ürün aldın."
 have-not-collect-permission: "<prefix> <red>Mahsülleri toplamak için yeterli iznin yok"
+have-not-collect-player-drops-permission: "<prefix> <red>Oyuncu Droplarını Toplama özelliğini kullanmak için çiftçi sahibinin gerekli yetkisi yok."
 have-not-autosell-permission: "<prefix> <red>Otomatik satış özelliğini kullanmak için çiftçi sahibinin gerekli yetkisi yok."
 have-not-xpcollect-permission: "<prefix> <red>Otomatik XP toplama özelliğini kullanmak için çiftçi sahibinin gerekli yetkisi yok."
+have-not-xpsellable-permission: "<prefix> <red>XP Satılabilir özelliğini kullanmak için çiftçi sahibinin gerekli yetkisi yok."
 have-not-autokill-permission: "<prefix> <red>Otomatik öldürme özelliğini kullanmak için çiftçi sahibinin gerekli yetkisi yok."
+have-not-autokillspawner-permission: "<prefix> <red>Spawner yaratıklarını otomatik öldürme özelliğini kullanmak için çiftçi sahibinin gerekli yetkisi yok."
 have-not-autoplant-permission: "<prefix> <red>Otomatik ekme özelliğini kullanmak için çiftçi sahibinin gerekli yetkisi yok."
 have-not-autoharvest-permission: "<prefix> <red>Otomatik biçme özelliğini kullanmak için çiftçi sahibinin gerekli yetkisi yok."
 have-not-glow-permission: "<prefix> <red>Parıltı özelliğini kullanmak için çiftçi sahibinin gerekli yetkisi yok."
+have-not-no-visual-permission: "<prefix> <red>Farmeri görünmez yapma özelliğini kullanmak için çiftçi sahibinin gerekli yetkisi yok."
+have-not-baby-permission: "<prefix> <red>Bebek Yaşı özelliğini kullanmak için çiftçi sahibinin gerekli yetkisi yok."
 have-not-toggle-glowing-permission: "<prefix> <red>Parıltı durumunu değiştirmek için yeterli iznin yok."
 have-not-change-glowing-color-permission: "<prefix> <red>Parıltı rengini değiştirmek için yeterli iznin yok."
 have-not-change-skin-name-permission: "<prefix> <red>Çiftçi skinini değiştirmek için yeterli iznin yok."
@@ -304,6 +311,22 @@ give-command:
 
   inventory-full: "<prefix> <#ff7700><player_name><gray> adlı oyuncunun envanteri dolu. <#ff7700><amount> <item> verilemedi."
   inventory-full-self: "<prefix> <gray>Envanterin dolu olduğu için <#ff7700><amount> <item> <gray>verilemedi."
+
+check-age-command:
+  header: "<prefix> <gold><bold>Chunk Bilgisi <white>(<x>, <z>)"
+  message: '<gray>• <aqua><hover:show_text:"<type><newline><yellow>Işınlanmak için Tıkla"><location>: <white><age>'
+  chunk-has-no-data: "<prefix> <red>Bu chunk'a ait yaş verisi bulunamadı."
+  world-has-no-data: "<prefix> <red>Bu dünyaya ait yaş verisi bulunamadı."
+
+check-perm-command:
+  message:
+    - "<gold><bold>Yetki Kontrolü » <white><player>"
+    - " <gray>• <gray>Yetki: <white><permission>"
+    - " <gray>• <gray>Önbellek Durumu: <white><cache>"
+    - " <gray>• <gray>LuckPerms Durumu: <white><luckperms>"
+    - "<aqua>Eğer yetki önbellekte FALSE veya NOT_LOADED ise, oyuncu bu permissionu gerektiren özelliği kullanamayabilir."
+    - "<aqua>Eğer iki durum da NOT_LOADED ise komutu tekrar kullanın."
+  no-such-perm: "<prefix> <red>Böyle bir permission bulunamadı, wiki üzerinden tüm permissionları görebilirsiniz."
 
 statistics-command:
   - "<prefix> <#4dcc1f><bold>Sunucu Genel İstatistikleri</bold>"

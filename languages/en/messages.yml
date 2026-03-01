@@ -11,7 +11,7 @@ pre-release-version:
 
 command-errors:
   invalid-argument: "<prefix> <red>Your usage of this command was wrong."
-  no-permission: "<prefix> <red>You do not have permission to use this command."
+  no-permission: "<prefix> <red>You do not have sufficient permission to do this."
   too-many-arguments: "<prefix> <red>Too many arguments."
   not-enough-arguments: "<prefix> <red>Not enough arguments."
   unknown-command: "<prefix> <red>You have used a non-existent command."
@@ -67,9 +67,11 @@ admin:
     commands:
       - "<gray>/uxmfarmer <#6bbcff>help <page number> <white>— Shows help commands in that page."
       - "<gray>/uxmfarmer <#6bbcff>select [uuid] <white>— Selects nearest farmer or farmer with given UUID to perform edits on."
+      - "<gray>/uxmfarmer <#6bbcff>menu <white>— Opens menu of selected farmer."
       - "<gray>/uxmfarmer <#6bbcff>save <white>— Saves all data to the database."
       - "<gray>/uxmfarmer <#6bbcff>reload <white>— Reloads config and all plugin files."
       - "<gray>/uxmfarmer <#6bbcff>clearpermcache <white>— Clears cached player permissions."
+      - "<gray>/uxmfarmer <#6bbcff>checkperm <player> <permission> <white>— Sends info about cache state of that player for given permission."
       - "<gray>/uxmfarmer <#6bbcff>bypass <white>— Toggles cooldown bypass mode."
       - "<gray>/uxmfarmer <#6bbcff>stats <white>— Displays overall farmer statistics."
       - "<gray>/uxmfarmer <#6bbcff>bulkedit <yellow><setting> <true|false> <white>— Disables or enables given setting for every farmer."
@@ -173,12 +175,17 @@ this-island-does-not-belong-to-you: "<prefix> <red>This region does not belong t
 should-number-format: "<prefix> <gray>Did not enter a valid number."
 collected-item: "<prefix> <#54fb55>Successfully collected <#05e200><amount> <#54fb55>items."
 have-not-collect-permission: "<prefix> <red>You do not have sufficient permission to collect products"
+have-not-collect-player-drops-permission: "<prefix> <red>Farmer owner does not have the permission for Collect Player Drops"
 have-not-autosell-permission: "<prefix> <red>Farmer owner does not have the permission for Auto Sell"
 have-not-xpcollect-permission: "<prefix> <red>Farmer owner does not have the permission for XP Collector"
+have-not-xpsellable-permission: "<prefix> <red>Farmer owner does not have the permission for toggling XP being sellable"
 have-not-autokill-permission: "<prefix> <red>Farmer owner does not have the permission for Auto Kill"
+have-not-autokillspawner-permission: "<prefix> <red>Farmer owner does not have the permission for Auto Kill Spawner Mobs"
 have-not-autoplant-permission: "<prefix> <red>Farmer owner does not have the permission for Auto Plant"
 have-not-autoharvest-permission: "<prefix> <red>Farmer owner does not have the permission for Auto Harvest"
-have-not-glow-permission: "<prefix> <red>Farmer owner does not have the permission for glow"
+have-not-glow-permission: "<prefix> <red>Farmer owner does not have the permission for Glow"
+have-not-no-visual-permission: "<prefix> <red>Farmer owner does not have the permission for No Visual"
+have-not-baby-permission: "<prefix> <red>Farmer owner does not have the permission for Baby Age"
 have-not-toggle-glowing-permission: "<prefix> <red>You do not have sufficient permission to toggle glowing status"
 have-not-change-glowing-color-permission: "<prefix> <red>You do not have sufficient permission to change glowing color"
 have-not-change-skin-name-permission: "<prefix> <red>You do not have sufficient permission to change skin name"
@@ -304,6 +311,22 @@ give-command:
 
   inventory-full: "<prefix> <#ff7700><player_name>'s <gray>inventory is full. <#ff7700><amount>x <item> <gray>could not be delivered."
   inventory-full-self: "<prefix> <gray>Your inventory is full! <#ff7700><amount>x <item> <gray>could not be added."
+
+check-perm-command:
+  message:
+    - "<gold><bold>Permission Check » <white><player>"
+    - " <gray>• <gray>Permission: <white><permission>"
+    - " <gray>• <gray>Cache Status: <white><cache>"
+    - " <gray>• <gray>LuckPerms Status: <white><luckperms>"
+    - "<aqua>If cache status is FALSE or NOT_LOADED, the player may be unable to use the feature requiring this permission."
+    - "<aqua>If both statuses are NOT_LOADED, use this command again to see the actual state."
+  no-such-perm: "<prefix> <red>This is not a correct uxmFarmer permission, please check wiki for all permissions."
+
+check-age-command:
+  header: "<prefix> <gold><bold>Chunk Info <white>(<x>, <z>)"
+  message: '<gray>• <aqua><hover:show_text:"<type><newline>Click to Teleport"><location>: <white><age>'
+  chunk-has-no-data: "<prefix> <red>This chunk has no age data."
+  world-has-no-data: "<prefix> <red>This world has no age data."
 
 statistics-command:
   - "<prefix> <#4dcc1f><bold>Overall Server Statistics</bold>"

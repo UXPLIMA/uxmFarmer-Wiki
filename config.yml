@@ -106,3 +106,7 @@ sounds:
 
 # never open this unless UXPLIMA staff told you to do
 debug: false
+# categories are NONE, ALL, AUTO_KILL, AUTO_SELL, AUTO_HARVEST, XP_COLLECTOR, HANDLE_ITEM, GENERAL
+debug-categories:
+- NONE
+ignore: []

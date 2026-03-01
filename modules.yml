@@ -37,6 +37,9 @@ auto-harvest:
     - PUMPKIN_STEM
     - BAMBOO
     - SUGAR_CANE
+    - BEETROOTS
+    - CARROTS
+    - POTATOES
   items:
     - WHEAT
     - COCOA

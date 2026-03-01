@@ -24,6 +24,9 @@ farmer-command-opens-buy-menu: true
 disable-buy-command: false
 # when set to true, /farmer sellall command or sell all executions from anywhere else will require confirmation.
 sell-all-requires-confirmation: true
+# there are 2 options for this: EVERYWHERE and NEAR_FARMER
+# this setting only applies to Island hooks, other hooks will always use NEAR_FARMER
+where-players-can-reach-farmer: NEAR_FARMER
 
 place-farmer-on-region-creation: false
 # if true, farmer managers will need the permission uxmfarmer.addmember to add new members to their farmers.
@@ -39,9 +42,9 @@ only-owners-can-upgrade: false
 disable-logs: false
 # when set to true, transferring farmers to other players will be disabled.
 disable-transfer: false
+
 # players can have maximum 2 farmers by default, give players the permission uxmfarmer.maxfarmer.<amount> for more farmers
 maximum-farmer-per-player: 2
-
 # default tax ratio taken from product sales
 tax-price: 0.25
 # price of one farmer
