@@ -1,0 +1,19 @@
+title: "<gradient:#00c6ff:#0072ff>Product Conversions</gradient>"
+rows: 1
+filler-material: "GRAY_STAINED_GLASS_PANE"
+filler-slots: []
+
+items:
+  back:
+    material: "BARRIER"
+    amount: 1
+    display-name: "<#ff0000>Go Back"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+    slots:
+      - 8
+    actions:
+      - "[menu] main"
+      - "[sound] UI_BUTTON_CLICK"

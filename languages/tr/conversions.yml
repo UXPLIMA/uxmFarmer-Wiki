@@ -1,0 +1,89 @@
+gold-nugget-to-ingot:
+  item:
+    material: GOLD_INGOT
+    model-data: 0
+    display-name: "<gold><b>Altın Külçesi"
+    lore:
+      - "<gray>Tüm parçacıkları külçelere dönüştür."
+      - ""
+      - "<white><b>GEREKSİNİMLER"
+      - "<special_requirements>"
+      - "<dark_gray>▪ <gray>Para: <gold>1.000$"
+      - "<dark_gray>▪ <gray>Materyal: <yellow>9x Altın Parçası"
+      - ""
+      - "<white><b>ÇIKTI"
+      - "<dark_gray>▪ <gray>Ürün: <gold>1x Altın Külçesi"
+      - ""
+      - "<white><b>DURUM"
+      - "<dark_gray>▪ <gray>Mevcut İşlemler: <green><possible_conversions>"
+      - ""
+      - "<dark_gray>▶ <white>1x <gray>işlemek için <yellow>Sol Tıkla"
+      - "<dark_gray>▶ <white>TÜMÜNÜ <gray>işlemek için <gold>Shift+Tık"
+  slot: 0
+  conversion-type: BOTH
+  # conversion type şu değerleri alabilir:
+  # SINGLE, ALL, BOTH
+  # SINGLE = her tıklamada tek bir dönüştürme yapar
+  # ALL = tek tıklamada her şeyi dönüştürür
+  # BOTH = her iki türü de destekler
+  requirements:
+    price: 1000
+    static-price: false
+    # eğer static-price true ise, tümünü dönüştür özelliğini kullansalar bile fiyat aynı kalacaktır
+    products:
+      - 9:GOLD_NUGGET
+    placeholders:
+      "playtime":
+        display: "<dark_gray>▪ <gray>Oynama Süresi: <white>1 Saat <dark_gray>(<gray>Mevcut: <white><papi:'math_0:floor_{statistic_PLAY_ONE_MINUTE}/72000'>s<dark_gray>)"
+        condition: "%math_({statistic_PLAY_ONE_MINUTE}/72000)>60%"
+        required-output: "1"
+  converts-to:
+    execute-actions-per-convert: false
+    actions:
+      - "[close]"
+    execute-player-commands-per-convert: false
+    # true ise convert all özelliği kullanıldığında her çeviri başına tüm komutlar yürütülür, false ise komutlar hep sadece bir kere yürütülür
+    player-commands:
+      - ""
+    execute-console-commands-per-convert: false
+    # true ise convert all özelliği kullanıldığında her çeviri başına tüm komutlar yürütülür, false ise komutlar hep sadece bir kere yürütülür
+    console-commands:
+      - ""
+    products:
+      - 1:GOLD_INGOT
+    send-messages-per-convert: false
+    # true ise convert all özelliği kullanıldığında her çeviri başına mesajlar yollanır, false ise mesajlar hep sadece bir kere gönderilir
+    messages:
+      - "<prefix> <yellow>Altın Parçaları <gray>başarıyla <gold>Altın Külçelerine <gray>dönüştürüldü."
+    money: 0
+  cooldown: 30
+  # bekleme süreleri saniye biçimindedir
+
+iron-ingot-to-block:
+  item:
+    material: IRON_BLOCK
+    model-data: 0
+    display-name: "<white><b>Demir Blok"
+    lore:
+      - "<gray>Demir külçeleri demir bloklara dönüştür."
+      - ""
+      - "<white><b>GEREKSİNİMLER"
+      - "<dark_gray>▪ <gray>Materyal: <white>9x Demir Külçesi"
+      - ""
+      - "<white><b>ÇIKTI"
+      - "<dark_gray>▪ <gray>Ürün: <white>1x Demir Blok"
+      - ""
+      - "<white><b>DURUM"
+      - "<dark_gray>▪ <gray>Mevcut İşlemler: <green><possible_conversions>"
+      - ""
+      - "<dark_gray>▶ <white>TÜMÜNÜ <gray>işlemek için <yellow>Shift+Tık"
+  slot: 1
+  conversion-type: ALL
+  requirements:
+    price: 0
+    products:
+      - 9:IRON_INGOT
+  converts-to:
+    products:
+      - 1:IRON_BLOCK
+  cooldown: 30

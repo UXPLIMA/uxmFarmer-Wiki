@@ -1,0 +1,89 @@
+gold-nugget-to-ingot:
+  item:
+    material: GOLD_INGOT
+    model-data: 0
+    display-name: "<gold><b>Gold Ingot"
+    lore:
+      - "<gray>Convert all nuggets into ingots."
+      - ""
+      - "<white><b>REQUIREMENTS"
+      - "<special_requirements>"
+      - "<dark_gray>▪ <gray>Money: <gold>$1,000"
+      - "<dark_gray>▪ <gray>Material: <yellow>9x Gold Nugget"
+      - ""
+      - "<white><b>YIELD"
+      - "<dark_gray>▪ <gray>Product: <gold>1x Gold Ingot"
+      - ""
+      - "<white><b>STATUS"
+      - "<dark_gray>▪ <gray>Available Operations: <green><possible_conversions>"
+      - ""
+      - "<dark_gray>▶ <yellow>Left-Click <gray>to process <white>1x"
+      - "<dark_gray>▶ <gold>Shift-Click <gray>to process <white>ALL"
+  slot: 0
+  conversion-type: BOTH
+  # conversion type can be these values:
+  # SINGLE, ALL, BOTH
+  # SINGLE = does a single conversion per click
+  # ALL = converts everything in one click
+  # BOTH = supports both types
+  requirements:
+    price: 1000
+    static-price: false
+    # if static-price is true, price will remain same even they use convert all feature
+    products:
+      - 9:GOLD_NUGGET
+    placeholders:
+      "playtime":
+        display: "<dark_gray>▪ <gray>Playtime: <white>1 Hour <dark_gray>(<gray>Current: <white><papi:'math_0:floor_{statistic_PLAY_ONE_MINUTE}/72000'>h<dark_gray>)"
+        condition: "%math_({statistic_PLAY_ONE_MINUTE}/72000)>60%"
+        required-output: "1"
+  converts-to:
+    execute-actions-per-convert: false
+    actions:
+      - "[close]"
+    execute-player-commands-per-convert: false
+    # if true, commands will be executed per-convert when convert all is used, if false, commands will be run once
+    player-commands:
+      - ""
+    execute-console-commands-per-convert: false
+    # if true, commands will be executed per-convert when convert all is used, if false, commands will be run once
+    console-commands:
+      - ""
+    products:
+      - 1:GOLD_INGOT
+    send-messages-per-convert: false
+    # if true, messages will be sent per-convert when convert all is used, if false, messages will be sent once
+    messages:
+      - "<prefix> <gray>Successfully processed <yellow>Gold Nuggets <gray>into <gold>Gold Ingots<gray>."
+    money: 0
+  cooldown: 30
+  # cooldowns are in seconds
+
+iron-ingot-to-block:
+  item:
+    material: IRON_BLOCK
+    model-data: 0
+    display-name: "<white><b>Iron Block"
+    lore:
+      - "<gray>Convert iron ingots into iron blocks."
+      - ""
+      - "<white><b>REQUIREMENTS"
+      - "<dark_gray>▪ <gray>Material: <white>9x Iron Ingot"
+      - ""
+      - "<white><b>YIELD"
+      - "<dark_gray>▪ <gray>Product: <white>1x Iron Block"
+      - ""
+      - "<white><b>STATUS"
+      - "<dark_gray>▪ <gray>Available Operations: <green><possible_conversions>"
+      - ""
+      - "<dark_gray>▶ <yellow>Click <gray>to process <white>ALL"
+  slot: 1
+  conversion-type: ALL
+  requirements:
+    price: 0
+    products:
+      - 9:IRON_INGOT
+  converts-to:
+    products:
+      - 1:IRON_BLOCK
+  cooldown: 30

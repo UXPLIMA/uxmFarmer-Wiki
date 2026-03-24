@@ -47,6 +47,7 @@ admin:
       - "<gray>Stored XP: <aqua><xp>"
       - "<gray>Glow Color: <aqua><glow>"
       - "<gray>Entity Type: <aqua><entity>"
+      - "<gray>Is enabled: <aqua><status>"
       - "<gray>Settings: <settings> <aqua>[Click on a setting to toggle it]"
       - "<gray>AutoKill mobs: <auto_kill_values> <aqua>[Click on a entity to toggle it]"
       - "<gray>AutoKill settings: <auto_kill_settings> <aqua>[Click on a setting to toggle it]"
@@ -76,6 +77,7 @@ admin:
       - "<gray>/uxmfarmer <#6bbcff>stats <white>— Displays overall farmer statistics."
       - "<gray>/uxmfarmer <#6bbcff>bulkedit <yellow><setting> <true|false> <white>— Disables or enables given setting for every farmer."
       - "<gray>/uxmfarmer <#6bbcff>editsetting <yellow><setting> <true|false> <white>— Disables or enables given setting for selected farmer."
+      - "<gray>/uxmfarmer <#6bbcff>setproductlevel <yellow><product> <level> <white>— Changes given product level's in selected farmer to given level."
       - "<gray>/uxmfarmer <#6bbcff>delete <yellow><player> <white>— Deletes given player’s farmer."
       - "<gray>/uxmfarmer <#6bbcff>clearlogs <yellow><white>— Clears logs of selected farmer."
       - "<gray>/uxmfarmer <#6bbcff>teleport <yellow><white>— Teleports you to selected farmer."
@@ -186,6 +188,7 @@ have-not-autoharvest-permission: "<prefix> <red>Farmer owner does not have the p
 have-not-glow-permission: "<prefix> <red>Farmer owner does not have the permission for Glow"
 have-not-no-visual-permission: "<prefix> <red>Farmer owner does not have the permission for No Visual"
 have-not-baby-permission: "<prefix> <red>Farmer owner does not have the permission for Baby Age"
+have-not-change-status-permission: "<prefix> <red>Farmer owner does not have the permission for toggling farmer's enabled status"
 have-not-toggle-glowing-permission: "<prefix> <red>You do not have sufficient permission to toggle glowing status"
 have-not-change-glowing-color-permission: "<prefix> <red>You do not have sufficient permission to change glowing color"
 have-not-change-skin-name-permission: "<prefix> <red>You do not have sufficient permission to change skin name"
@@ -228,7 +231,7 @@ teleport-admin: "<prefix> <green>Teleported successful."
 gave-farmer: "<prefix> <gray>You have given <#ff7700><player_name> <gray>a farmer."
 got-a-farmer: "<prefix> <gray>Someone gave you a farmer."
 your-product-level-changed: "<prefix> <gray>Level of the product <#ff7700><product><gray> is now <#ff7700><level><gray>."
-admin-changed-product-level: "<prefix> <gray>You set the level of <#ff7700><product><gray> for player <#ff7700><player_name><gray> to <#ff7700><level><gray>."
+changed-product-level-admin: "<prefix> <gray>You set the level of <#ff7700><product><gray> for farmer <#ff7700><farmer><gray> to <#ff7700><level><gray>."
 no-such-level: "<prefix> <red>There is no level <level> for that product."
 have-higher-level: "<prefix> <red>Your farmer has a higher level or same level <product>."
 no-such-product: "<prefix> <red>That product does not exist. Please check Bukkit material names or collected-materials.yml for correct product names."
@@ -365,6 +368,16 @@ auto-sell-module:
   will-be-auto-sold: "<prefix> <white><material> <green>will be sold automatically from now on."
   wont-be-auto-sold: "<prefix> <white><material> <green>will not get sold automatically from now on."
 
+conversion-messages:
+  not-meeting-products: "<prefix> <red>Your farmer does not meet product requirements of this conversion."
+  placeholder-fail: "<prefix> <red>You do not meet special requirements of this conversion."
+  not-enough-money: "<prefix> <red>You do not have enough money to use this conversion."
+
+  cannot-convert-all: "<prefix> <red>You cannot use convert all feature in this conversion."
+  cannot-convert-single: "<prefix> <red>You cannot use convert single feature in this conversion."
+
+  on-cooldown: "<prefix> <red>Your farmer is currently on cooldown for this conversion. Remaining time: <gray><remaining>"
+
 setting-names:
   collect-natural-drops: "Collect Natural Drops"
   auto-harvest: "Auto Harvest"
@@ -377,3 +390,4 @@ setting-names:
   kill-spawner-mobs: "Auto Kill Spawner Mobs"
   collect-player-drops: "Collect Player Drops"
   baby: "Baby Age"
+  enabled: "Enabled Status"

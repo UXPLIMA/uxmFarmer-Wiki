@@ -47,6 +47,7 @@ admin:
       - "<gray>Biriken XP: <aqua><xp>"
       - "<gray>Parlama Rengi: <aqua><glow>"
       - "<gray>Varlık Türü: <aqua><entity>"
+      - "<gray>Aktiflik durumu: <aqua><status>"
       - "<gray>Ayarlar: <aqua><settings> <aqua>[Açmak/kapamak için ayara tıkla]"
       - "<gray>AutoKill mobları: <red><auto_kill_values> <aqua>[Açmak/kapatmak için bir moba tıkla]"
       - "<gray>AutoKill ayarları: <red><auto_kill_settings> <aqua>[Açmak/kapatmak için bir ayara tıkla]"
@@ -74,8 +75,9 @@ admin:
       - "<gray>/uxmfarmer <#6bbcff>checkperm <oyuncu> <yetki> <white>— Girilen oyuncunun, girilen yetkiye sahip olma durumunun önbellekteki halini gösterir."
       - "<gray>/uxmfarmer <#6bbcff>bypass <white>— Bekleme süresi (cooldown) bypass modunu açar/kapatır."
       - "<gray>/uxmfarmer <#6bbcff>stats <white>— Genel çiftçi istatistiklerini görüntüler."
-      - "<gray>/uxmfarmer <#6bbcff>bulkedit <yellow><setting> <true|false> <white>— Girilen ayarı her çiftçi için açar veya kapatır."
-      - "<gray>/uxmfarmer <#6bbcff>editsetting <yellow><setting> <true|false> <white>— Girilen ayarı seçilen çiftçi için açar veya kapatır."
+      - "<gray>/uxmfarmer <#6bbcff>bulkedit <yellow><ayar> <true|false> <white>— Girilen ayarı her çiftçi için açar veya kapatır."
+      - "<gray>/uxmfarmer <#6bbcff>editsetting <yellow><ayar> <true|false> <white>— Girilen ayarı seçilen çiftçi için açar veya kapatır."
+      - "<gray>/uxmfarmer <#6bbcff>setproductlevel <yellow><ürün> <seviye> <white>— Seçili çiftçinin girilen üründeki seviyesini değiştirir."
       - "<gray>/uxmfarmer <#6bbcff>teleport <white>— Sizi seçilen çiftçiye ışınlar."
       - "<gray>/uxmfarmer <#6bbcff>clearlogs <white>— Seçilen çiftçinin günlüklerini temizler."
       - "<gray>/uxmfarmer <#6bbcff>setowner <yellow><oyuncu> <white>— Seçilen çiftçinin sahibini belirtilen oyuncu olarak ayarlar."
@@ -180,6 +182,7 @@ have-not-autoharvest-permission: "<prefix> <red>Otomatik biçme özelliğini kul
 have-not-glow-permission: "<prefix> <red>Parıltı özelliğini kullanmak için çiftçi sahibinin gerekli yetkisi yok."
 have-not-no-visual-permission: "<prefix> <red>Farmeri görünmez yapma özelliğini kullanmak için çiftçi sahibinin gerekli yetkisi yok."
 have-not-baby-permission: "<prefix> <red>Bebek Yaşı özelliğini kullanmak için çiftçi sahibinin gerekli yetkisi yok."
+have-not-change-status-permission: "<prefix> <red>Çiftçi sahibi Farmer'i tamamen açma veya kapatma yetkisine sahip değil."
 have-not-toggle-glowing-permission: "<prefix> <red>Parıltı durumunu değiştirmek için yeterli iznin yok."
 have-not-change-glowing-color-permission: "<prefix> <red>Parıltı rengini değiştirmek için yeterli iznin yok."
 have-not-change-skin-name-permission: "<prefix> <red>Çiftçi skinini değiştirmek için yeterli iznin yok."
@@ -222,7 +225,7 @@ teleport-admin: "<prefix> <green>Işınlanma başarılı."
 gave-farmer: "<prefix> <#ff7700><player_name> <gray>adlı oyuncuya bir Farmer verdin."
 got-a-farmer: "<prefix> <gray>Birileri sana Farmer verdi."
 your-product-level-changed: "<prefix> <#ff7700><product> <gray>adlı ürününün seviyesi artık <#ff7700><level><gray>."
-admin-changed-product-level: "<prefix> <#ff7700><player_name> <gray>adlı oyuncunun <#ff7700><product> <gray> seviyesini <#ff7700><level><gray> yaptın."
+changed-product-level-admin: "<prefix> <#ff7700><player_name> <gray>adlı oyuncunun <#ff7700><product> <gray> seviyesini <#ff7700><level><gray> yaptın."
 no-such-level: "<prefix> <red>Bu ürün için <level>. seviye yok."
 have-higher-level: "<prefix> <red>Çiftçinin <product> seviyesi vermeye çalıştığından daha yüksek veya aynı."
 no-such-product: "<prefix> <red>Bu ürün mevcut değil. Doğru ürün isimlerini bulmak için Bukkit materyal isimlerini arayabilir veya collected-materials.yml dosyasına bakabilirsin."
@@ -365,6 +368,16 @@ auto-sell-module:
   will-be-auto-sold: "<prefix> <white><material> <green>artık otomatik olarak satılmayacak."
   wont-be-auto-sold: "<prefix> <white><material> <green>artık otomatik olarak satılmayacak."
 
+conversion-messages:
+  not-meeting-products: "<prefix> <red>Çiftçin bu dönüştürmenin ürün gereksinimlerini karşılamıyor."
+  placeholder-fail: "<prefix> <red>Bu dönüştürmenin özel gereksinimlerini karşılamıyorsun."
+  not-enough-money: "<prefix> <red>Bu dönüştürmeyi kullanmak için yeterli paran yok."
+
+  cannot-convert-all: "<prefix> <red>Bu dönüştürmede tümünü dönüştür özelliğini kullanamazsın."
+  cannot-convert-single: "<prefix> <red>Bu dönüştürmede tekli dönüştür özelliğini kullanamazsın."
+
+  on-cooldown: "<prefix> <red>Çiftçin şu anda bu dönüştürme için bekleme süresinde. Kalan süre: <gray><remaining>"
+
 setting-names:
   collect-natural-drops: "Doğal Olarak Yere Düşen Eşyaları Topla"
   auto-harvest: "Otomatik Toplama"
@@ -377,3 +390,4 @@ setting-names:
   kill-spawner-mobs: "Spawner Yaratıklarını Otomatik Öldürme"
   collect-player-drops: "Oyunculardan Düşen Eşyaları Toplama"
   baby: "Bebek Görünümü"
+  enabled: "Aktiflik Durumu"

@@ -20,11 +20,11 @@ collected-materials:
           - "say test"
         requirements:
           "playtime":
-            display: "<blue>1 Hour Playtime (Current: <papi:'math_0:floor_{statistic_PLAY_ONE_MINUTE}/1200'>)"
+            display: "<blue>1 Hour Playtime (Current: <papi:'math_0:floor_{statistic_PLAY_ONE_MINUTE}/72000'>)"
             # Math expansion is required for this operation
             # Math expansion returns 1 if given expression is valid
             # otherwise it returns 0
-            condition: "%math_({statistic_PLAY_ONE_MINUTE}/1200)>60%"
+            condition: "%math_({statistic_PLAY_ONE_MINUTE}/72000)>60%"
             required-output: "1"
           "vip":
             display: "<green>VIP Rank"
@@ -209,15 +209,24 @@ collected-materials:
   EGG:
     unit-price: 0.35
     levels: {}
+  IRON_NUGGET:
+    unit-price: 0.5
+    levels: { }
   IRON_INGOT:
     unit-price: 4.5
     levels: {}
+  IRON_BLOCK:
+    unit-price: 41
+    levels: { }
+  GOLD_NUGGET:
+    unit-price: 0.5
+    levels: { }
   GOLD_INGOT:
     unit-price: 5.0
     levels: {}
-  GOLD_NUGGET:
-    unit-price: 0.5
-    levels: {}
+  GOLD_BLOCK:
+    unit-price: 50
+    levels: { }
   REDSTONE:
     unit-price: 4.0
     levels: {}

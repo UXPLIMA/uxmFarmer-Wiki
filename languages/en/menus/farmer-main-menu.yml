@@ -205,6 +205,24 @@ items:
     actions:
       - "[menu] upgrade_all"
 
+  conversions:
+    material: "ANVIL"
+    model-data: 0
+    amount: 1
+    display-name: "<#a8ff78><bold>Convert Products"
+    glowing: true
+    head-data: null
+    lore:
+      - ""
+      - "<gray>Convert products"
+      - "<gray>with a single click!"
+      - ""
+      - "<#a8ff78>▶ Click to see conversions"
+    slots:
+      - 35
+    actions:
+      - "[menu] conversions"
+
   next:
     material: "PLAYER_HEAD"
     model-data: 0

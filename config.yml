@@ -22,6 +22,7 @@ hooks:
   #  - UltimateClaims
   #  - FabledSkyBlock
   #  - DeluxeSkyblock
+  #  - NClaim
   region-hook: "uxmClaims"
 
   # Economy Hook
@@ -45,6 +46,7 @@ hooks:
   # - Citizens
   # - FancyNpcs
   # - ZNPCsPlus
+  # - NpcApi - Eisi05's NpcApi plugin
   # - ModelSystem (ModelEngine, ItemsAdder or BetterModel) - this is internal, can be configured in model-settings
   # - default or "" - no interaction, farmer only accessible by commands
   interaction-hook: "FancyNpcs"
@@ -110,3 +112,4 @@ debug: false
 debug-categories:
 - NONE
 ignore: []
+farmer-ids: []
