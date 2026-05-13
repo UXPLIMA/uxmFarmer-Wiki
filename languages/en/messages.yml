@@ -158,6 +158,7 @@ all-collecting-disabled: "<prefix> <gray>Successfully <red>disabled <gray>collec
 collecting-enabled: "<prefix> <gray>Successfully <green>enabled <gray>collecting"
 collecting-disabled: "<prefix> <gray>Successfully <red>disabled <gray>collecting"
 can-not-move: "<prefix> <gray>You need to wait <#e3000e><remaining_time> <gray>to move the farmer."
+can-not-take-all: "<prefix> <gray>You need to wait <#e3000e><remaining_time> <gray>to collect all of a product."
 can-not-sell-all: "<prefix> <gray>You need to wait <#e3000e><remaining_time> <gray>to sell all the farmer's products."
 confirm-sell-all: "<prefix> <gold>Click this message to confirm selling all products."
 collected-items: "<prefix> <gray>Successfully collected all products."
@@ -278,6 +279,8 @@ upgrade-all:
 
   successful-upgrades: '<prefix> <gray>Products that successfully upgraded: <gold><products>'
   no-product: "<prefix> <red>Farmer does not have any products. Let the farmer collect some products then use this again."
+
+  must-meet-all-products-requirements: "<prefix> <red>You must meet all requirements of every product to upgrade everything."
 
 near-farmers-command:
   farmers-near-you: "<gold>Farmers Near You (Range: <aqua><range><gold>) <italic><gray>(click to copy farmer UUIDs)"

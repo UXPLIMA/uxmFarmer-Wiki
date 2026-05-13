@@ -93,6 +93,7 @@ log-cleaner:
 # cooldowns are in seconds
 cooldowns:
   move-cooldown: 180
+  take-all-cooldown: 120
   sell-all-cooldown: 120
   sell-xp-cooldown: 120
   change-glowing-cooldown: 120

@@ -158,6 +158,7 @@ all-collecting-disabled: "<prefix> <gray>Başarıyla <red>de-aktif <gray>edildi"
 collecting-enabled: "<prefix> <gray>Başarıyla <green>aktif <gray>edildi"
 collecting-disabled: "<prefix> <gray>Başarıyla <red>de-aktif <gray>edildi"
 can-not-move: "<prefix> <gray>Çiftçinin lokasyonunu değiştirmek için <#e3000e><remaining_time> <gray>beklemen gerek."
+can-not-take-all: "<prefix> <gray>Tekrar bir ürünün hepsini toplayabilmek için <#e3000e><remaining_time> <gray>beklemen gerek."
 can-not-sell-all: "<prefix> <gray>Çiftçinin tüm ürünlerini satmak için <#e3000e><remaining_time> <gray>beklemen gerek."
 confirm-sell-all: "<prefix> <gold>Tüm ürünleri satmayı onaylamak için bu mesaja tıkla."
 collected-items: "<prefix> <gray>Başarıyla tüm ürünleri <#05e300>aldın."
@@ -278,6 +279,8 @@ upgrade-all:
 
   successful-upgrades: "<prefix> <gray>Başarıyla yükseltilen ürünler: <gold><products>"
   no-product: "<prefix> <red>Çiftçinin herhangi bir ürünü yok. Birkaç ürün toplattıktan sonra tekrar deneyin."
+
+  must-meet-all-products-requirements: "<prefix> <red>Her ürünü yükseltebilmek için tüm ürünlerin gereksinimlerini karşılaman gerek."
 
 near-farmers-command:
   farmers-near-you: "<gold>Yakınındaki çiftçiler (Çap: <aqua><range><gold>) <italic><gray>(UUID kopyalamak için üstlerine tıklayın)"

@@ -1,33 +1,37 @@
-title: "<#11998e><bold>Farmer Dashboard"
+title: "<black><bold>Farmer Dashboard"
 rows: 6
-pageable-slot-size: 25
-filler-material: "BLACK_STAINED_GLASS_PANE"
+pageable-slot-size: 28
+filler-material: "GRAY_STAINED_GLASS_PANE"
 filler-slots:
+  - 0
+  - 1
   - 2
   - 3
+  - 4
   - 5
   - 6
-
-  - 1
-  - 10
-  - 19
-  - 28
-  - 37
-  - 46
-
   - 7
-  - 16
-  - 25
-  - 34
-  - 43
-  - 52
-
+  - 8
+  - 9
+  - 17
+  - 18
   - 26
+  - 27
   - 35
   - 36
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
 
 collected-item:
-  material: STONE
+  material: STONE # keep this here
   model-data: 0
   amount: 1
   display-name: ""
@@ -56,154 +60,23 @@ collected-item:
     - "[sound] ENTITY_ITEM_PICKUP"
 
 items:
-  manage:
-    material: "PLAYER_HEAD"
-    model-data: 0
-    amount: 1
-    display-name: "<#f5af19><bold>Command Center"
-    glowing: true
-    head-data: "texture-ewogICJ0aW1lc3RhbXAiIDogMTYyMDM5NzA2MjE1MSwKICAicHJvZmlsZUlkIiA6ICI0ZGI2MWRkOTM0Mzk0M2M0YjhhOTZiNDQwMWM3MDM1MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJiZWVyYmVsbHltYW4iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2MyZTgxOTkwNmViMTc5NDM5YjhkZDU1NTExMzJlNTRlYjQ3MTczZTBmNDU4ODYxYWQyYThjOTM3OTE4Mzg5MSIKICAgIH0KICB9Cn0="
-    lore:
-      - ""
-      - "<gray>The central hub for all"
-      - "<gray>advanced farmer activities."
-      - "<gray>Shape your strategy here."
-      - ""
-      - "<#f5af19>▶ Click to access management"
-    slots:
-      - 4
-    actions:
-      - "[menu] manage"
-
   storage-status:
     material: "PLAYER_HEAD"
     model-data: 0
     amount: 1
-    display-name: "<#38ef7d><bold>Storage Status"
+    display-name: "<#4dcc1f>Storage Status"
     glowing: false
     head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWM5NmJlNzg4NmViN2RmNzU1MjVhMzYzZTVmNTQ5NjI2YzIxMzg4ZjBmZGE5ODhhNmU4YmY0ODdhNTMifX19"
     lore:
       - ""
-      - "<gray>Monitor the current capacity"
-      - "<gray>and fill levels of your"
-      - "<gray>farmer's storage system."
+      - " <gray>You can see farmer's"
+      - " <gray>storage status from here"
       - ""
-      - "<#38ef7d>▶ Click to view storage limits"
+      - "<#55de23>▶ Click to see farmer's storage status"
     slots:
       - 0
     actions:
       - "[menu] storage_status"
-
-  appearance:
-    material: "NAME_TAG"
-    model-data: 0
-    amount: 1
-    display-name: "<#ff7eb3><bold>Appearance Settings"
-    glowing: false
-    head-data: null
-    lore:
-      - ""
-      - "<gray>Customize the look and feel"
-      - "<gray>of your personal farmer."
-      - ""
-      - "<#ff7eb3>▶ Click to customize"
-    slots:
-      - 9
-    actions:
-      - "[menu] appearance_settings"
-      - "[sound] BLOCK_BREWING_STAND_BREW"
-
-  logs:
-    material: "WRITABLE_BOOK"
-    model-data: 0
-    amount: 1
-    display-name: "<#00c6ff><bold>Action Logs"
-    glowing: false
-    head-data: null
-    lore:
-      - ""
-      - "<gray>Review a detailed history"
-      - "<gray>of all interactions and"
-      - "<gray>transactions."
-      - ""
-      - "<#00c6ff>▶ Click to view history"
-    slots:
-      - 18
-    actions:
-      - "[menu] logs"
-
-  move-here:
-    material: "ENDER_PEARL"
-    model-data: 0
-    amount: 1
-    display-name: "<#b24592><bold>Relocate Farmer"
-    glowing: false
-    head-data: null
-    lore:
-      - ""
-      - "<gray>Instantly summon the farmer"
-      - "<gray>to your exact coordinates."
-      - ""
-      - "<#b24592>▶ Click to teleport farmer"
-    slots:
-      - 27
-    actions:
-      - "[close]"
-      - "[teleport]"
-
-  previous:
-    material: "PLAYER_HEAD"
-    model-data: 0
-    amount: 1
-    display-name: "<#ffea00>← Previous Page"
-    glowing: false
-    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RjOWU0ZGNmYTQyMjFhMWZhZGMxYjViMmIxMWQ4YmVlYjU3ODc5YWYxYzQyMzYyMTQyYmFlMWVkZDUifX19"
-    lore:
-      - ""
-    slots:
-      - 45
-    actions:
-      - "[previous_page]"
-
-  sell-all:
-    material: "PLAYER_HEAD"
-    model-data: 0
-    amount: 1
-    display-name: "<#FFD700><bold>Sell All Products"
-    glowing: false
-    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjA5Mjk5YTExN2JlZTg4ZDMyNjJmNmFiOTgyMTFmYmEzNDRlY2FlMzliNDdlYzg0ODEyOTcwNmRlZGM4MWU0ZiJ9fX0="
-    lore:
-      - ""
-      - "<gray>Instantly sell all harvested"
-      - "<gray>goods inside the warehouse."
-      - ""
-      - "<red><italic>Note: Standard taxes apply."
-      - ""
-      - "<#FFD700>▶ Click to sell everything"
-    slots:
-      - 8
-    actions:
-      - "[close]"
-      - "[player] farmer sellall"
-
-  upgrade-all:
-    material: "EXPERIENCE_BOTTLE"
-    model-data: 0
-    amount: 1
-    display-name: "<#a8ff78><bold>Mass Upgrade"
-    glowing: true
-    head-data: null
-    lore:
-      - ""
-      - "<gray>Automatically upgrade every"
-      - "<gray>single product you can"
-      - "<gray>currently afford."
-      - ""
-      - "<#a8ff78>▶ Click to upgrade all"
-    slots:
-      - 17
-    actions:
-      - "[menu] upgrade_all"
 
   conversions:
     material: "ANVIL"
@@ -219,9 +92,68 @@ items:
       - ""
       - "<#a8ff78>▶ Click to see conversions"
     slots:
-      - 35
+      - 8
     actions:
       - "[menu] conversions"
+
+  manage:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Management Panel"
+    glowing: false
+    head-data: "texture-ewogICJ0aW1lc3RhbXAiIDogMTYyMDM5NzA2MjE1MSwKICAicHJvZmlsZUlkIiA6ICI0ZGI2MWRkOTM0Mzk0M2M0YjhhOTZiNDQwMWM3MDM1MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJiZWVyYmVsbHltYW4iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2MyZTgxOTkwNmViMTc5NDM5YjhkZDU1NTExMzJlNTRlYjQ3MTczZTBmNDU4ODYxYWQyYThjOTM3OTE4Mzg5MSIKICAgIH0KICB9Cn0="
+    lore:
+      - ""
+      - " <gray>This is the command center"
+      - " <gray>for all farmer activities."
+      - ""
+      - " <gray>Efficiency, management,"
+      - " <gray>and strategy are shaped here."
+      - ""
+      - "<red>▶ Click to access the management panel"
+    slots:
+      - 3
+    actions:
+      - "[menu] manage"
+
+  upgrade-all:
+    material: "FIREWORK_ROCKET"
+    model-data: 0
+    amount: 1
+    display-name: "<#ff0000>Upgrade Everything Menu"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - "<gray>In this menu"
+      - "<gray>you can upgrade every product"
+      - "<gray>that you can afford to upgrade"
+      - ""
+      - "<yellow>▶ Click to upgrade every product"
+    slots:
+      - 5
+    actions:
+      - "[menu] upgrade_all"
+
+  move-here:
+    material: "ENDER_PEARL"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Move Here"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>Teleports the farmer"
+      - " <gray>to your current location"
+      - ""
+      - "<yellow>▶ Click to teleport the farmer"
+    slots:
+      - 45
+    actions:
+      - "[close]"
+      - "[teleport]"
 
   next:
     material: "PLAYER_HEAD"
@@ -233,51 +165,125 @@ items:
     lore:
       - ""
     slots:
-      - 53
+      - 50
     actions:
       - "[next_page]"
+  previous:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>← Previous Page"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RjOWU0ZGNmYTQyMjFhMWZhZGMxYjViMmIxMWQ4YmVlYjU3ODc5YWYxYzQyMzYyMTQyYmFlMWVkZDUifX19"
+    lore:
+      - ""
+    slots:
+      - 48
+    actions:
+      - "[previous_page]"
+
+  sell-all:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Sell Farmer's Warehouse"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjA5Mjk5YTExN2JlZTg4ZDMyNjJmNmFiOTgyMTFmYmEzNDRlY2FlMzliNDdlYzg0ODEyOTcwNmRlZGM4MWU0ZiJ9fX0="
+    lore:
+      - ""
+      - " <gray>Sells all items in the"
+      - " <gray>farmer's storage"
+      - " <gray>Sell taxes for each product"
+      - " <gray>will be applied"
+      - ""
+      - "<yellow>▶ Click to sell all items"
+    slots:
+      - 49
+    actions:
+      - "[close]"
+      - "[player] farmer sellall"
+
+  logs:
+    material: "CLOCK"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Farmer Logs"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>All actions performed"
+      - " <gray>by players for the farmer"
+      - " <gray>are logged here"
+      - ""
+      - "<yellow>▶ Click to view logs"
+    slots:
+      - 46
+    actions:
+      - "[menu] logs"
+
+  appearance:
+    material: "DRAGON_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#ffea00>Appearance Settings"
+    glowing: false
+    head-data: null
+    lore:
+      - ""
+      - " <gray>You can manage all settings"
+      - " <gray>related to farmer's appearance"
+      - " <gray>of your farmer from here"
+      - ""
+      - "<yellow>▶ Click to view appearance settings"
+    slots:
+      - 52
+    actions:
+      - "[menu] appearance_settings"
+      - "[sound] BLOCK_BREWING_STAND_BREW"
 
 dynamic-items:
   collecting:
     enabled:
-      material: "HOPPER"
+      material: "LIME_DYE"
       model-data: 0
       amount: 1
-      display-name: "<#00b09b><bold>Collect Dropped Items"
-      glowing: true
-      head-data: null
-      lore:
-        - ""
-        - "<gray>The farmer is currently"
-        - "<gray>sweeping the ground for"
-        - "<gray>dropped farm products."
-        - ""
-        - "<dark_gray>» <gray>Status: <#00b09b>Active"
-        - ""
-        - "<#00b09b>▶ Click to pause collection"
-      slots:
-        - 44
-      actions:
-        - "[change_status]"
-        - "[sound] ENTITY_ITEM_PICKUP"
-    disabled:
-      material: "MINECART"
-      model-data: 0
-      amount: 1
-      display-name: "<#ff0844><bold>Collect Dropped Items"
+      display-name: "<#ffea00>Change Collecting Status"
       glowing: false
       head-data: null
       lore:
         - ""
-        - "<gray>The farmer is currently"
-        - "<gray>ignoring items dropped"
-        - "<gray>on the ground."
+        - " <gray>The farmer"
+        - " <gray>collects fallen"
+        - " <gray>products from the ground"
         - ""
-        - "<dark_gray>» <gray>Status: <#ff0844>Paused"
+        - " <gray>Status: <#05e300>Enabled"
         - ""
-        - "<#ff0844>▶ Click to resume collection"
+        - "<yellow>▶ Click to change the collection status"
+
       slots:
-        - 44
+        - 53
+      actions:
+        - "[change_status]"
+        - "[sound] ENTITY_ITEM_PICKUP"
+    disabled:
+      material: "GRAY_DYE"
+      model-data: 0
+      amount: 1
+      display-name: "<#ffea00>Change Collecting Status"
+      glowing: false
+      head-data: null
+      lore:
+        - ""
+        - " <gray>The farmer"
+        - " <gray>collects fallen"
+        - " <gray>products from the ground"
+        - ""
+        - " <gray>Status: <#e3000e>Disabled"
+        - ""
+        - "<yellow>▶ Click to change the collection status"
+      slots:
+        - 53
       actions:
         - "[change_status]"
         - "[sound] ENTITY_ITEM_PICKUP"
