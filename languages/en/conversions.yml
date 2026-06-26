@@ -16,10 +16,10 @@ gold-nugget-to-ingot:
       - ""
       - "<white><b>STATUS"
       - "<dark_gray>▪ <gray>Available Operations: <green><possible_conversions>"
+      - "<dark_gray>▪ <gray>Available Gold Nuggets: <green><papi:'uxmfarmer_<uuid>_amount_GOLD_NUGGET'>"
       - ""
       - "<dark_gray>▶ <yellow>Left-Click <gray>to process <white>1x"
       - "<dark_gray>▶ <gold>Shift-Click <gray>to process <white>ALL"
-  slot: 0
   conversion-type: BOTH
   # conversion type can be these values:
   # SINGLE, ALL, BOTH
@@ -54,7 +54,7 @@ gold-nugget-to-ingot:
     send-messages-per-convert: false
     # if true, messages will be sent per-convert when convert all is used, if false, messages will be sent once
     messages:
-      - "<prefix> <gray>Successfully processed <yellow>Gold Nuggets <gray>into <gold>Gold Ingots<gray>."
+      - "<prefix> <gray>Successfully processed <yellow>Gold Nuggets <gray>into <gold>Gold Ingots <white><processed_conversions> <gray>times."
     money: 0
   cooldown: 30
   # cooldowns are in seconds
@@ -75,9 +75,9 @@ iron-ingot-to-block:
       - ""
       - "<white><b>STATUS"
       - "<dark_gray>▪ <gray>Available Operations: <green><possible_conversions>"
+      - "<dark_gray>▪ <gray>Available Iron Ingots: <green><papi:'uxmfarmer_<uuid>_amount_IRON_INGOT'>"
       - ""
       - "<dark_gray>▶ <yellow>Click <gray>to process <white>ALL"
-  slot: 1
   conversion-type: ALL
   requirements:
     price: 0

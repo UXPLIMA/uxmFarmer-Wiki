@@ -16,10 +16,10 @@ gold-nugget-to-ingot:
       - ""
       - "<white><b>DURUM"
       - "<dark_gray>▪ <gray>Mevcut İşlemler: <green><possible_conversions>"
+      - "<dark_gray>▪ <gray>Mevcut Altın Parçaları: <green><papi:'uxmfarmer_<uuid>_amount_GOLD_NUGGET'>"
       - ""
       - "<dark_gray>▶ <white>1x <gray>işlemek için <yellow>Sol Tıkla"
       - "<dark_gray>▶ <white>TÜMÜNÜ <gray>işlemek için <gold>Shift+Tık"
-  slot: 0
   conversion-type: BOTH
   # conversion type şu değerleri alabilir:
   # SINGLE, ALL, BOTH
@@ -54,7 +54,7 @@ gold-nugget-to-ingot:
     send-messages-per-convert: false
     # true ise convert all özelliği kullanıldığında her çeviri başına mesajlar yollanır, false ise mesajlar hep sadece bir kere gönderilir
     messages:
-      - "<prefix> <yellow>Altın Parçaları <gray>başarıyla <gold>Altın Külçelerine <gray>dönüştürüldü."
+      - "<prefix> <yellow>Altın Parçaları <gray>başarıyla <gold><processed_conversions> <gray>kere <gold>Altın Külçelerine <gray>dönüştürüldü."
     money: 0
   cooldown: 30
   # bekleme süreleri saniye biçimindedir
@@ -75,9 +75,9 @@ iron-ingot-to-block:
       - ""
       - "<white><b>DURUM"
       - "<dark_gray>▪ <gray>Mevcut İşlemler: <green><possible_conversions>"
+      - "<dark_gray>▪ <gray>Mevcut Demir Külçesi: <green><papi:'uxmfarmer_<uuid>_amount_IRON_INGOT'>"
       - ""
       - "<dark_gray>▶ <white>TÜMÜNÜ <gray>işlemek için <yellow>Shift+Tık"
-  slot: 1
   conversion-type: ALL
   requirements:
     price: 0

@@ -5,7 +5,7 @@ collect-dropped-items: true
 # whether farmer should collect items dropped by players
 collect-player-dropped-items: true
 collect-player-dropped-items-by-default: true
-# custom item means an item with either custom name or custom lore
+# custom item means an item with either custom name, custom lore or any enchant
 collect-custom-items: false
 
 farmer-visible-by-default: true
@@ -14,7 +14,7 @@ farmer-visible-by-default: true
 # upgrade-all takes everything in collected-materials into account and upgrades them.
 upgrade-all-upgrades-everything: false
 # if this setting is set to true, players will be able to use upgrade all only if they meet money requirement of every product
-# due to nature of our level system, this setting only applies to money requirements, other requirements cannot checked included in this setting
+# due to nature of our level system, this setting only applies to money requirements
 upgrade-all-must-meet-all-requirements: false
 # applies given discount when upgrading all products. specific discounts can be given with the permission uxmfarmer.upgradediscount.<discount>
 upgrade-all-discount: 50
@@ -38,6 +38,8 @@ adding-member-requires-permission: false
 add-new-region-members-to-farmer: true
 # if true, region members who have left the region will be removed from farmer members
 remove-leaving-region-members-from-farmer: true
+# if true, if the farmer owner is not the region owner and leaves the region, farmer ownership will be transferred to the region owner
+transfer-farmer-ownership-to-region-owner-on-leave: true
 # if true, only farmer owners will be able to upgrade products to other levels
 only-owners-can-upgrade: false
 

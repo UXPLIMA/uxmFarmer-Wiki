@@ -1,7 +1,26 @@
 title: "<gradient:#00c6ff:#0072ff>Product Conversions</gradient>"
-rows: 1
+rows: 3
+pageable-slot-size: 7
 filler-material: "GRAY_STAINED_GLASS_PANE"
-filler-slots: []
+filler-slots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 17
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
 
 items:
   back:
@@ -13,7 +32,33 @@ items:
     lore:
       - ""
     slots:
-      - 8
+      - 22
     actions:
       - "[menu] main"
       - "[sound] UI_BUTTON_CLICK"
+  next:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#39a7fc>Next Page →"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU2YTM2MTg0NTllNDNiMjg3YjIyYjdlMjM1ZWM2OTk1OTQ1NDZjNmZjZDZkYzg0YmZjYTRjZjMwYWI5MzExIn19fQ=="
+    lore:
+      - ""
+    slots:
+      - 26
+    actions:
+      - "[next_page]"
+  previous:
+    material: "PLAYER_HEAD"
+    model-data: 0
+    amount: 1
+    display-name: "<#39a7fc>← Previous Page"
+    glowing: false
+    head-data: "texture-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RjOWU0ZGNmYTQyMjFhMWZhZGMxYjViMmIxMWQ4YmVlYjU3ODc5YWYxYzQyMzYyMTQyYmFlMWVkZDUifX19"
+    lore:
+      - ""
+    slots:
+      - 18
+    actions:
+      - "[previous_page]"
